@@ -1,0 +1,85 @@
+// *** Code related to dungeon items ***
+
+// Creating containers on Waukeen's Promenade for dungeon items
+COPY_EXISTING ~AR0700.ARE~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2450
+    fj_loc_y          = 948
+    fj_type           = 8         // non-visible
+    fj_lock_diff      = 0
+    fj_flags          = (1 << 5)  // initially disabled
+    fj_trap_remove_diff = 0
+    fj_box_left       = 2372
+    fj_box_top        = 914
+    fj_box_right      = 2425
+    fj_box_bottom     = 969
+    fj_vertex_0       = 2372 | (914 << 16)
+    fj_vertex_1       = 2372 | (923 << 16)
+    fj_vertex_2       = 2377 | (949 << 16)
+    fj_vertex_3       = 2393 | (954 << 16)
+    fj_vertex_4       = 2403 | (969 << 16)
+    fj_vertex_5       = 2416 | (965 << 16)
+    fj_vertex_6       = 2425 | (926 << 16)
+    fj_vertex_7       = 2416 | (919 << 16)
+  STR_VAR
+    fj_structure_type = "container"
+    fj_name           = "A7-Rubble1"
+  END
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2538
+    fj_loc_y          = 1168
+    fj_type           = 8         // non-visible
+    fj_lock_diff      = 0
+    fj_flags          = (1 << 5)  // initially disabled
+    fj_trap_remove_diff = 0
+    fj_box_left       = 2511
+    fj_box_top        = 1093
+    fj_box_right      = 2574
+    fj_box_bottom     = 1143
+    fj_vertex_0       = 2511 | (1103 << 16)
+    fj_vertex_1       = 2512 | (1120 << 16)
+    fj_vertex_2       = 2520 | (1143 << 16)
+    fj_vertex_3       = 2564 | (1141 << 16)
+    fj_vertex_4       = 2574 | (1123 << 16)
+    fj_vertex_5       = 2574 | (1107 << 16)
+    fj_vertex_6       = 2563 | (1098 << 16)
+    fj_vertex_7       = 2549 | (1093 << 16)
+    fj_vertex_8       = 2514 | (1094 << 16)
+  STR_VAR
+    fj_structure_type = "container"
+    fj_name           = "A7-Rubble2"
+  END
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x          = 2785
+    fj_loc_y          = 1136
+    fj_type           = 8         // non-visible
+    fj_lock_diff      = 0
+    fj_flags          = (1 << 5)  // initially disabled
+    fj_trap_remove_diff = 0
+    fj_box_left       = 2773
+    fj_box_top        = 1038
+    fj_box_right      = 2837
+    fj_box_bottom     = 1137
+    fj_vertex_0       = 2773 | (1038 << 16)
+    fj_vertex_1       = 2773 | (1096 << 16)
+    fj_vertex_2       = 2837 | (1137 << 16)
+    fj_vertex_3       = 2837 | (1080 << 16)
+  STR_VAR
+    fj_structure_type = "container"
+    fj_name           = "A7-Rubble3"
+  END
+
+
+// Applying item control script
+EXTEND_TOP ~ar0700.bcs~ ~%MOD_FOLDER%/scripts/ar0700_top.baf~ EVAL
+
+
+// Placing item from IMPORT01.2DA into a container to be able to pick it up via script
+COPY_EXISTING ~AR0602.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~^.+TakeItemListPartyNum("IMPORT01".+$~ ~ActionOverride("Chest1",TakeItemListPartyNum("IMPORT01",1))~
+  END
+BUT_ONLY

@@ -1,0 +1,64 @@
+// *** Code related to magical portals and teleportation ***
+
+// Magical Portal on AR0603
+COPY_EXISTING ~TELE0602.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~\([^!]PartyHasItem("MISC4G")\)~ ~\1 Global("A7-ShortcutEnabled","GLOBAL",0)~
+  END
+BUT_ONLY
+
+<<<<<<<< .../inlined/tele0602_shortcut.baf
+IF
+  Clicked([ANYONE])
+  PartyHasItem("MISC4G") // Portal Key
+  Global("A7-ShortcutEnabled", "GLOBAL", 1)
+  Range(LastTrigger, 9)
+THEN
+  RESPONSE #100
+    CreateCreatureImpassableAllowOverlap("a7-tele", [415.2850], S)
+END
+>>>>>>>>
+EXTEND_TOP ~TELE0602.BCS~ ~.../inlined/tele0602_shortcut.baf~
+
+COMPILE ~%MOD_FOLDER%/dialogs/a7-tele.d~ EVAL
+COMPILE ~%MOD_FOLDER%/scripts/a7-tele.baf~
+
+COPY ~%MOD_FOLDER%/creatures/a7-tele.cre~ ~override~
+  WRITE_ASCII SCRIPT_OVERRIDE ~A7-TELE~ #8
+  WRITE_ASCII DIALOG ~A7-TELE~ #8
+
+
+// Updating teleport sequence on AR0602
+COPY_EXISTING ~AR0602.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~\(Global("IrenTeleport","GLOBAL",2)\)~ ~\1 Global("A7-ShortcutEnabled","GLOBAL",0)~
+  END
+BUT_ONLY
+
+<<<<<<<< .../inlined/ar0602_tele.baf
+IF
+  Global("IrenTeleport", "GLOBAL", 2)
+  Global("A7-ShortcutEnabled", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("IrenTeleport", "GLOBAL", 1)
+    SmallWait(8)
+    PlaySound("EFF_M29")
+    FadeFromColor([30.0], 0)
+    CreateVisualEffectObject("SPCLOUD1", Player1)
+    CreateVisualEffectObject("SPCLOUD1", Player2)
+    CreateVisualEffectObject("SPCLOUD1", Player3)
+    CreateVisualEffectObject("SPCLOUD1", Player4)
+    CreateVisualEffectObject("SPCLOUD1", Player5)
+    CreateVisualEffectObject("SPCLOUD1", Player6)
+END
+>>>>>>>>
+EXTEND_BOTTOM ~AR0602.BCS~ ~.../inlined/ar0602_tele.baf~
+
+
+// Disabling shortcut mode when using the regular transition to AR0700
+COPY_EXISTING ~TELE0700.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~\(SaveGame(.+)\)~ ~\1 SetGlobal("A7-ShortcutEnabled","GLOBAL",0)~
+  END
+BUT_ONLY

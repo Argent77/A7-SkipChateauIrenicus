@@ -1,0 +1,18 @@
+// *** Cutscene: Rogue appears from the portal to the north of Charname's cell - Part 1 ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetAreaScript("a7-skip", OVERRIDE)
+    SetGlobal("A7-Cutscene_Breakable", "GLOBAL", 1)
+    SetCutSceneBreakable(TRUE)
+    CloseDoor("Door05")
+    MoveViewPoint([3875.2445], INSTANT)
+    CreateCreature("a7-ctspy", [3790.2450], S)
+    Wait(2)
+    CreateCreatureEffect("a7-shad1", "SPCLOUD1", [3870.2456], SW)
+    Wait(2)
+    StartCutScene("a7-cut02")
+END

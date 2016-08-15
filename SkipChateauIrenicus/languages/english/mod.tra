@@ -1,0 +1,45 @@
+// -*- coding: utf-8 -*- 
+
+// Misc. strings
+@1000 = ~These are the dryads' magical acorns that you've obtained off of the duergar leader Ilyich.
+
+You were told to deliver them to the Fairy Queen in the south end of the Windspear Hills.
+
+STATISTICS:
+
+Weight: 0~
+@1001 = ~Whoa, what a ride. Where am I now?~
+
+
+// Rogue dialog
+@2000 = ~Keep your distance! Are you friend or foe?~
+@2001 = ~I'm <GABBER>. I've been imprisoned by a mage of great power until now. How did you appear so suddenly?~
+@2002 = ~I won't tell you anything. You might be a spy of my captor or worse. Get lost!~
+@2003 = ~There are magical portals that connect each level of this blasted dungeon.~
+@2004 = ~You say a mage imprisoned you? Where's he now?~
+@2005 = ~He teleported away just a short while ago.~
+@2006 = ~Damn it! Then all our efforts to reach him were for naught. A'right, a change of plan is called for. We'll prepare an ambush for him on the surface.~
+@2007 = ~Can I use these portals to escape?~
+@2008 = ~I don't see why not. You need a key to use them, though. Luckily for you I grabbed a few spare keys. You can have one if you want.~
+@2009 = ~I'll take the key. Thanks.~
+@2010 = ~No need. I'd rather find the way out by myself.~
+@2011 = ~Here you go. Now if you'll excuse me. I've got to hunt down a treacherous mage.~
+@2012 = ~I don't care anyway. I've got to hunt down a treacherous mage.~
+@2013 = ~Keep your distance.~
+
+
+// Portal dialog
+@2100 = ~Select your destination:~
+@2101 = ~To the lower level.~ 
+@2102 = ~To the surface.~
+@2103 = ~Nevermind.~
+
+
+// Journal entries
+@5000 = ~Shortcut to the surface
+
+I encountered a mysterious rogue who was apparently hunting down my captor. He gave me a key which enables me to use magical portals to leave this dungeon quickly.~
+
+@5001 = ~Shortcut to the surface
+
+I encountered a suspicious rogue. I played it safe and refused to disclose any information. He might have been a spy for my captor, or worse.~

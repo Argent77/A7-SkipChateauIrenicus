@@ -1,0 +1,30 @@
+// *** Cutscene: Rogue appears from the portal to the north of Charname's cell - Part 2 ***
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("a7-shadow")
+    Face(NW)
+    SmallWait(10)
+    Face(SE)
+    SmallWait(10)
+    Face(SW)
+    DisplayStringHead(Myself, @1001)  // Whoa, what a ride. Where am I now?
+    Wait(2)
+    MoveViewPoint([3750.2650], VERY_FAST)
+    MoveToObject("Door05")
+    SmallWait(5)
+    OpenDoor("Door05")
+    CreateCreature("a7-ctspy", [3820.2590], S)
+    SmallWait(5)
+    MoveToPoint([3750.2650])
+    SmallWait(10)
+    Face(SE)
+    SmallWait(10)
+    Face(SW)
+    SmallWait(10)
+    Face(S)
+    Wait(1)
+    EndCutSceneMode()
+END

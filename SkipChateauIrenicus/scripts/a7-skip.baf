@@ -1,0 +1,35 @@
+// *** Broken cutscene: Rogue appears from magical portal ***
+
+// Resetting breakable cutscene state
+IF
+  CutSceneBroken()
+THEN
+  RESPONSE #100
+    SetCutSceneBreakable(FALSE)
+    StartCutSceneMode()
+    ClearAllActions()
+    FadeToColor([0.0], 0)
+    SetCursorState(FALSE)
+    SetAreaScript("", OVERRIDE)
+    SetGlobal("A7-Cutscene_Breakable", "GLOBAL", 0)
+    Continue()
+END
+
+// Finalizing broken cutscene
+IF
+  CutSceneBroken()
+  Switch("A7-Cutscene_Breakable", "GLOBAL")
+THEN
+  RESPONSE #1
+    ActionOverride("a7-shadow", DestroySelf())
+    ActionOverride("a7-cutspy", DestroySelf())
+    ActionOverride("a7-cutspy", DestroySelf())
+    OpenDoor("Door05")
+    CreateCreature("a7-ctspy", [3790.2450], S)
+    CreateCreature("a7-ctspy", [3820.2590], S)
+    CreateCreature("a7-shad1", [3750.2650], S)
+    MoveViewPoint([3750.2650], INSTANT)
+    FadeFromColor([10.0],0)
+    SmallWait(5)
+    EndCutSceneMode()
+END

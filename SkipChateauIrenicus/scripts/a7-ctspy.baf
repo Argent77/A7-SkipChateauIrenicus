@@ -1,0 +1,8 @@
+// *** Cutspy script ***
+
+IF
+  Global("A7-Cutscene", "MYAREA", 2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

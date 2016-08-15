@@ -1,0 +1,5 @@
+// *** Stuff not covered elsewhere ***
+
+// Updating Acorn description
+COPY_EXISTING ~MISC4N.ITM~ ~override~
+  SAY UNIDENTIFIED_DESC @1000   // These are the dryads' magical acorns...

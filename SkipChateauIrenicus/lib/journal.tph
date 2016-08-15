@@ -1,0 +1,4 @@
+// *** Journal-related stuff ***
+
+// Registering journal entries
+ADD_JOURNAL @5000 @5001

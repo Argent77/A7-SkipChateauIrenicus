@@ -1,0 +1,13 @@
+// *** Irenicus Dungeon - First Level (AR0602) ***
+
+IF
+  Delay(4)
+  Global("MoveScreen", "MYAREA", 1)
+  Global("A7-Cutscene", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-Cutscene", "MYAREA", 1)
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("a7-cut01")
+END

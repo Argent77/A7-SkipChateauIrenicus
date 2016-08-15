@@ -1,0 +1,7 @@
+// -*- coding: us-ascii -*- 
+// Setup (index 0..999)
+
+@0 = ~Skip Chateau Irenicus~
+
+@100 = ~This mod requires BG2:EE or EET to be installed.~
+@101 = ~This mod requires the game to be patched to v2.0 or higher.~

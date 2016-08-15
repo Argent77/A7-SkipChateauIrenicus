@@ -1,0 +1,17 @@
+// *** Code related to a mysterious rogue ***
+
+COMPILE ~%MOD_FOLDER%/dialogs/a7-shad1.d~
+        ~%MOD_FOLDER%/scripts/a7-shad1.baf~
+        ~%MOD_FOLDER%/scripts/a7-ctspy.baf~
+        ~%MOD_FOLDER%/scripts/a7-cut01.baf~
+        ~%MOD_FOLDER%/scripts/a7-cut02.baf~
+        ~%MOD_FOLDER%/scripts/a7-skip.baf~
+
+EXTEND_TOP ~AR0602.BCS~ ~%MOD_FOLDER%/scripts/ar0602_top.baf~
+
+COPY ~%MOD_FOLDER%/creatures/a7-shad1.cre~ ~override~
+  WRITE_ASCII SCRIPT_OVERRIDE ~A7-SHAD1~ #8
+  WRITE_ASCII DIALOG ~A7-SHAD1~ #8
+
+COPY ~%MOD_FOLDER%/creatures/a7-ctspy.cre~ ~override~
+  WRITE_ASCII SCRIPT_OVERRIDE ~A7-CTSPY~ #8

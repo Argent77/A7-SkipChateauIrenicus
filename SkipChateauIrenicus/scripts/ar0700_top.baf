@@ -1,0 +1,41 @@
+// *** Waukeen's Promenade (AR0700) ***
+
+// Enabling containers
+IF
+  Global("A7-ShortcutEnabled", "GLOBAL", 1)
+  Global("A7-TransferItems", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TransferItems", "MYAREA", 1)
+    ContainerEnable("A7-Rubble1", TRUE)
+    ContainerEnable("A7-Rubble2", TRUE)
+    ContainerEnable("A7-Rubble3", TRUE)
+    Continue()
+END
+
+// Unique items are handled in separately
+%item_create_unique%
+
+// Transferring items from dungeon
+IF
+  Global("A7-ShortcutEnabled", "GLOBAL", 1)
+  Global("A7-TransferItems", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    // adding special items not found in containers
+    %item_create%
+    // transferring container contents
+    %container_contents%
+    Continue()
+END
+
+// Removing unneeded items from containers in second pass
+IF
+  Global("A7-ShortcutEnabled", "GLOBAL", 1)
+  Global("A7-TransferItems", "MYAREA", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("A7-TransferItems", "MYAREA", 2)
+    %item_destroy%
+    Continue()
+END

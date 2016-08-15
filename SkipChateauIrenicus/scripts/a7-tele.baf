@@ -1,0 +1,16 @@
+// *** Portal helper creature ***
+
+IF
+  Global("init", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("init", "LOCALS", 1)
+    StartDialogueNoSet(LastTrigger)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    DestroySelf()
+END

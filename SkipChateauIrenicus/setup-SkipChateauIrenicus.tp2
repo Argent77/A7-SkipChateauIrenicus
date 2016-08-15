@@ -1,0 +1,22 @@
+BACKUP ~SkipChateauIrenicus/backup~
+AUTHOR ~Argent77~
+VERSION ~0.2~
+
+README ~SkipChateauIrenicus/readme/readme-%LANGUAGE%.txt~
+       ~SkipChateauIrenicus/readme/readme.txt~
+
+LANGUAGE ~English~ ~english~
+         ~SkipChateauIrenicus/languages/english/setup.tra~
+         ~SkipChateauIrenicus/languages/english/mod.tra~
+
+BEGIN @0  // Skip Chateau Irenicus
+  REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @100      // This mod requires BG2:EE or EET to be installed.
+  REQUIRE_PREDICATE FILE_EXISTS ~engine.lua~ @101 // This mod requires the game to be patched to v2.0 or higher.
+  DESIGNATED 0
+
+  INCLUDE ~%MOD_FOLDER%/lib/journal.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/tables.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/portal.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/rogue.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/items.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/misc.tph~

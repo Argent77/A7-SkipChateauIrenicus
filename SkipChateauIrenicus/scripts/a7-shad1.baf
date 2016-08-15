@@ -1,0 +1,24 @@
+// *** Shadow Thief script ***
+
+IF
+  AttackedBy([GOODCUTOFF], 0)
+  Global("attacked", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("attacked", "LOCALS", 1)
+    SetGlobal("A7-Cutscene", "MYAREA", 2)
+    DisplayStringHead(Myself, 61890)  // Must... return to the shadows!
+    Wait(2)
+    CreateItem("POTN10", 1, 0, 0)
+    UseItem("POTN10", Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("attacked", "LOCALS", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("attacked", "LOCALS", 2)
+    EscapeAreaObject("JailPortal")
+END
