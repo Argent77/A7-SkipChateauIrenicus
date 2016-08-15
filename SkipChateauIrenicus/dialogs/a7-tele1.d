@@ -1,26 +1,26 @@
-// *** Teleporter Level 2 dialog ***
+// *** Teleporter Level 1 dialog ***
 
-BEGIN ~a7-tele~
+BEGIN ~a7-tele1~
 
 IF ~True()~ teleport
   SAY @2100 /*Select your destination: */
 
-  ++ @2101 /* To the lower level. */
+  ++ @2104 /* To the upper level. */
     DO ~SetInterrupt(FALSE)
-        SetGlobal("IrenTeleport", "GLOBAL", 2)
+        SetGlobal("IrenTeleport", "GLOBAL", 3)
         FadeToColor([20.0], 0)
         PlaySound("EFF_M28")
         Wait(1)
         SaveGame(0)
         MultiPlayerSync()
-        ActionOverride(Player1, LeaveAreaLUAPanic("AR0602", "", [3875.2440], SW))
-        ActionOverride(Player1, LeaveAreaLUA("AR0602", "", [3875.2440], SW))
+        ActionOverride(Player1, LeaveAreaLUAPanic("AR0603", "", [516.2929], E))
+        ActionOverride(Player1, LeaveAreaLUA("AR0603", "", [516.2929], E))
         ActionOverride(Player1, DisplayStringNoName(Myself, 47346))
-        ActionOverride(Player2, LeaveAreaLUA("AR0602", "", [3841.2410], SW))
-        ActionOverride(Player3, LeaveAreaLUA("AR0602", "", [3922.2464], SW))
-        ActionOverride(Player4, LeaveAreaLUA("AR0602", "", [3825.2460], SW))
-        ActionOverride(Player5, LeaveAreaLUA("AR0602", "", [3871.2485], SW))
-        ActionOverride(Player6, LeaveAreaLUA("AR0602", "", [3922.2510], SW))
+        ActionOverride(Player2, LeaveAreaLUA("AR0603", "", [475.2973], E))
+        ActionOverride(Player3, LeaveAreaLUA("AR0603", "", [415.2953], E))
+        ActionOverride(Player4, LeaveAreaLUA("AR0603", "", [553.2957], E))
+        ActionOverride(Player5, LeaveAreaLUA("AR0603", "", [486.2969], E))
+        ActionOverride(Player6, LeaveAreaLUA("AR0603", "", [430.2984], E))
         ActionOverride(Player1, MultiPlayerSync())
         SetInterrupt(TRUE)~ EXIT
 

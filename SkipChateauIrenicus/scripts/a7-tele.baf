@@ -1,4 +1,4 @@
-// *** Portal helper creature ***
+// *** Portal helper creature - Level 2 ***
 
 IF
   Global("init", "LOCALS", 0)

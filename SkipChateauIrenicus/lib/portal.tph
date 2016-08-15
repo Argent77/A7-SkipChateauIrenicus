@@ -1,5 +1,49 @@
 // *** Code related to magical portals and teleportation ***
 
+// Shared resources
+COMPILE ~%MOD_FOLDER%/scripts/a7-tele.baf~
+
+
+// Magical Portals on AR0602
+COPY_EXISTING ~TELE0603.BCS~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~\([^!]PartyHasItem("MISC4G")\)~ ~\1 Global("A7-ShortcutEnabled","GLOBAL",0)~
+  END
+BUT_ONLY
+
+// Two different script blocks are necessary to handle both portals correctly
+<<<<<<<< .../inlined/tele0603_shortcut.baf
+IF
+  Clicked([ANYONE])
+  Name("Jail Portal", Myself)
+  PartyHasItem("MISC4G") // Portal Key
+  Global("A7-ShortcutEnabled", "GLOBAL", 1)
+  Range(LastTrigger, 9)
+THEN
+  RESPONSE #100
+    CreateCreatureImpassableAllowOverlap("a7-tele1", [3900.2385], S)
+END
+
+IF
+  Clicked([ANYONE])
+  Name("Irenicus Room Teleport", Myself)
+  PartyHasItem("MISC4G") // Portal Key
+  Global("A7-ShortcutEnabled", "GLOBAL", 1)
+  Range(LastTrigger, 9)
+THEN
+  RESPONSE #100
+    CreateCreatureImpassableAllowOverlap("a7-tele1", [2975.555], S)
+END
+>>>>>>>>
+EXTEND_TOP ~TELE0603.BCS~ ~.../inlined/tele0603_shortcut.baf~
+
+COMPILE ~%MOD_FOLDER%/dialogs/a7-tele1.d~ EVAL
+
+COPY ~%MOD_FOLDER%/creatures/a7-tele1.cre~ ~override~
+  WRITE_ASCII SCRIPT_OVERRIDE ~A7-TELE~ #8
+  WRITE_ASCII DIALOG ~A7-TELE1~ #8
+
+
 // Magical Portal on AR0603
 COPY_EXISTING ~TELE0602.BCS~ ~override~
   DECOMPILE_AND_PATCH BEGIN
@@ -15,17 +59,16 @@ IF
   Range(LastTrigger, 9)
 THEN
   RESPONSE #100
-    CreateCreatureImpassableAllowOverlap("a7-tele", [415.2850], S)
+    CreateCreatureImpassableAllowOverlap("a7-tele2", [415.2850], S)
 END
 >>>>>>>>
 EXTEND_TOP ~TELE0602.BCS~ ~.../inlined/tele0602_shortcut.baf~
 
-COMPILE ~%MOD_FOLDER%/dialogs/a7-tele.d~ EVAL
-COMPILE ~%MOD_FOLDER%/scripts/a7-tele.baf~
+COMPILE ~%MOD_FOLDER%/dialogs/a7-tele2.d~ EVAL
 
-COPY ~%MOD_FOLDER%/creatures/a7-tele.cre~ ~override~
+COPY ~%MOD_FOLDER%/creatures/a7-tele2.cre~ ~override~
   WRITE_ASCII SCRIPT_OVERRIDE ~A7-TELE~ #8
-  WRITE_ASCII DIALOG ~A7-TELE~ #8
+  WRITE_ASCII DIALOG ~A7-TELE2~ #8
 
 
 // Updating teleport sequence on AR0602

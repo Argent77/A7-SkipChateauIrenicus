@@ -31,11 +31,12 @@ Weight: 0~
 @2016 = ~Now if you'll excuse me. I've got to hunt down a treacherous mage.~
 
 
-// Portal dialog
+// Portal dialogs
 @2100 = ~Select your destination:~
 @2101 = ~To the lower level.~ 
 @2102 = ~To the surface.~
 @2103 = ~Nevermind.~
+@2104 = ~To the upper level.~ 
 
 
 // Journal entries
