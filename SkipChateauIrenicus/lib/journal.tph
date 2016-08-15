@@ -1,4 +1,4 @@
 // *** Journal-related stuff ***
 
-// Registering journal entries
-ADD_JOURNAL @5000 @5001
+// Registering journal entries (currently not working)
+ADD_JOURNAL @5000 @5001 @5002

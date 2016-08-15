@@ -1,4 +1,4 @@
-// *** Shadow Thief dialog ***
+// *** Rogue dialog ***
 
 BEGIN ~a7-shad1~
 

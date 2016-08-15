@@ -1,8 +1,12 @@
 Skip Chateau Irenicus
 ~~~~~~~~~~~~~~~~~~~~~
 
-Version: 1.0
-Author:  Argent77
+Version:    1.0
+Author:     Argent77
+
+Download:   https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest
+Discussion: http://www.shsforums.net/topic/58730-mod-skip-chateau-irenicus/
+            https://forums.beamdog.com/discussion/60934/mod-skip-chateau-irenicus
 
 
 Overview

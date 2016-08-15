@@ -13,7 +13,7 @@ THEN
     Continue()
 END
 
-// Unique items are handled in separately
+// Unique items are handled separately
 %item_create_unique%
 
 // Transferring items from dungeon
