@@ -18,12 +18,12 @@ CREATE_ITEM     AR0603    WAND07              0               1       0       0
 CREATE_ITEM     AR0603    WAND10              0               1       0       0
 CREATE_ITEM     AR0603    WAND13              0               1       0       0
 DESTROY_ITEM    AR0602    MISC4D              1               0       0       0
-DESTROY_ITEM    AR0602    MISC4I              1               0       0       0
-DESTROY_ITEM    AR0602    MISC4K              1               0       0       0
 DESTROY_ITEM    AR0602    MISC4A              0               0       0       0
 DESTROY_ITEM    AR0602    MISC4B              0               0       0       0
 DESTROY_ITEM    AR0602    MISC4C              0               0       0       0
 DESTROY_ITEM    AR0602    MISC4G              0               0       0       0
+DESTROY_ITEM    AR0602    MISC4I              0               0       0       0
+DESTROY_ITEM    AR0602    MISC4K              0               0       0       0
 DESTROY_ITEM    AR0603    MISC4P              0               0       0       0
 DESTROY_ITEM    AR0603    MISC4H              0               0       0       0
 DESTROY_ITEM    AR0603    MISC4J              0               0       0       0

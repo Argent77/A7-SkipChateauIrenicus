@@ -23,9 +23,12 @@ Weight: 0~
 @2008 = ~I don't see why not. You need a key to use them, though. Luckily for you I grabbed a few spare keys. You can have one if you want.~
 @2009 = ~I'll take the key. Thanks.~
 @2010 = ~No need. I'd rather find the way out by myself.~
-@2011 = ~Here you go. Now if you'll excuse me. I've got to hunt down a treacherous mage.~
+@2011 = ~Here you go.~
 @2012 = ~I don't care anyway. I've got to hunt down a treacherous mage.~
 @2013 = ~Keep your distance.~
+@2014 = ~No thanks. I've got one already.~
+@2015 = ~Suit yourself.~
+@2016 = ~Now if you'll excuse me. I've got to hunt down a treacherous mage.~
 
 
 // Portal dialog
@@ -38,8 +41,12 @@ Weight: 0~
 // Journal entries
 @5000 = ~Shortcut to the surface
 
-I encountered a mysterious rogue who was apparently hunting down my captor. He gave me a key which enables me to use magical portals to leave this dungeon quickly.~
+I encountered a suspicious rogue. I played it safe and refused to disclose any information. He might have been a spy for my captor, or worse.~
 
 @5001 = ~Shortcut to the surface
 
-I encountered a suspicious rogue. I played it safe and refused to disclose any information. He might have been a spy for my captor, or worse.~
+I encountered a mysterious rogue who was apparently hunting down my captor. He gave me a key which enables me to use magical portals to leave this dungeon quickly.~
+
+@5002 = ~Shortcut to the surface
+
+I encountered a mysterious rogue who was apparently hunting down my captor. He told me that I can use magical portals to leave this dungeon quickly.~
