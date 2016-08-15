@@ -1,7 +1,7 @@
 Skip Chateau Irenicus
 ~~~~~~~~~~~~~~~~~~~~~
 
-Version: 0.2 (beta)
+Version: 1.0
 Author:  Argent77
 
 
@@ -91,3 +91,5 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 History
 ~~~~~~~
 
+1.0
+- Initial release
