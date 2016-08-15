@@ -53,20 +53,25 @@ COPY_EXISTING ~AR0700.ARE~ ~override~
   END
   LPF fj_are_structure
   INT_VAR
-    fj_loc_x          = 2785
-    fj_loc_y          = 1136
+    fj_loc_x          = 2530
+    fj_loc_y          = 835
     fj_type           = 8         // non-visible
     fj_lock_diff      = 0
     fj_flags          = (1 << 5)  // initially disabled
     fj_trap_remove_diff = 0
-    fj_box_left       = 2773
-    fj_box_top        = 1038
-    fj_box_right      = 2837
-    fj_box_bottom     = 1137
-    fj_vertex_0       = 2773 | (1038 << 16)
-    fj_vertex_1       = 2773 | (1096 << 16)
-    fj_vertex_2       = 2837 | (1137 << 16)
-    fj_vertex_3       = 2837 | (1080 << 16)
+    fj_box_left       = 2498
+    fj_box_top        = 786
+    fj_box_right      = 2521
+    fj_box_bottom     = 820
+    fj_vertex_0       = 2521 | (803 << 16)
+    fj_vertex_1       = 2513 | (786 << 16)
+    fj_vertex_2       = 2506 | (789 << 16)
+    fj_vertex_3       = 2506 | (799 << 16)
+    fj_vertex_4       = 2499 | (799 << 16)
+    fj_vertex_5       = 2498 | (812 << 16)
+    fj_vertex_6       = 2508 | (812 << 16)
+    fj_vertex_7       = 2512 | (820 << 16)
+    fj_vertex_8       = 2521 | (813 << 16)
   STR_VAR
     fj_structure_type = "container"
     fj_name           = "A7-Rubble3"
