@@ -41,6 +41,7 @@ END
 
 
 // Variables containing script portions for handling items and containers
+OUTER_SET supported_areas = 0             // array of area codes
 OUTER_TEXT_SPRINT container_contents ~~   // sequence of script actions
 OUTER_TEXT_SPRINT item_create ~~          // sequence of script actions
 OUTER_TEXT_SPRINT item_create_unique ~~   // sequence of individual script blocks
@@ -48,15 +49,34 @@ OUTER_TEXT_SPRINT item_destroy ~~         // sequence of script actions
 OUTER_TEXT_SPRINT item_destroy_party ~~   // sequence of script actions
 
 
-// Generating item transfer script
-ACTION_DEFINE_ASSOCIATIVE_ARRAY areaContainers BEGIN
-  ~A7-Rubble1~ => ~AR0602.ARE~
-  ~A7-Rubble2~ => ~AR0603.ARE~
-  ~A7-Rubble3~ => ~AR0601.ARE~
+// Generating list of supported areas
+OUTER_FOR (idx = 0; idx < control_table; idx += 1) BEGIN
+  OUTER_PATCH ~dummy~ BEGIN
+    READ_2DA_ENTRY_FORMER "control_table" idx 0 action
+    PATCH_IF (~%action%~ STRING_EQUAL ~ADD_AREA~) BEGIN
+      READ_2DA_ENTRY_FORMER "control_table" idx 1 area
+      PATCH_IF (FILE_EXISTS_IN_GAME ~%area%.ARE~) BEGIN
+        TEXT_SPRINT EVAL "supported_areas_%supported_areas%" ~%area%~
+        SET supported_areas += 1
+      END
+    END
+  END
 END
 
-ACTION_PHP_EACH areaContainers AS dstContainer => srcArea BEGIN
-  COPY_EXISTING - ~%srcArea%~ ~override~
+
+// Generating item transfer script
+OUTER_FOR (idxArea = 0; idxArea < supported_areas; idxArea += 1) BEGIN
+  OUTER_TEXT_SPRINT srcArea $EVAL supported_areas("%idxArea%")
+  // This part is still hardcoded
+  ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~AR0602~) BEGIN
+    OUTER_TEXT_SPRINT dstContainer ~A7-Rubble1~
+  END ELSE ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~AR0603~) BEGIN
+    OUTER_TEXT_SPRINT dstContainer ~A7-Rubble2~
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT dstContainer ~A7-Rubble3~
+  END
+
+  COPY_EXISTING - ~%srcArea%.ARE~ ~override~
     READ_LONG 0x70 ofsContainers
     READ_SHORT 0x74 numContainers
     FOR (idx = 0; idx < numContainers; idx += 1) BEGIN

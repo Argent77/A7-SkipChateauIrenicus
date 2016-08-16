@@ -1,4 +1,7 @@
                 AREA      CONTAINER/ITEMNAME  UNIQUE/INV_ONLY CHARGE1 CHARGE2 CHARGE3
+ADD_AREA        AR0601    *                   0               0       0       0
+ADD_AREA        AR0602    *                   0               0       0       0
+ADD_AREA        AR0603    *                   0               0       0       0
 CREATE_ITEM     AR0601    SW2H16              1               0       0       0
 CREATE_ITEM     AR0602    MISC4N              1               0       0       0
 CREATE_ITEM     AR0601    MISC07              0               150     0       0
