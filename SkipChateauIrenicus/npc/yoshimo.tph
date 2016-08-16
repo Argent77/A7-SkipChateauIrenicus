@@ -1,0 +1,17 @@
+// *** Yoshimo ***
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~YOSHI7.CRE~) BEGIN
+  OUTER_SET num_npc_actions = 1
+
+  OUTER_TEXT_SPRINT npc_script_0 ~AR0700.BCS~
+
+  OUTER_TEXT_SPRINT npc_trigger_0
+    ~!InParty("Yoshimo")
+     !BeenInParty("Yoshimo")
+     Global("MetYoshimo","GLOBAL",0)~
+
+  OUTER_TEXT_SPRINT npc_action_0
+    ~SetGlobal("MetYoshimo","GLOBAL",1)
+     ActionOverride("Yoshimo",SetNumTimesTalkedTo(1))
+     MoveGlobal("AR0406","Yoshimo",[1368.1922])~
+END

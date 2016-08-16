@@ -1,0 +1,25 @@
+// *** Jaheira ***
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~JAHEIR7.CRE~) BEGIN
+  OUTER_SET num_npc_actions = 2
+
+  OUTER_TEXT_SPRINT npc_script_1 ~AR0300.BCS~
+
+  OUTER_TEXT_SPRINT npc_trigger_0
+    ~!InParty("Jaheira")
+     !BeenInParty("Jaheira")
+     Global("JaheiraJerk","GLOBAL",0)
+     Global("JaheiraReleased","GLOBAL",0)
+     Global("JaheiraHunt","GLOBAL",0)
+     NextTriggerObject("Jaheira")
+     NumTimesTalkedTo(0)~
+  OUTER_TEXT_SPRINT npc_trigger_1 ~%npc_trigger_0%~
+
+  OUTER_TEXT_SPRINT npc_action_0
+    ~MoveGlobal("AR0300","Jaheira",[1257.3007])~
+  OUTER_TEXT_SPRINT npc_action_1
+    ~ActionOverride("Jaheira",SetDialog("JAHEIRAP"))
+     ActionOverride("Jaheira",SetGlobal("KickedOut","LOCALS",1))
+     ActionOverride("Jaheira",SetNumTimesTalkedTo(1))
+     ActionOverride("Jaheira",Face(14)~
+END

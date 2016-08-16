@@ -19,4 +19,5 @@ BEGIN @0  // Skip Chateau Irenicus
   INCLUDE ~%MOD_FOLDER%/lib/portal.tph~
   INCLUDE ~%MOD_FOLDER%/lib/rogue.tph~
   INCLUDE ~%MOD_FOLDER%/lib/items.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/npcs.tph~
   INCLUDE ~%MOD_FOLDER%/lib/misc.tph~

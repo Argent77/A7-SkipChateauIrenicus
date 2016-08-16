@@ -56,8 +56,9 @@ Compatibility
 ~~~~~~~~~~~~~
 
 This mod skips an important part of the SoA main story. Although items will be transferred to the surface you may still 
-miss certain mod-added content, such as journal entries or NPCs. There is currently no technically feasible way to 
-automatically collect all available NPCs.
+miss certain mod-added content, such as journal entries or NPCs. The mod provides a feature to deal with skipped NPCs, 
+but only code for the vanilla NPCs Minsc, Jaheira and Yoshimo are available by default. Modders can use this feature 
+to add their own code. More information can be found in the next chapter.
 The mod is designed so that you can transport back and forth between the two levels of Chateau Irenicus until you 
 decide to transport to the surface. Afterwards the way is blocked forever, like in the unmodified game.
 
@@ -72,9 +73,13 @@ later on. Only items that can be acquired by special means (such as quest reward
 handled by this method.
 
 Each 2DA file may contain information whether to exclude specific containers from the item transference process, how to 
-handle items acquired by scripted actions and what to do with unique or dungeon-specific items.
+handle items acquired by scripted actions and what to do with unique or dungeon-specific items. You can find a more 
+detailed description with example code in "SkipChateauIrenicus/tables/desc.txt".
 
-You can find a more detailed description with example code in "SkipChateauIrenicus/tables/desc.txt".
+The mod also provides an "addon" feature which can be used to deal with mod-added NPCs normally found in Chateau 
+Irenicus, but skipped because of this mod. For that reason a modder can place a WeiDU script file with .tpa or .tph 
+extension into the "npc" subfolder of this mod. A small number of predefined variables can be used to interact with 
+this mod. You can find a more detailed description with example code in "SkipChateauIrenicus/npc/desc.txt"
 
 
 Credits

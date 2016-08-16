@@ -1,0 +1,67 @@
+// *** Code for dealing with NPCs in Chateau Irenicus ***
+
+MKDIR ~%MOD_FOLDER%/temp~
+OUTER_TEXT_SPRINT script_file ~%MOD_FOLDER%/temp/script.tph~
+
+OUTER_SET num_npc_actions = 0
+ACTION_BASH_FOR ~%MOD_FOLDER%/npc~ ~^.+\.tp[ah]$~ BEGIN
+  // applying addon code
+  COPY - ~%BASH_FOR_FILESPEC%~ ~%script_file%~
+    TEXT_SPRINT npc_file ~%SOURCE_RES%~
+  REINCLUDE ~%script_file%~
+
+  // dealing with main actions
+  OUTER_FOR (idx = 0; idx < num_npc_actions; idx += 1) BEGIN
+    ACTION_IF (VARIABLE_IS_SET EVAL "npc_trigger_%idx%" AND VARIABLE_IS_SET EVAL "npc_action_%idx%") BEGIN
+      OUTER_TEXT_SPRINT curTrigger $EVAL npc_trigger("%idx%")
+      OUTER_TEXT_SPRINT curAction $EVAL npc_action("%idx%")
+      OUTER_TEXT_SPRINT curScript ~AR0700.BCS~
+      ACTION_IF (VARIABLE_IS_SET EVAL "npc_script_%idx%" AND FILE_EXISTS_IN_GAME $EVAL npc_script("%idx%")) BEGIN
+        OUTER_TEXT_SPRINT curScript $EVAL npc_script("%idx%")
+      END
+
+      ACTION_IF (NOT ~%curTrigger%~ STRING_EQUAL ~~ AND NOT ~%curAction%~ STRING_EQUAL ~~) BEGIN
+        <<<<<<<< .../inlined/script.baf
+        IF
+          Global("A7-ShortcutEnabled", "GLOBAL", 1)
+          Global("A7-NPC-%npc_file%", "MYAREA", 0)
+          %curTrigger%
+        THEN
+          RESPONSE #100
+            SetGlobal("A7-NPC-%npc_file%", "MYAREA", 1)
+            %curAction%
+            Continue()
+        END
+        >>>>>>>>
+        EXTEND_TOP ~%curScript%~ ~.../inlined/script.baf~ EVAL
+      END
+    END
+  END
+
+  // dealing with transition actions
+  ACTION_IF (VARIABLE_IS_SET trans_action AND NOT ~%trans_action%~ STRING_EQUAL ~~) BEGIN
+    COPY_EXISTING ~a7-tele1.dlg~ ~override~
+                  ~a7-tele2.dlg~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~^[ %TAB%]*\(StartCutScene.*("cut01".*)\)$~ ~%trans_action% \1~
+      END
+    BUT_ONLY
+  END
+
+  // clearing variables
+  OUTER_FOR (idx = 0; idx < num_npc_actions; idx += 1) BEGIN
+    OUTER_TEXT_SPRINT $EVAL npc_script("%idx%") ~~
+    OUTER_TEXT_SPRINT $EVAL npc_trigger("%idx%") ~~
+    OUTER_TEXT_SPRINT $EVAL npc_action("%idx%") ~~
+  END
+  OUTER_TEXT_SPRINT trans_action ~~
+  OUTER_SET num_npc_actions = 0
+END
+
+// Removing script from memory
+<<<<<<<< .../inlined/script.tph
+>>>>>>>>
+COPY ~.../inlined/script.tph~ ~%script_file%~
+REINCLUDE ~%script_file%~
+DELETE ~%script_file%~
+DELETE ~%MOD_FOLDER%/temp~

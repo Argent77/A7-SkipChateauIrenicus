@@ -1,0 +1,22 @@
+// *** Minsc ***
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~MINSC7.CRE~) BEGIN
+  OUTER_SET num_npc_actions = 2
+
+  OUTER_TEXT_SPRINT npc_script_1 ~AR0406.BCS~
+
+  OUTER_TEXT_SPRINT npc_trigger_0
+    ~!InParty("Minsc")
+     !BeenInParty("Minsc")
+     NextTriggerObject("Minsc")
+     NumTimesTalkedTo(0)~
+  OUTER_TEXT_SPRINT npc_trigger_1 ~%npc_trigger_0%~
+
+  OUTER_TEXT_SPRINT npc_action_0
+    ~MoveGlobal("AR0406","Minsc",[1178.1386])~
+  OUTER_TEXT_SPRINT npc_action_1
+    ~ActionOverride("Minsc",SetDialog("MINSCP"))
+     ActionOverride("Minsc",SetNumTimesTalkedTo(1))
+     ActionOverride("Minsc",SetGlobal("KickedOut","LOCALS",1))
+     ActionOverride("Minsc",Face(S)~
+END
