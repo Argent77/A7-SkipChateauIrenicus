@@ -17,8 +17,22 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~JAHEIR7.CRE~) BEGIN
 
   OUTER_TEXT_SPRINT npc_action_0
     ~MoveGlobal("AR0300","Jaheira",[1257.3007])~
+
+  // getting post dialog file for Jaheira
+  OUTER_TEXT_SPRINT postDialog ~JAHEIRAP~
+  COPY_EXISTING - ~pdialog.2da~ ~override~
+    COUNT_2DA_COLS numCols
+    COUNT_2DA_ROWS numCols numRows
+    FOR (idx = 0; idx < numRows; idx += 1) BEGIN
+      READ_2DA_ENTRY idx 0 numCols name
+      PATCH_IF (~%name%~ STRING_EQUAL_CASE ~JAHEIRA~) BEGIN
+        READ_2DA_ENTRY idx 1 numCols postDialog
+        SET idx = numRows
+      END
+    END
+
   OUTER_TEXT_SPRINT npc_action_1
-    ~ActionOverride("Jaheira",SetDialog("JAHEIRAP"))
+    ~ActionOverride("Jaheira",SetDialog("%postDialog%"))
      ActionOverride("Jaheira",SetGlobal("KickedOut","LOCALS",1))
      ActionOverride("Jaheira",SetNumTimesTalkedTo(1))
      ActionOverride("Jaheira",Face(14)~

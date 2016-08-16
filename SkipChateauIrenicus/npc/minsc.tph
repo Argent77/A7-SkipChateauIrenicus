@@ -14,8 +14,22 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~MINSC7.CRE~) BEGIN
 
   OUTER_TEXT_SPRINT npc_action_0
     ~MoveGlobal("AR0406","Minsc",[1178.1386])~
+
+  // getting post dialog file for Minsc
+  OUTER_TEXT_SPRINT postDialog ~MINSCP~
+  COPY_EXISTING - ~pdialog.2da~ ~override~
+    COUNT_2DA_COLS numCols
+    COUNT_2DA_ROWS numCols numRows
+    FOR (idx = 0; idx < numRows; idx += 1) BEGIN
+      READ_2DA_ENTRY idx 0 numCols name
+      PATCH_IF (~%name%~ STRING_EQUAL_CASE ~MINSC~) BEGIN
+        READ_2DA_ENTRY idx 1 numCols postDialog
+        SET idx = numRows
+      END
+    END
+
   OUTER_TEXT_SPRINT npc_action_1
-    ~ActionOverride("Minsc",SetDialog("MINSCP"))
+    ~ActionOverride("Minsc",SetDialog("%postDialog%"))
      ActionOverride("Minsc",SetNumTimesTalkedTo(1))
      ActionOverride("Minsc",SetGlobal("KickedOut","LOCALS",1))
      ActionOverride("Minsc",Face(S)~
