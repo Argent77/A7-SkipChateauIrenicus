@@ -14,7 +14,7 @@ Overview
 
 Are you tired of running through the whole initial dungeon over and over? Not anymore!
 
-This mod allows you skip all the boring details of Irenicus' dungeon. You can even collect the items normally found 
+This mod allows you skip all the boring details of Irenicus' dungeon. You can even collect all the items normally found 
 within the dungeon. Just inspect the rubble of the destroyed building on Waukeen's Promenade. As a bonus you will also 
 get some experience and may find a bit of pocket change.
 
@@ -40,10 +40,14 @@ Components
 There is only one component: "Skip Chateau Irenicus".
 
 The component triggers moments after you are released from your cell. A rogue appears and opens up the opportunity 
-to use the magical portals to leave the dungeon. Each portal will transport you to the next level of the dungeon.
-The teleporter on the second level allows you to transport directly to the surface.
-Afterwards the way back is blocked like in the unmodified game. To loot the items from the dungeon inspect the rubble 
-of the destroyed building on Waukeen's Promenade.
+to use the magical portals to leave the dungeon. Each portal will transport you to the other level of the dungeon 
+or directly to the surface. Afterwards the way back is blocked like in the unmodified game. To loot the items from 
+the dungeon inspect the rubble of the destroyed building on Waukeen's Promenade.
+
+Potential NPCs you missed when taking the shortcut to the surface may be recruitable later on. The vanilla NPCs Minsc, 
+Jaheira and Yoshimo can be found at their default locations as if you dismissed them from your party. Mod-added NPCs 
+that can be encountered in Chateau Irenicus may be supported by ther respective authors. This mod provides an easy 
+mechanism to make it possible. Read more about it in the following chapters.
 
 The item description of the dryads' acorns have been slightly altered to give you some information what you can do 
 with it.
