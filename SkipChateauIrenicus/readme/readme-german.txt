@@ -75,7 +75,7 @@ Die Mod ist sehr leicht erweiterbar im Bezug auf Behälter und die darin liegend
 zur Oberfläche zu bringen. Der Unterordner "tables" dieser Mod wird nach 2DA-Dateien abgesucht, die entsprechend ihrem 
 Inhalt verarbeitet werden. Auf diese Weise ist es möglich, bestimmte Aktionen für spezielle Gegenstände, Karten oder 
 Behälter zu definieren, wie z.B. mit Gegenständen aus Questbelohnungen oder einzigartigen Gegenständen umgegangen 
-werden soll. Gegenstände in Behälten werden automatisch ohne weiteres Zutun an die Oberfläche transferiert. Genauere 
+werden soll. Gegenstände in Behältern werden automatisch ohne weiteres Zutun an die Oberfläche transferiert. Genauere 
 Informationen und Beispielcode gibt es in der Textdatei "SkipChateauIrenicus/tables/desc.txt".
 
 Die Mod bietet außerdem eine Funktion an, mit der man recht leicht mit NSCs umgehen kann, falls sie durch die 
@@ -103,6 +103,14 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 
 History
 ~~~~~~~
+
+2.0
+- Relocated a container in the rubble of the destroyed building on Waukeen's Promenade to a more suitable location
+- Added more transportation options to the lower level portals in Chateau Irenicus
+- Vanilla NPCs Jaheira, Minsc and Yoshimo can be recruited later if you decide to skip them in Chateau Irenicus
+- Added German translation
+- For modders: externalized areas to consider when transferring items to the surface
+- For modders: implemented "addon" feature that can be used to deal with skipped NPCs
 
 1.0
 - Initial release

@@ -104,5 +104,13 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 History
 ~~~~~~~
 
+2.0
+- Relocated a container in the rubble of the destroyed building on Waukeen's Promenade to a more suitable location
+- Added more transportation options to the lower level portals in Chateau Irenicus
+- Vanilla NPCs Jaheira, Minsc and Yoshimo can be recruited later if you decide to skip them in Chateau Irenicus
+- Added German translation
+- For modders: externalized areas to consider when transferring items to the surface
+- For modders: implemented "addon" feature that can be used to deal with skipped NPCs
+
 1.0
 - Initial release
