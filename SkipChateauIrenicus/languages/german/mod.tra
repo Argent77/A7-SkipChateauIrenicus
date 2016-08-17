@@ -1,0 +1,53 @@
+// -*- coding: utf-8 -*- 
+
+// Misc. strings
+@1000 = ~Das sind die magischen Eicheln der Dryaden, die Ihr dem Duergar-Anführer Ilyich abgenommen habt.
+
+Euch wurde gesagt, die Eicheln der Feenkönigin in den südlichen Ausläufern der Windspeerhügel zu bringen.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@1001 = ~Was für ein Ritt! Wo bin ich denn jetzt gelandet?~
+
+
+// Rogue dialog
+@2000 = ~Bleibt auf Abstand! Seid Ihr Freund oder Feind?~
+@2001 = ~Ich bin <GABBER>. Ich wurde von einem mächtigen Magier bis eben gefangengehalten. Wie seid Ihr so plötzlich aufgetaucht?~
+@2002 = ~Ich habe Euch nichts zu sagen. Ihr könntet ein Spion meines Entführers sein. Verschwindet!~
+@2003 = ~Es gibt hier magische Portale, die jede Ebene dieses verfluchten Kerkers miteinander verbinden.~
+@2004 = ~So, ein Magier hat Euch also gefangengehalten? Wo ist er jetzt?~
+@2005 = ~Er hat sich vor einer Weile wegteleportiert.~
+@2006 = ~Verdammt! Dann sind all unsere Bemühungen, ihn zu erreichen, fehlgeschlagen. Na gut, dann muss eben ein anderer Plan her. Wir werden ihm am besten an der Oberfläche auflauern.~
+@2007 = ~Kann ich diese Portale zur Flucht verwenden?~
+@2008 = ~Sicher, warum nicht? Man braucht aber einen Schlüssel dafür. Ihr habt Glück, dass ich noch ein paar Ersatzschlüssel eingesteckt habe. Ihr könnt einen haben, wenn Ihr wollt.~
+@2009 = ~Danke. Ich nehme einen.~
+@2010 = ~Kein Bedarf. Ich finde den Weg zur Oberfläche auch alleine.~
+@2011 = ~Bitte sehr.~
+@2012 = ~Das ist mir ohnehin egal. Ich muss einen verräterischen Magier aufspüren.~
+@2013 = ~Bleibt auf Abstand!~
+@2014 = ~Nein danke. Ich habe schon einen.~
+@2015 = ~Wie Ihr wollt.~
+@2016 = ~Wenn Ihr mich jetzt entschuldigen wollt. Ich muss noch einen verräterischen Magier aufspüren.~
+
+
+// Portal dialogs
+@2100 = ~Ziel auswählen:~
+@2101 = ~Zur unteren Ebene.~ 
+@2102 = ~Zur Oberfläche.~
+@2103 = ~Schon gut!~
+@2104 = ~Zur oberen Ebene. ~
+
+
+// Journal entries
+@5000 = ~Abkürzung zur Oberfläche
+
+Ich bin einem verdächtigen Spitzbuben begegnet. Ich ging auf Nummer sicher und verweigerte jegliche Auskunft. Er hätte ein Spion meines Entführers oder etwas Schlimmeres sein können.~
+
+@5001 = ~Abkürzung zur Oberfläche
+
+Ich bin einem geheimnisvollen Spitzbuben begegnet, der anscheinend meinem Entführer auf der Spur war. Er gab mir einen Schlüssel, mit dem ich die Teleportationsportale nutzen kann, um diesen Kerker rasch hinter mir zu lassen.~
+
+@5002 = ~Abkürzung zur Oberfläche
+
+Ich bin einem geheimnisvollen Spitzbuben begegnet, der anscheinend meinem Entführer auf der Spur war. Er sagte mir, dass ich die Teleportationsportale nutzen kann, um diesen Kerker rasch hinter mir zu lassen.~

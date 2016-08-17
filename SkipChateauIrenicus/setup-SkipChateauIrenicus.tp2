@@ -8,6 +8,9 @@ README ~SkipChateauIrenicus/readme/readme-%LANGUAGE%.txt~
 LANGUAGE ~English~ ~english~
          ~SkipChateauIrenicus/languages/english/setup.tra~
          ~SkipChateauIrenicus/languages/english/mod.tra~
+LANGUAGE ~Deutsch~ ~german~
+         ~SkipChateauIrenicus/languages/german/setup.tra~
+         ~SkipChateauIrenicus/languages/german/mod.tra~
 
 BEGIN @0  // Skip Chateau Irenicus
   REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @100      // This mod requires BG2:EE or EET to be installed.
