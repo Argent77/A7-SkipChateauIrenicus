@@ -1,39 +1,39 @@
 // *** Code for dealing with NPCs in Chateau Irenicus ***
 
 MKDIR ~%MOD_FOLDER%/temp~
-OUTER_TEXT_SPRINT script_file ~%MOD_FOLDER%/temp/script.tph~
+OUTER_TEXT_SPRINT a7_script_file ~%MOD_FOLDER%/temp/script.tph~
 
 OUTER_SET num_npc_actions = 0
 ACTION_BASH_FOR ~%MOD_FOLDER%/npc~ ~^.+\.tp[ah]$~ BEGIN
   // applying addon code
-  COPY - ~%BASH_FOR_FILESPEC%~ ~%script_file%~
-    TEXT_SPRINT npc_file ~%SOURCE_RES%~
-  REINCLUDE ~%script_file%~
+  COPY - ~%BASH_FOR_FILESPEC%~ ~%a7_script_file%~
+    TEXT_SPRINT a7_npc_file ~%SOURCE_RES%~
+  REINCLUDE ~%a7_script_file%~
 
   // dealing with main actions
-  OUTER_FOR (idx = 0; idx < num_npc_actions; idx += 1) BEGIN
-    ACTION_IF (VARIABLE_IS_SET EVAL "npc_trigger_%idx%" AND VARIABLE_IS_SET EVAL "npc_action_%idx%") BEGIN
-      OUTER_TEXT_SPRINT curTrigger $EVAL npc_trigger("%idx%")
-      OUTER_TEXT_SPRINT curAction $EVAL npc_action("%idx%")
-      OUTER_TEXT_SPRINT curScript ~AR0700.BCS~
-      ACTION_IF (VARIABLE_IS_SET EVAL "npc_script_%idx%" AND FILE_EXISTS_IN_GAME $EVAL npc_script("%idx%")) BEGIN
-        OUTER_TEXT_SPRINT curScript $EVAL npc_script("%idx%")
+  OUTER_FOR (a7_idx = 0; a7_idx < num_npc_actions; a7_idx += 1) BEGIN
+    ACTION_IF (VARIABLE_IS_SET EVAL "npc_trigger_%a7_idx%" AND VARIABLE_IS_SET EVAL "npc_action_%a7_idx%") BEGIN
+      OUTER_TEXT_SPRINT a7_curTrigger $EVAL npc_trigger("%a7_idx%")
+      OUTER_TEXT_SPRINT a7_curAction $EVAL npc_action("%a7_idx%")
+      OUTER_TEXT_SPRINT a7_curScript ~AR0700.BCS~
+      ACTION_IF (VARIABLE_IS_SET EVAL "npc_script_%a7_idx%" AND FILE_EXISTS_IN_GAME $EVAL npc_script("%a7_idx%")) BEGIN
+        OUTER_TEXT_SPRINT a7_curScript $EVAL npc_script("%a7_idx%")
       END
 
-      ACTION_IF (NOT ~%curTrigger%~ STRING_EQUAL ~~ AND NOT ~%curAction%~ STRING_EQUAL ~~) BEGIN
+      ACTION_IF (NOT ~%a7_curTrigger%~ STRING_EQUAL ~~ AND NOT ~%a7_curAction%~ STRING_EQUAL ~~) BEGIN
         <<<<<<<< .../inlined/script.baf
         IF
           Global("A7-ShortcutEnabled", "GLOBAL", 1)
-          Global("A7-NPC-%npc_file%", "MYAREA", 0)
-          %curTrigger%
+          Global("A7-NPC-%a7_npc_file%", "MYAREA", 0)
+          %a7_curTrigger%
         THEN
           RESPONSE #100
-            SetGlobal("A7-NPC-%npc_file%", "MYAREA", 1)
-            %curAction%
+            SetGlobal("A7-NPC-%a7_npc_file%", "MYAREA", 1)
+            %a7_curAction%
             Continue()
         END
         >>>>>>>>
-        EXTEND_TOP ~%curScript%~ ~.../inlined/script.baf~ EVAL
+        EXTEND_TOP ~%a7_curScript%~ ~.../inlined/script.baf~ EVAL
       END
     END
   END
@@ -49,10 +49,10 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/npc~ ~^.+\.tp[ah]$~ BEGIN
   END
 
   // clearing variables
-  OUTER_FOR (idx = 0; idx < num_npc_actions; idx += 1) BEGIN
-    OUTER_TEXT_SPRINT $EVAL npc_script("%idx%") ~~
-    OUTER_TEXT_SPRINT $EVAL npc_trigger("%idx%") ~~
-    OUTER_TEXT_SPRINT $EVAL npc_action("%idx%") ~~
+  OUTER_FOR (a7_idx = 0; a7_idx < num_npc_actions; a7_idx += 1) BEGIN
+    OUTER_TEXT_SPRINT $EVAL npc_script("%a7_idx%") ~~
+    OUTER_TEXT_SPRINT $EVAL npc_trigger("%a7_idx%") ~~
+    OUTER_TEXT_SPRINT $EVAL npc_action("%a7_idx%") ~~
   END
   OUTER_TEXT_SPRINT trans_action ~~
   OUTER_SET num_npc_actions = 0
@@ -61,7 +61,7 @@ END
 // Removing script from memory
 <<<<<<<< .../inlined/script.tph
 >>>>>>>>
-COPY ~.../inlined/script.tph~ ~%script_file%~
-REINCLUDE ~%script_file%~
-DELETE ~%script_file%~
+COPY ~.../inlined/script.tph~ ~%a7_script_file%~
+REINCLUDE ~%a7_script_file%~
+DELETE ~%a7_script_file%~
 DELETE ~%MOD_FOLDER%/temp~
