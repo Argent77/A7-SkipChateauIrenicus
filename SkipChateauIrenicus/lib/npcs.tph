@@ -1,10 +1,14 @@
 // *** Code for dealing with NPCs in Chateau Irenicus ***
 
+LOG ~DEBUG: Starting parsing NPC addon code...~
+
 MKDIR ~%MOD_FOLDER%/temp~
 OUTER_TEXT_SPRINT a7_script_file ~%MOD_FOLDER%/temp/script.tph~
 
 OUTER_SET num_npc_actions = 0
 ACTION_BASH_FOR ~%MOD_FOLDER%/npc~ ~^.+\.tp[ah]$~ BEGIN
+  LOG ~DEBUG: Executing addon "%BASH_FOR_FILE%"...~
+
   // applying addon code
   COPY - ~%BASH_FOR_FILESPEC%~ ~%a7_script_file%~
     TEXT_SPRINT a7_npc_file ~%SOURCE_RES%~
@@ -65,3 +69,5 @@ COPY ~.../inlined/script.tph~ ~%a7_script_file%~
 REINCLUDE ~%a7_script_file%~
 DELETE ~%a7_script_file%~
 DELETE ~%MOD_FOLDER%/temp~
+
+LOG ~DEBUG: Finished parsing NPC addon code...~

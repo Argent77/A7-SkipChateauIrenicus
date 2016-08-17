@@ -1,8 +1,12 @@
 // *** Prepares item control tables ***
 
+LOG ~DEBUG: Starting parsing item control tables...~
+
 OUTER_TEXT_SPRINT table_data ~~
 
 ACTION_BASH_FOR ~%MOD_FOLDER%/tables~ ~^.+\.2da$~ BEGIN
+  LOG ~DEBUG: Loading table "%BASH_FOR_FILE%"...~
+
   COPY - ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_FILESPEC%~
     PATCH_IF (SOURCE_SIZE > 0) BEGIN
       READ_ASCII 0 data (SOURCE_SIZE)
@@ -38,6 +42,7 @@ BEGIN
   END
 END
 
+LOG ~DEBUG: Finished parsing item control tables...~
 
 
 // Variables containing script portions for handling items and containers
