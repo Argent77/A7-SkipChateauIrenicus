@@ -62,7 +62,7 @@ Compatibility
 This mod skips an important part of the SoA main story. Although items will be transferred to the surface you may 
 still miss certain mod-added content, such as quests, journal entries or NPCs. The mod provides a feature to deal 
 with skipped NPCs, but only code for the vanilla NPCs Minsc, Jaheira and Yoshimo are included in this mod. Modders 
-can use this feature to add their own code. More information can be found in the next chapter.
+can use this feature to add their own code though. More information can be found in the next chapter.
 The mod is designed so that you can transport back and forth between the two levels of Chateau Irenicus until you 
 decide to teleport to the surface. Afterwards the way is blocked forever, like in the unmodified game.
 
