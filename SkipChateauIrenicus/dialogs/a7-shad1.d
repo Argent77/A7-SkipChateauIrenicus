@@ -4,7 +4,7 @@ BEGIN ~a7-shad1~
 
 IF ~NumTimesTalkedTo(0)~ thief.intro
   SAY @2000 /* Keep your distance! Are you friend or foe? */
-  ++ @2001 /* I'm <GABBER>. I've been imprisoned by a mage of great power until now. How did you appear so suddenly? */ + thief.1
+  ++ @2001 /* I'm <GABBER>. I've been imprisoned by a mage of great power until recently. How did you appear so suddenly? */ + thief.1
   ++ @2002 /* I won't tell you anything. You might be a spy of my captor or worse. Get lost! */ + thief.rejected
 END
 
@@ -14,7 +14,7 @@ IF ~True()~ thief.default
 END
 
 IF ~~ thief.1
-  SAY @2003 /* There are magical portals that connect each level of this blasted dungeon. */
+  SAY @2003 /* This blasted dungeon uses magical portals to connect each level. */
   = @2004 /* You say a mage imprisoned you? Where's he now? */
   ++ @2005 /* He teleported away just a short while ago. */ + thief.2
 END

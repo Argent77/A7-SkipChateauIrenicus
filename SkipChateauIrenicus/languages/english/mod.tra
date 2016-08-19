@@ -13,9 +13,9 @@ Weight: 0~
 
 // Rogue dialog
 @2000 = ~Keep your distance! Are you friend or foe?~
-@2001 = ~I'm <GABBER>. I've been imprisoned by a mage of great power until now. How did you appear so suddenly?~
+@2001 = ~I'm <GABBER>. I've been imprisoned by a mage of great power until recently. How did you appear so suddenly?~
 @2002 = ~I won't tell you anything. You might be a spy of my captor or worse. Get lost!~
-@2003 = ~There are magical portals that connect each level of this blasted dungeon.~
+@2003 = ~This blasted dungeon uses magical portals to connect each level.~
 @2004 = ~You say a mage imprisoned you? Where's he now?~
 @2005 = ~He teleported away just a short while ago.~
 @2006 = ~Damn it! Then all our efforts to reach him were for naught. A'right, a change of plan is called for. We'll prepare an ambush for him on the surface.~
