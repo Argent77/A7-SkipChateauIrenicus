@@ -65,9 +65,9 @@ END
 // Removing script from memory
 <<<<<<<< .../inlined/script.tph
 >>>>>>>>
-COPY ~.../inlined/script.tph~ ~%a7_script_file%~
+COPY + ~.../inlined/script.tph~ ~%a7_script_file%~
 REINCLUDE ~%a7_script_file%~
-DELETE ~%a7_script_file%~
-DELETE ~%MOD_FOLDER%/temp~
+DELETE + ~%a7_script_file%~
+DELETE + ~%MOD_FOLDER%/temp~
 
 LOG ~DEBUG: Finished parsing NPC addon code...~
