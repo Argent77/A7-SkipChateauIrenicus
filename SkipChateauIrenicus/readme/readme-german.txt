@@ -1,7 +1,7 @@
 Überspringe Chateau Irenicus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version:    1.0
+Version:    2.0
 Autor:      Argent77
 
 Download:   https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest
