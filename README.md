@@ -31,6 +31,8 @@ The mod is designed so that you can transport back and forth between the two lev
 
 Writing, coding and testing: Argent77
 
+Polish translation: Cahir
+
 Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.
 
 
