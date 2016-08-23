@@ -91,6 +91,8 @@ Credits
 
 Writing, coding and testing: Argent77
 
+Polish translation: Cahir
+
 Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.
 
 
@@ -103,6 +105,9 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 
 History
 ~~~~~~~
+
+2.1
+- Added Polish translation
 
 2.0
 - Relocated a container in the rubble of the destroyed building on Waukeen's Promenade to a more suitable location
