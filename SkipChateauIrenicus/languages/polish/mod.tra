@@ -1,0 +1,59 @@
+// -*- coding: utf-8 -*- 
+
+// Misc. strings
+@1000 = ~To są magiczne żołędzie będące własnością driad, które udało ci się odzyskać od przywódcy duergarów, Ilyicha.
+
+Poproszono cię o dostarczenie ich do Królowej Lasu, zamieszkującej południową część Wzgórz Wichrowych Włóczni.
+
+PARAMETRY:
+
+Waga: 0~
+@1001 = ~Wow, ale przejażdżka. Gdzie ja jestem?~
+
+
+// Rogue dialog
+@2000 = ~Nie zbliżaj się! Przyjaciel czy wróg?~
+@2001 = ~Jestem <GABBER>. Do niedawna byłem więziony przez maga o niebywałej mocy. Jak udało ci się pojawić tak szybko?~~Jestem <GABBER>. Do niedawna byłam więziona przez maga o niebywałej mocy. Jak udało ci się pojawić tak szybko?~
+@2002 = ~Nie zdradzę ci wszystkiego. Równie dobrze możesz być szpiegiem mojego porywacza albo kimś jeszcze gorszym. Zjeżdżaj!~
+@2003 = ~Te przeklęte lochy korzystają z sieci magicznych portali łączących ze sobą każdy z poziomów.~
+@2004 = ~Twierdzisz, że uwięził cię mag? A gdzież on teraz jest?~
+@2005 = ~Teleportował się stąd przed chwilą.~
+@2006 = ~Do diaska! A więc cały nasz wysiłek, aby go dostać, poszedł na marne. Dobra, zmiana planów. Przygotujemy na niego zasadzkę na powierzchni.~
+@2007 = ~Czy mogę wykorzystać te portale do ucieczki?~
+@2008 = ~Czemu nie? Będziesz jednak potrzebował klucza, aby ich użyć. Na szczęście dla ciebie, zwinąłem kilka zapasowych. Mogę dać ci jeden, jeśli chcesz.~~Czemu nie? Będziesz jednak potrzebowała klucza, aby ich użyć. Na szczęście dla ciebie, zwinąłem kilka zapasowych. Mogę dać ci jeden, jeśli chcesz.~
+@2009 = ~Wezmę klucz, dzięki.~
+@2010 = ~Nie ma potrzeby. Wolę odnaleźć drogę na własną rękę.~
+@2011 = ~Oto on.~
+@2012 = ~W sumie to nie moja sprawa. Muszę dorwać tego zdradzieckiego maga.~
+@2013 = ~Nie zbliżaj się!~
+@2014 = ~Nie, dziękuję. Mam już jeden.~
+@2015 = ~Jak sobie chcesz.~
+@2016 = ~A teraz wybacz, ale muszę dorwać tego zdradzieckiego maga.~
+
+
+// Portal dialogs
+@2100 = ~Wybierz miejsce docelowe:~
+@2101 = ~Na niższy poziom.~ 
+@2102 = ~Na powierzchnię.~
+@2103 = ~Nieważne.~
+@2104 = ~Na wyższy poziom.~ 
+
+
+// Journal entries
+@5000 = ~Skrót na powierzchnię
+
+Spotkałem podejrzanego łotrzyka. Byłem ostrożny i nie wyjawiłem mu żadnych informacji. Mógł być szpiegiem mojego porywacza albo kimś gorszym.~~Skrót na powierzchnię
+
+Spotkałam podejrzanego łotrzyka. Byłam ostrożna i nie wyjawiłam mu żadnych informacji. Mógł być szpiegiem mojego porywacza albo kimś gorszym.~
+
+@5001 = ~Skrót na powierzchnię
+
+Spotkałem tajemniczego łotrzyka, który najwyraźniej tropił mojego porywacza. Podarował mi on klucz, którym można uaktywnić magiczne portale pozwalające na szybkie opuszczenie tego lochu.~~Skrót na powierzchnię
+
+Spotkałam tajemniczego łotrzyka, który najwyraźniej tropił mojego porywacza. Podarował mi on klucz, którym można uaktywnić magiczne portale pozwalające na szybkie opuszczenie tego lochu.~
+
+@5002 = ~Skrót na powierzchnię
+
+Spotkałem tajemniczego łotrzyka, który najwyraźniej tropił mojego porywacza. Powiedział mi, że mogę skorzystać z magicznych portali, aby wydostać się szybko z tego lochu.~~Skrót na powierzchnię
+
+Spotkałam tajemniczego łotrzyka, który najwyraźniej tropił mojego porywacza. Powiedział mi, że mogę skorzystać z magicznych portali, aby wydostać się szybko z tego lochu.~
