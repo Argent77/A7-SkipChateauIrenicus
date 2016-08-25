@@ -82,7 +82,7 @@ History
 ~~~~~~~
 
 2.1
-- Added Polish translation
+- Added Polish translation (thanks Cahir)
 
 2.0
 - Relocated a container in the rubble of the destroyed building on Waukeen's Promenade to a more suitable location
