@@ -20,8 +20,11 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/npc~ ~^.+\.tp[ah]$~ BEGIN
       OUTER_TEXT_SPRINT a7_curTrigger $EVAL npc_trigger("%a7_idx%")
       OUTER_TEXT_SPRINT a7_curAction $EVAL npc_action("%a7_idx%")
       OUTER_TEXT_SPRINT a7_curScript ~AR0700.BCS~
-      ACTION_IF (VARIABLE_IS_SET EVAL "npc_script_%a7_idx%" AND FILE_EXISTS_IN_GAME $EVAL npc_script("%a7_idx%")) BEGIN
-        OUTER_TEXT_SPRINT a7_curScript $EVAL npc_script("%a7_idx%")
+      ACTION_IF (VARIABLE_IS_SET EVAL "npc_script_%a7_idx%") BEGIN
+        OUTER_TEXT_SPRINT scriptRes $EVAL npc_script("%a7_idx%")
+        ACTION_IF (NOT ~%scriptRes%~ STRING_EQUAL ~~ AND FILE_EXISTS_IN_GAME ~%scriptRes%~) BEGIN
+          OUTER_TEXT_SPRINT a7_curScript ~%scriptRes%~
+        END
       END
 
       ACTION_IF (NOT ~%a7_curTrigger%~ STRING_EQUAL ~~ AND NOT ~%a7_curAction%~ STRING_EQUAL ~~) BEGIN
