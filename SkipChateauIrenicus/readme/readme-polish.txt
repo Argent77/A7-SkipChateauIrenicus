@@ -81,6 +81,10 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 History
 ~~~~~~~
 
+2.2
+- Added NPC support for Adrian, Chloe and Yasraena
+- Fixed harmless error messages shown during installation
+
 2.1
 - Added Polish translation (thanks Cahir)
 

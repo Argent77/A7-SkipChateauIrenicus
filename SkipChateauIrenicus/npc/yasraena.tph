@@ -1,0 +1,19 @@
+// *** Yasraena by Sillara (based on v16) ***
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~YASRAENA.DLG~) BEGIN
+  OUTER_SET num_npc_actions = 1
+
+  OUTER_TEXT_SPRINT npc_trigger_0
+    ~!InParty("yasraena")
+     !BeenInParty("yasraena")
+     Global("YasraenaMet","GLOBAL",0)~
+
+  OUTER_TEXT_SPRINT npc_action_0
+    ~CreateCreature("YASRAENA",[2375.1130],E)~
+
+  // set a variable for detection purposes
+<<<<<<<< .../inlined/yasraena_patch.d
+  ADD_TRANS_ACTION ~yasraena~ BEGIN 0 END BEGIN 0 1 2 3 4 5 END ~SetGlobal("YasraenaMet","GLOBAL",1)~
+>>>>>>>>
+  COMPILE ~.../inlined/yasraena_patch.d~
+END
