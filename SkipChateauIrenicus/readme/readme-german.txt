@@ -44,7 +44,9 @@ zur Oberfläche. Danach ist der Weg zurück blockiert, wie im unmodifizierten Sp
 irgendwo im Schutt des zerstörten Gebäudes aufgesammelt werden.
 
 NSCs die sich im Kerker befanden können möglicherweise später aufgenommen werden. Die Standard-NSCs Minsc, Jaheira 
-und Yoshimo könnt ihr alle an ihren standardmäßigen Orten finden. Mod-NSCs, die ebenfalls in Chateau Irenicus zu 
+und Yoshimo könnt ihr alle an ihren standardmäßigen Orten finden.
+Außerdem werden bereits einige Mod-NSCs unterstützt. Ihr könnt Adrian, Chloe oder Yasraena irgendwo außerhalb von 
+Chateau Irenicus antreffen, wenn ihr den Kerker überspringt. Weitere Mod-NSCs, die ebenfalls in Chateau Irenicus zu 
 finden wären, könnt ihr theoretisch ebenfalls später antreffen, wenn der Mod-Ersteller eine entsprechende 
 Unterstützung anbietet. Diese Mod ermöglicht es Mod-Erstellern, auf einfache Weise ihre NSCs an diese Mod anzupassen. 
 Mehr dazu in den folgenden Kapiteln.

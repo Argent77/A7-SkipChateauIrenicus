@@ -46,8 +46,10 @@ the dungeon inspect the rubble of the destroyed building on Waukeen's Promenade.
 
 Potential NPCs that you missed when taking the shortcut to the surface may be recruitable later on. The vanilla NPCs 
 Minsc, Jaheira and Yoshimo can be found at their default locations as if you dismissed them from the party. 
-Mod-added NPCs that can be encountered in Chateau Irenicus may be supported by their respective authors. This mod 
-provides an easy mechanism to make it possible. You can read more about it in the following chapters.
+Several mod-added NPCs are supported as well. You can meet Adrian, Chloe or Yasraena somewhere outside of Chateau 
+Irenicus if you skipped the dungeon. Other mod-added NPCs that can be encountered in Chateau Irenicus may be supported 
+by their respective authors. This mod provides an easy mechanism to make it possible. You can read more about it in 
+the following chapters.
 
 The item description of the dryads' acorns have been slightly altered to give you some information what you can do 
 with it.
