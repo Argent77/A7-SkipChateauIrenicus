@@ -1,7 +1,7 @@
 Skip Chateau Irenicus
 ~~~~~~~~~~~~~~~~~~~~~
 
-Version:    2.1
+Version:    2.2
 Author:     Argent77
 
 Download:   https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest
