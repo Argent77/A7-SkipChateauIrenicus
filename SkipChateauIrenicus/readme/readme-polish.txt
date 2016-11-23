@@ -66,6 +66,7 @@ Credits
 
 Writing, coding and testing: Argent77
 
+French translation: Gwendolyne
 Polish translation: Cahir
 
 Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.
@@ -80,6 +81,11 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 
 History
 ~~~~~~~
+
+2.3
+- Relocated Chloe support code to Chloe NPC mod
+- Added error catching code to NPC addon feature to prevent mod termination because of buggy script files
+- Added French translation (thanks Gwendolyne)
 
 2.2
 - Added NPC support for Adrian, Chloe and Yasraena

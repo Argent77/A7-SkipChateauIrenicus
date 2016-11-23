@@ -111,6 +111,7 @@ History
 
 2.3
 - Relocated Chloe support code to Chloe NPC mod
+- Added error catching code to NPC addon feature to prevent mod termination because of buggy script files
 - Added French translation (thanks Gwendolyne)
 
 2.2
