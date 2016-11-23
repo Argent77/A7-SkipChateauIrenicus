@@ -11,10 +11,10 @@ LANGUAGE ~English~ ~english~
 LANGUAGE ~Deutsch~ ~german~
          ~SkipChateauIrenicus/languages/german/setup.tra~
          ~SkipChateauIrenicus/languages/german/mod.tra~
-LANGUAGE ~Francais (Translation: Gwendolyne)~ ~french~
+LANGUAGE ~Francais (Traduction: Gwendolyne)~ ~french~
          ~SkipChateauIrenicus/languages/french/setup.tra~
          ~SkipChateauIrenicus/languages/french/mod.tra~
-LANGUAGE ~Polski (tlumaczenie: Cahir)~ ~polish~
+LANGUAGE ~Polski (Tlumaczenie: Cahir)~ ~polish~
          ~SkipChateauIrenicus/languages/polish/setup.tra~
          ~SkipChateauIrenicus/languages/polish/mod.tra~
 
