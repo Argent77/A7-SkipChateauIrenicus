@@ -3,3 +3,18 @@
 // Updating Acorn description
 COPY_EXISTING ~MISC4N.ITM~ ~override~
   SAY UNIDENTIFIED_DESC @1000   // These are the dryads' magical acorns...
+
+// Show area on worldmap when picking up the acorns
+<<<<<<<< .../inlined/ar0700_acorns.baf
+IF
+  Global("A7-ShortcutEnabled", "GLOBAL", 1)
+  Global("A7-AcornsTaken", "AR0700", 0)
+  PartyHasItem("misc4n")
+THEN
+  RESPONSE #100
+    SetGlobal("A7-AcornsTaken", "AR0700", 1)
+    RevealAreaOnMap("AR1200")
+    Continue()
+END
+>>>>>>>>
+EXTEND_TOP ~ar0700.bcs~ ~.../inlined/ar0700_acorns.baf~
