@@ -32,15 +32,25 @@ Ważne: Aby można było zainstalować tę modyfikację, gra musi zostać wcześ
 Komponenty
 ~~~~~~~~~~
 
-Jest tylko jeden komponent tej modyfikacji: „Pomiń lochy Irenicusa”.
+Główny komponent: Pomiń lochy Irenicusa
 
 Komponent ten uaktywnia się w momencie twojego uwolnienia z celi. Pojawia się wówczas łotrzyk, który oferuje możliwość użycia magicznych portali do opuszczenia lochów. Każdy z portali przeniesie cię do innego poziomu lochów lub prosto na powierzchnię. Po wyjściu na powierzchnię droga powrotna do lochów zostaje zablokowana jak w niezmodyfikowanej grze. Aby zebrać przedmioty znajdujące się w lochach, wystarczy przeszukać gruzy zniszczonego budynku na Promenadzie Waukeen.
-
-Potencjalni Bohaterowie Niezależni (BN), których pominąłeś, korzystając ze skrótu, mogą zostać dołączeni do drużyny później. BN z podstawowej gry, Minsc, Jaheira i Yoshimo znajdują się w domyślnej lokacji, czyli tej, do której udają się, gdy usuniesz ich z drużyny. Zapewniono również wsparcie dla kilku modyfikacji dodających nowych BN. Kilkoro z nich: Adriana, Chloe oraz Yasraenę można spotkać poza Lochami Irenicusa, jeśli wybierze się opcję pominięcia tychże lochów. Wsparcie dla pozostałych modyfikacji dodających BN na terenie Lochów Irenicusa może być w przyszłości zapewnione przez autorów tych modyfikacji. Szczegóły dotyczące tego zagadnienia znajdują się w kolejnych punktach instrukcji.
 
 Opis należących do driad żołędzi został lekko zmieniony, dodając wskazówkę, co można z nimi zrobić.
 
 Uwaga: Gra może zanotować kilkusekundowe zwolnienie podczas początkowego przerywnika filmowego na Promenadzie Waukeen, związanego z procesem przenoszenia przedmiotów.
+
+
+Opcjonalny komponent: Zarządzaj pominiętymi BN
+
+Komponent ten pozwala na przyjęcie do drużyny tych BN, którzy mogli zostać przegapieni w wyniku instalacji komponentu głównego Pomiń lochy Irenicusa. Jest on dostępny w dwóch opcjach:
+
+1. Tylko BN z podstawowej wersji
+Opcja ta pozwala na zarządzanie tylko następującymi BN z podstawowej wersji gry: Jaheirą, Minsciem i Yoshimo. Można ich znaleźć w tych samych lokacjach, do których udają się zwykle po odłączeniu od drużyny.
+
+2. Wszyscy dostępni BN
+Opcja ta pozwala na zarządzanie wszystkimi wspieranymi BN z podstawowej wersji gry oraz modyfikacji. Poza BN z podstawowej wersji gry uwzględnia ona również kod dla następujących BN dodawanych przez modyfikacje: Adrian Sianodel (autor: Rhaella), Chloe (autor: Lucythebeast) oraz Yasraena (autor: Sillara). Postacie te można znaleźć tuż obok zniszczonego budynku na Promenadzie Waukeen lub w tych samych lokacjach, do których udają się zwykle po odłączeniu od drużyny. 
+Pozostali BN dodawani przez modyfikacje, których można spotkać w lochach Irenicusa, mogą uzyskać w przyszłości wsparcie autorów tychże modyfikacji. W takim przypadku komponent ten również będzie uwzględniał ich obecność. Modyfikacja ta zawiera bowiem prosty mechanizm, który to umożliwia. Więcej informacji na ten temat można znaleźć w kolejnych rozdziałach.
 
 
 Kompatybilność
@@ -83,7 +93,7 @@ History
 ~~~~~~~
 
 2.3
-- Relocated Chloe support code to Chloe NPC mod
+- Moved NPC-related code into separate subcomponent
 - Added error catching code to NPC addon feature to prevent mod termination because of buggy script files
 - Added French translation (thanks Gwendolyne)
 

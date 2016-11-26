@@ -2,6 +2,10 @@
 // Setup (index 0..999)
 
 @0 = ~Ueberspringe Chateau Irenicus~
+@10 = ~Uebersprungene NSCs mit einbeziehen~
+@11 = ~Nur originale NSCs~
+@12 = ~Alle verfuegbaren NSCs~
 
 @100 = ~Diese Mod benoetigt BG2:EE oder EET.~
 @101 = ~Diese Mod benoetigt BG2:EE v2.0 oder hoeher.~
+@102 = ~Benoetigt die Hauptkomponente.~

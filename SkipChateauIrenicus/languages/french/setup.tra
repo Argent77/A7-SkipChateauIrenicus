@@ -2,9 +2,13 @@
 // Setup (index 0..999)
 
 @0 = ~Esquiver le Donjon d'Irenicus~
+@10 = ~Gerer les PNJs court-circuites~
+@11 = ~Uniquement les PNJs originaux~
+@12 = ~Tous les PNJs concernes~
 
 @100 = ~Ce mod necessite l'installation de BG2:EE ou de EET.~
 @101 = ~Ce mod requiert un jeu beneficiant du patch v2.0 ou ulterieur.~
+@102 = ~Le composant principal est pre-requis.~
 
 // WeiDU prompts
 @-1000= "Le mod %TP2_FILE_NAME% contient"

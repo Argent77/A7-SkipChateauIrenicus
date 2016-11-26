@@ -36,25 +36,35 @@ ist startbereit. Ihr müsst ein neues SvA-Spiel starten, um die neuen Optionen n
 Komponenten
 ~~~~~~~~~~~
 
-Es gibt nur eine Komponente: "Überspringe Chateau Irenicus".
+Hauptkomponente: Überspringe Chateau Irenicus
 
 Diese Komponente wird kurz nach eurer Befreiung durch Imoen aktiv. Ein Spitzbube erscheint und ermöglicht es euch, 
 die magischen Portale zur Flucht zu nutzen. Jedes Portal bringt euch zu einer anderen Ebene des Kerkers oder direkt 
 zur Oberfläche. Danach ist der Weg zurück blockiert, wie im unmodifizierten Spiel. Gegenstände und Ausrüstung können 
 irgendwo im Schutt des zerstörten Gebäudes aufgesammelt werden.
 
-NSCs die sich im Kerker befanden können möglicherweise später aufgenommen werden. Die Standard-NSCs Minsc, Jaheira 
-und Yoshimo könnt ihr alle an ihren standardmäßigen Orten finden.
-Außerdem werden bereits einige Mod-NSCs unterstützt. Ihr könnt Adrian, Chloe oder Yasraena irgendwo außerhalb von 
-Chateau Irenicus antreffen, wenn ihr den Kerker überspringt. Weitere Mod-NSCs, die ebenfalls in Chateau Irenicus zu 
-finden wären, könnt ihr theoretisch ebenfalls später antreffen, wenn der Mod-Ersteller eine entsprechende 
-Unterstützung anbietet. Diese Mod ermöglicht es Mod-Erstellern, auf einfache Weise ihre NSCs an diese Mod anzupassen. 
-Mehr dazu in den folgenden Kapiteln.
-
 Die Beschreibung der magischen Eicheln der Dryaden wurde angepasst, um mehr Informationen bereitzustellen, was mit 
 ihnen geschehen soll.
 
 Hinweis: Nach der Zwischensequenz mit Irenicus in Waukeens Promenade kann es für ein paar Sekunden zu Rucklern kommen.
+
+
+Optionale Komponente: Übersprungene NSCs mit einbeziehen
+
+Diese Komponente erlaubt es euch NSCs außerhalb von Chateau Irenicus anzutreffen, im Fall dass ihr das Verließ 
+vorzeitig verlasst. Es gibt zwei Optionen:
+
+1. Nur originale NSCs
+Mit dieser Option könnt ihr nur die Original-NSCs Jaheira, Minsc und Yoshimo außerhalb von Chateau Irenicus antreffen. 
+Ihr findet sie an den vorgesehenen Orten, z.B. in der Kupferkrone oder im Hafenbezirk.
+
+2. Alle verfügbaren NSCs
+Diese Option bezieht alle Original-NSCs und einige Mod-NSCs mit ein. Gegenwärtig werden die NSCs Adrian Sianodel (von 
+Rhaella), Chloe (von Lucythebeast) als auch Yasraena (von Sillara) direkt unterstützt. Sie können entweder in Waukeens 
+Promenade oder an ihren vorgesehenen Orten angetroffen werden.
+Weitere Mod-NSCs, die ebenfalls in Chateau Irenicus zu finden wären, könnt ihr theoretisch ebenfalls später antreffen, 
+wenn der Mod-Autor eine entsprechende Unterstützung anbietet. Diese Mod ermöglicht es Mod-Autoren, auf einfache Weise 
+ihre NSCs an diese Mod anzupassen. Mehr dazu in den folgenden Kapiteln.
 
 
 Kompatibilität
@@ -110,7 +120,7 @@ History
 ~~~~~~~
 
 2.3
-- Relocated Chloe support code to Chloe NPC mod
+- Moved NPC-related code into separate subcomponent
 - Added error catching code to NPC addon feature to prevent mod termination because of buggy script files
 - Added French translation (thanks Gwendolyne)
 

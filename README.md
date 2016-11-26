@@ -13,13 +13,25 @@ This mod allows you skip all the boring details of Chateau Irenicus. You can eve
 
 ## Components
 
-There is only one component: *"Skip Chateau Irenicus".*
+### Main component: Skip Chateau Irenicus
 
 The component triggers moments after you are released from your cell. A rogue appears and opens up the opportunity to use the magical portals to leave the dungeon. Each portal will transport you to the other level of the dungeon or directly to the surface. Afterwards the way back is blocked like in the unmodified game. To loot the items from the dungeon inspect the rubble of the destroyed building on Waukeen's Promenade.
 
 The item description of the dryads' acorns have been slightly altered to give you some information what you can do with it.
 
 **Note:** There may be a general slowdown of the game for a few seconds after the initial cutscene on Waukeen's Promenade which is caused by the item transference process.
+
+### Optional component: Deal with skipped NPCs
+
+This component allows you to recruit NPCs which might have been missed because you skipped the dungeon. It comes in two flavors:
+
+#### 1. Vanilla NPCs only
+This option deals only with the vanilla NPCs Jaheira, Minsc and Yoshimo. They can be found at their designated locations as if you dismissed them from the party.
+
+#### 2. All available NPCs
+This option deals with every supported vanilla and mod NPC. In addition to the vanilla NPCs it adds code for Adrian Sianodel (by Rhaella), Chloe (by Lucythebeast) as well as Yasraena (by Sillara). They can either be found directly near the destroyed building at Waukeen's Promenade or at their designated waiting locations as if you dismissed them from the party.
+
+Other mod NPCs that can be encountered in Chateau Irenicus may be supported by their respective authors. In this case they will be handled by this mod component as well. This mod provides an easy mechanism to make it possible.
 
 ## Compatibility
 

@@ -2,6 +2,10 @@
 // Setup (index 0..999)
 
 @0 = ~Pomin lochy Irenicusa~
+@10 = ~Zarzadzaj pominietymi BN~
+@11 = ~Tylko BN z podstawowej wersji~
+@12 = ~Wszyscy dostepni BN~
 
 @100 = ~Modyfikacja ta wymaga uprzedniego zainstalowania BG2:EE lub EET.~
 @101 = ~Modyfikacja ta wymaga uprzedniego zaktualizowania gry do wersji 2.0 lub wyzszej.~
+@102 = ~Wymagany glowny komponent.~

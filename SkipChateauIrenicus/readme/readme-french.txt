@@ -38,7 +38,7 @@ Important : Le jeu doit être doté du patch v2.0 ou supérieur pour que l'insta
 Composants
 ~~~~~~~~~~
 
-Ce mod ne dispose que d'un seul composant : "Éviter le Donjon d'Irenicus".
+Composant principal : Éviter le Donjon d'Irenicus
 
 Il se déclenche peu après que vous avez quitté votre cellule. Un roublard apparaît et vous offre la possibilité 
 d'utiliser les portails magiques pour quitter le donjon. Chaque portail vous transportera à l'autre niveau du donjon 
@@ -46,18 +46,29 @@ ou directement à la surface. Comme dans le jeu, une fois arrivé dans la Promen
 retourner dans le donjon. Pour récupérer les objets que l'on trouve habituellement dans le donjon, inspectez les 
 décombres du bâtiment détruit sur la Promenade.
 
-Les PNJ éventuels que vous avez manqués en prenant le raccourci vers la surface peuvent être recrutés plus tard. Vous 
-retrouverez ceux du jeu (Minsc, Jaheira et Yoshimo) à l'endroit habituel où ils se rendent quand vous leur demandez de 
-quitter le groupe. Plusieurs PNJ ajoutés par des mods sont également pris en charge. Vous pouvez ainsi rencontrer Adrian, 
-Chloe ou Yasraena quelque part à la sortie du donjon si vous avez emprunté le portail. Ce mod offre aussi aux moddeurs 
-une procédure simple à utiliser pour qu'ils puissent rendre leur PNJ rencontré initialement dans le donjon compatible 
-avec SCI. Ce point est abordé dans les chapitres suivants.
-
 La description des glands des dryades a été légèrement modifiée pour vous donner quelques informations sur ce que vous 
 pouvez en faire.
 
 Note : Il peut y avoir un ralentissement général du jeu pendant quelques secondes après la cinématique initiale sur la 
        Promenade de Waukyne, dû au processus de transfert des objets.
+
+
+Composant optionnel : Gérer les PNJs court-circuités
+
+Ce composant vous permet de recruter les PNJs que vous pourriez ne pas avoir rencontrés en prenant le raccourci vers
+la surface. Il se décline en deux options :
+
+1. Uniquement les PNJs originaux.
+Cette option gère seulement les PNJs du jeu, Jaheira, Minsc et Yoshimo, que vous retrouverez à l'endroit habituel où ils
+se rendent quand vous leur demandez de quitter le groupe.
+
+2. Tous les PNJs concernés.
+Cette option prend en charge tous les PNJs, aussi bien ceux du jeu que ceux ajoutés par des mods. En plus de l'option
+précédente, elle gère Adrian Sianodel (de Rhaella), Chloe (de Lucythebeast) et Yasraena (de Sillara). Vous pourrez les
+retrouver soit près des décombres de la Promenade de Waukyne, soit à l'endroit habituel où ils se rendent quand vous leur
+demandez de quitter le groupe.
+Les auteurs d'autres PNJs que l'on peut rencontrer dans le Donjon d'Irenicus peuvent décider de permettre à ce composant
+de les intégrer à l'aide d'une procédure simple. Les chapitres suivants la détaillent plus avant.
 
 
 Compatibilité
@@ -116,7 +127,7 @@ History
 ~~~~~~~
 
 2.3
-- Relocated Chloe support code to Chloe NPC mod
+- Moved NPC-related code into separate subcomponent
 - Added error catching code to NPC addon feature to prevent mod termination because of buggy script files
 - Added French translation (thanks Gwendolyne)
 

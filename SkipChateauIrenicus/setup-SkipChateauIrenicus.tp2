@@ -28,5 +28,22 @@ BEGIN @0  // Skip Chateau Irenicus
   INCLUDE ~%MOD_FOLDER%/lib/portal.tph~
   INCLUDE ~%MOD_FOLDER%/lib/rogue.tph~
   INCLUDE ~%MOD_FOLDER%/lib/items.tph~
-  INCLUDE ~%MOD_FOLDER%/lib/npcs.tph~
   INCLUDE ~%MOD_FOLDER%/lib/misc.tph~
+
+
+BEGIN @11 // Vanilla NPCs only
+  REQUIRE_COMPONENT ~setup-SkipChateauIrenicus.tp2~ 0 @102  // Main component required.
+  SUBCOMPONENT @10  // Deal with skipped NPCs
+  DESIGNATED 101
+
+  OUTER_SET vanilla_npc_only = 1
+  INCLUDE ~%MOD_FOLDER%/lib/npcs.tph~
+
+
+BEGIN @12 // All available NPCs
+  REQUIRE_COMPONENT ~setup-SkipChateauIrenicus.tp2~ 0 @102  // Main component required.
+  SUBCOMPONENT @10  // Deal with skipped NPCs
+  DESIGNATED 102
+
+  OUTER_SET vanilla_npc_only = 0
+  INCLUDE ~%MOD_FOLDER%/lib/npcs.tph~

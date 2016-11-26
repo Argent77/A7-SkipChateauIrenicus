@@ -2,6 +2,10 @@
 // Setup (index 0..999)
 
 @0 = ~Skip Chateau Irenicus~
+@10 = ~Deal with skipped NPCs~
+@11 = ~Vanilla NPCs only~
+@12 = ~All available NPCs~
 
 @100 = ~This mod requires BG2:EE or EET to be installed.~
 @101 = ~This mod requires the game to be patched to v2.0 or higher.~
+@102 = ~Main component required.~
