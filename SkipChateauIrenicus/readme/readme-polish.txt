@@ -18,7 +18,7 @@ Modyfikacja ta pozwala na pominięcie nudnych szczegółów związanych z locham
 
 „Pomiń lochy Irenicusa” stanowi alternatywę dla (nie)sławnej modyfikacji Dungeon-Be-Gone, zapewniając podobne możliwości, lecz w sposób nieburzący tzw. czwartej ściany.
 
-Modyfikacja ta wymaga do działania BG2:EE w wersji v2.0 lub wyższej, lub też EET (Enhanced Edition Trilogy).
+Modyfikacja ta wymaga do działania BG2 (z zainstalowanym dodatkiem Tron Bhaala lub bez), BG2:EE lub EET (Enhanced Edition Trilogy).
 
 
 Instalacja
@@ -26,22 +26,24 @@ Instalacja
 
 Jest to modyfikacja WeiDU, co oznacza, iż jest bardzo prosta w instalacji. Wystarczy rozpakować pobrane archiwum do katalogu z grą, a następnie uruchomić plik „setup-SkipChateauIrenicus.exe”. Należy postępować zgodnie z instrukcjami, co spowoduje zainstalowanie modyfikacji. Aby można było zauważyć jej efekty, należy wcześniej rozpocząć nową grę w kampanii Cienie Amn.
 
-Ważne: Aby można było zainstalować tę modyfikację, gra musi zostać wcześniej zaktualizowana do wersji v2.0 lub wyższej.
+Uwaga: Aby uzyskać jak najwięcej korzyści z tej modyfikacji, zalecana jest uprzednia aktualizacja BG2:EE do wersji v2.0 lub wyższej.
 
 
 Komponenty
 ~~~~~~~~~~
 
-Główny komponent: Pomiń lochy Irenicusa
+Główny komponent: Pomiń lochy Irenicusa (wymaga zainstalowania BG2, BG2:EE lub EET)
 
 Komponent ten uaktywnia się w momencie twojego uwolnienia z celi. Pojawia się wówczas łotrzyk, który oferuje możliwość użycia magicznych portali do opuszczenia lochów. Każdy z portali przeniesie cię do innego poziomu lochów lub prosto na powierzchnię. Po wyjściu na powierzchnię droga powrotna do lochów zostaje zablokowana jak w niezmodyfikowanej grze. Aby zebrać przedmioty znajdujące się w lochach, wystarczy przeszukać gruzy zniszczonego budynku na Promenadzie Waukeen.
 
 Opis należących do driad żołędzi został lekko zmieniony, dodając wskazówkę, co można z nimi zrobić.
 
-Uwaga: Gra może zanotować kilkusekundowe zwolnienie podczas początkowego przerywnika filmowego na Promenadzie Waukeen, związanego z procesem przenoszenia przedmiotów.
+W przypadku BG2:EE w wersji niższej niż 2.0, lub oryginalnej wersji BG2, modyfikacja używa mniej zaawansowanych metod przenoszenia łupów z lochu na powierzchnię. W rezultacie możliwe jest pominięcie pomniejszych skarbów lub powielenie niektórych przedmiotów, w zależności stopnia wyczyszczenia lochów przed teleportacją na powierzchnię.
+
+Uwaga: W przypadku BG2:EE v2.0+ lub EET gra może zanotować kilkusekundowe zwolnienie podczas początkowego przerywnika filmowego na Promenadzie Waukeen, związanego z procesem przenoszenia przedmiotów.
 
 
-Opcjonalny komponent: Zarządzaj pominiętymi BN
+Opcjonalny komponent: Zarządzaj pominiętymi BN (wymaga zainstalowania głównego komponentu, wymaga zainstalowania BG2:EE lub EET)
 
 Komponent ten pozwala na przyjęcie do drużyny tych BN, którzy mogli zostać przegapieni w wyniku instalacji komponentu głównego Pomiń lochy Irenicusa. Jest on dostępny w dwóch opcjach:
 
@@ -49,7 +51,7 @@ Komponent ten pozwala na przyjęcie do drużyny tych BN, którzy mogli zostać p
 Opcja ta pozwala na zarządzanie tylko następującymi BN z podstawowej wersji gry: Jaheirą, Minsciem i Yoshimo. Można ich znaleźć w tych samych lokacjach, do których udają się zwykle po odłączeniu od drużyny.
 
 2. Wszyscy dostępni BN
-Opcja ta pozwala na zarządzanie wszystkimi wspieranymi BN z podstawowej wersji gry oraz modyfikacji. Poza BN z podstawowej wersji gry uwzględnia ona również kod dla następujących BN dodawanych przez modyfikacje: Adrian Sianodel (autor: Rhaella), Chloe (autor: Lucythebeast) oraz Yasraena (autor: Sillara). Postacie te można znaleźć tuż obok zniszczonego budynku na Promenadzie Waukeen lub w tych samych lokacjach, do których udają się zwykle po odłączeniu od drużyny. 
+Opcja ta pozwala na zarządzanie wszystkimi wspieranymi BN z podstawowej wersji gry oraz modyfikacji. Poza BN z podstawowej wersji gry uwzględnia ona również kod dla następujących BN dodawanych przez modyfikacje: Adrian Sianodel (autor: Rhaella), Chloe (autor: Lucythebeast) oraz Yasraena (autor: Sillara). Postacie te można znaleźć tuż obok zniszczonego budynku na Promenadzie Waukeen lub w tych samych lokacjach, do których udają się zwykle po odłączeniu od drużyny.
 Pozostali BN dodawani przez modyfikacje, których można spotkać w lochach Irenicusa, mogą uzyskać w przyszłości wsparcie autorów tychże modyfikacji. W takim przypadku komponent ten również będzie uwzględniał ich obecność. Modyfikacja ta zawiera bowiem prosty mechanizm, który to umożliwia. Więcej informacji na ten temat można znaleźć w kolejnych rozdziałach.
 
 
@@ -85,7 +87,7 @@ Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.
 Copyright Notice
 ~~~~~~~~~~~~~~~~
 
-The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribution-ShareAlike 4.0 International License" 
+The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribution-ShareAlike 4.0 International License"
 (http://creativecommons.org/licenses/by-sa/4.0/).
 
 

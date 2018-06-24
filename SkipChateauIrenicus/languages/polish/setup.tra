@@ -6,6 +6,6 @@
 @11 = ~Tylko BN z podstawowej wersji~
 @12 = ~Wszyscy dostepni BN~
 
-@100 = ~Modyfikacja ta wymaga uprzedniego zainstalowania BG2:EE lub EET.~
-@101 = ~Modyfikacja ta wymaga uprzedniego zaktualizowania gry do wersji 2.0 lub wyzszej.~
+@100 = ~Modyfikacja ta wymaga uprzedniego zainstalowania BG2, BG2:EE lub EET.~
+@101 = ~Komponent ten wymaga uprzedniego zainstalowania BG2EE lub EET.~
 @102 = ~Wymagany glowny komponent.~
