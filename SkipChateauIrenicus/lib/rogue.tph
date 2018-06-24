@@ -3,9 +3,14 @@
 COMPILE ~%MOD_FOLDER%/dialogs/a7-shad1.d~
         ~%MOD_FOLDER%/scripts/a7-shad1.baf~
         ~%MOD_FOLDER%/scripts/a7-ctspy.baf~
-        ~%MOD_FOLDER%/scripts/a7-cut01.baf~
         ~%MOD_FOLDER%/scripts/a7-cut02.baf~
-        ~%MOD_FOLDER%/scripts/a7-skip.baf~
+
+ACTION_IF IS_EE2 BEGIN
+  COMPILE ~%MOD_FOLDER%/scripts/a7-cut01.baf~
+          ~%MOD_FOLDER%/scripts/a7-skip.baf~
+END ELSE BEGIN
+  COMPILE ~%MOD_FOLDER%/scripts/bg2/a7-cut01.baf~
+END
 
 EXTEND_TOP ~AR0602.BCS~ ~%MOD_FOLDER%/scripts/ar0602_top.baf~
 

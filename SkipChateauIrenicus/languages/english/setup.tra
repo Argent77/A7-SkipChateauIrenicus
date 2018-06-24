@@ -6,6 +6,6 @@
 @11 = ~Vanilla NPCs only~
 @12 = ~All available NPCs~
 
-@100 = ~This mod requires BG2:EE or EET to be installed.~
-@101 = ~This mod requires the game to be patched to v2.0 or higher.~
+@100 = ~This mod requires BG2, BG2:EE or EET.~
+@101 = ~This component requires BG2:EE or EET.~
 @102 = ~Main component required.~

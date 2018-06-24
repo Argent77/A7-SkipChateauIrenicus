@@ -1,59 +1,59 @@
-// -*- coding: utf-8 -*- 
+// -*- coding: windows-1250 -*- 
 
 // Misc. strings
-@1000 = ~To sÄ… magiczne Å¼oÅ‚Ä™dzie bÄ™dÄ…ce wÅ‚asnoÅ›ciÄ… driad, ktÃ³re udaÅ‚o ci siÄ™ odzyskaÄ‡ od przywÃ³dcy duergarÃ³w, Ilyicha.
+@1000 = ~To s¹ magiczne ¿o³êdzie bêd¹ce w³asnoœci¹ driad, które uda³o ci siê odzyskaæ od przywódcy duergarów, Ilyicha.
 
-Poproszono ciÄ™ o dostarczenie ich do KrÃ³lowej Lasu, zamieszkujÄ…cej poÅ‚udniowÄ… czÄ™Å›Ä‡ WzgÃ³rz Wichrowych WÅ‚Ã³czni.
+Poproszono ciê o dostarczenie ich do Królowej Lasu, zamieszkuj¹cej po³udniow¹ czêœæ Wzgórz Wichrowych W³óczni.
 
 PARAMETRY:
 
 Waga: 0~
-@1001 = ~Wow, ale przejaÅ¼dÅ¼ka. Gdzie ja jestem?~
+@1001 = ~Wow, ale przeja¿d¿ka. Gdzie ja jestem?~
 
 
 // Rogue dialog
-@2000 = ~Nie zbliÅ¼aj siÄ™! Przyjaciel czy wrÃ³g?~
-@2001 = ~Jestem <GABBER>. Do niedawna byÅ‚em wiÄ™ziony przez maga o niebywaÅ‚ej mocy. Jak udaÅ‚o ci siÄ™ pojawiÄ‡ tak szybko?~~Jestem <GABBER>. Do niedawna byÅ‚am wiÄ™ziona przez maga o niebywaÅ‚ej mocy. Jak udaÅ‚o ci siÄ™ pojawiÄ‡ tak szybko?~
-@2002 = ~Nie zdradzÄ™ ci wszystkiego. RÃ³wnie dobrze moÅ¼esz byÄ‡ szpiegiem mojego porywacza albo kimÅ› jeszcze gorszym. ZjeÅ¼dÅ¼aj!~
-@2003 = ~Te przeklÄ™te lochy korzystajÄ… z sieci magicznych portali Å‚Ä…czÄ…cych ze sobÄ… kaÅ¼dy z poziomÃ³w.~
-@2004 = ~Twierdzisz, Å¼e uwiÄ™ziÅ‚ ciÄ™ mag? A gdzieÅ¼ on teraz jest?~
-@2005 = ~TeleportowaÅ‚ siÄ™ stÄ…d przed chwilÄ….~
-@2006 = ~Do diaska! A wiÄ™c caÅ‚y nasz wysiÅ‚ek, aby go dostaÄ‡, poszedÅ‚ na marne. Dobra, zmiana planÃ³w. Przygotujemy na niego zasadzkÄ™ na powierzchni.~
-@2007 = ~Czy mogÄ™ wykorzystaÄ‡ te portale do ucieczki?~
-@2008 = ~Czemu nie? BÄ™dziesz jednak potrzebowaÅ‚ klucza, aby ich uÅ¼yÄ‡. Na szczÄ™Å›cie dla ciebie, zwinÄ…Å‚em kilka zapasowych. MogÄ™ daÄ‡ ci jeden, jeÅ›li chcesz.~~Czemu nie? BÄ™dziesz jednak potrzebowaÅ‚a klucza, aby ich uÅ¼yÄ‡. Na szczÄ™Å›cie dla ciebie, zwinÄ…Å‚em kilka zapasowych. MogÄ™ daÄ‡ ci jeden, jeÅ›li chcesz.~
-@2009 = ~WezmÄ™ klucz, dziÄ™ki.~
-@2010 = ~Nie ma potrzeby. WolÄ™ odnaleÅºÄ‡ drogÄ™ na wÅ‚asnÄ… rÄ™kÄ™.~
+@2000 = ~Nie zbli¿aj siê! Przyjaciel czy wróg?~
+@2001 = ~Jestem <GABBER>. Do niedawna by³em wiêziony przez maga o niebywa³ej mocy. Jak uda³o ci siê pojawiæ tak szybko?~~Jestem <GABBER>. Do niedawna by³am wiêziona przez maga o niebywa³ej mocy. Jak uda³o ci siê pojawiæ tak szybko?~
+@2002 = ~Nie zdradzê ci wszystkiego. Równie dobrze mo¿esz byæ szpiegiem mojego porywacza albo kimœ jeszcze gorszym. Zje¿d¿aj!~
+@2003 = ~Te przeklête lochy korzystaj¹ z sieci magicznych portali ³¹cz¹cych ze sob¹ ka¿dy z poziomów.~
+@2004 = ~Twierdzisz, ¿e uwiêzi³ ciê mag? A gdzie¿ on teraz jest?~
+@2005 = ~Teleportowa³ siê st¹d przed chwil¹.~
+@2006 = ~Do diaska! A wiêc ca³y nasz wysi³ek, aby go dostaæ, poszed³ na marne. Dobra, zmiana planów. Przygotujemy na niego zasadzkê na powierzchni.~
+@2007 = ~Czy mogê wykorzystaæ te portale do ucieczki?~
+@2008 = ~Czemu nie? Bêdziesz jednak potrzebowa³ klucza, aby ich u¿yæ. Na szczêœcie dla ciebie, zwin¹³em kilka zapasowych. Mogê daæ ci jeden, jeœli chcesz.~~Czemu nie? Bêdziesz jednak potrzebowa³a klucza, aby ich u¿yæ. Na szczêœcie dla ciebie, zwin¹³em kilka zapasowych. Mogê daæ ci jeden, jeœli chcesz.~
+@2009 = ~Wezmê klucz, dziêki.~
+@2010 = ~Nie ma potrzeby. Wolê odnaleŸæ drogê na w³asn¹ rêkê.~
 @2011 = ~Oto on.~
-@2012 = ~W sumie to nie moja sprawa. MuszÄ™ dorwaÄ‡ tego zdradzieckiego maga.~
-@2013 = ~Nie zbliÅ¼aj siÄ™!~
-@2014 = ~Nie, dziÄ™kujÄ™. Mam juÅ¼ jeden.~
+@2012 = ~W sumie to nie moja sprawa. Muszê dorwaæ tego zdradzieckiego maga.~
+@2013 = ~Nie zbli¿aj siê!~
+@2014 = ~Nie, dziêkujê. Mam ju¿ jeden.~
 @2015 = ~Jak sobie chcesz.~
-@2016 = ~A teraz wybacz, ale muszÄ™ dorwaÄ‡ tego zdradzieckiego maga.~
+@2016 = ~A teraz wybacz, ale muszê dorwaæ tego zdradzieckiego maga.~
 
 
 // Portal dialogs
 @2100 = ~Wybierz miejsce docelowe:~
-@2101 = ~Na niÅ¼szy poziom.~ 
-@2102 = ~Na powierzchniÄ™.~
-@2103 = ~NiewaÅ¼ne.~
-@2104 = ~Na wyÅ¼szy poziom.~ 
+@2101 = ~Na ni¿szy poziom.~ 
+@2102 = ~Na powierzchniê.~
+@2103 = ~Niewa¿ne.~
+@2104 = ~Na wy¿szy poziom.~ 
 
 
 // Journal entries
-@5000 = ~SkrÃ³t na powierzchniÄ™
+@5000 = ~Skrót na powierzchniê
 
-SpotkaÅ‚em podejrzanego Å‚otrzyka. ByÅ‚em ostroÅ¼ny i nie wyjawiÅ‚em mu Å¼adnych informacji. MÃ³gÅ‚ byÄ‡ szpiegiem mojego porywacza albo kimÅ› gorszym.~~SkrÃ³t na powierzchniÄ™
+Spotka³em podejrzanego ³otrzyka. By³em ostro¿ny i nie wyjawi³em mu ¿adnych informacji. Móg³ byæ szpiegiem mojego porywacza albo kimœ gorszym.~~Skrót na powierzchniê
 
-SpotkaÅ‚am podejrzanego Å‚otrzyka. ByÅ‚am ostroÅ¼na i nie wyjawiÅ‚am mu Å¼adnych informacji. MÃ³gÅ‚ byÄ‡ szpiegiem mojego porywacza albo kimÅ› gorszym.~
+Spotka³am podejrzanego ³otrzyka. By³am ostro¿na i nie wyjawi³am mu ¿adnych informacji. Móg³ byæ szpiegiem mojego porywacza albo kimœ gorszym.~
 
-@5001 = ~SkrÃ³t na powierzchniÄ™
+@5001 = ~Skrót na powierzchniê
 
-SpotkaÅ‚em tajemniczego Å‚otrzyka, ktÃ³ry najwyraÅºniej tropiÅ‚ mojego porywacza. PodarowaÅ‚ mi on klucz, ktÃ³rym moÅ¼na uaktywniÄ‡ magiczne portale pozwalajÄ…ce na szybkie opuszczenie tego lochu.~~SkrÃ³t na powierzchniÄ™
+Spotka³em tajemniczego ³otrzyka, który najwyraŸniej tropi³ mojego porywacza. Podarowa³ mi on klucz, którym mo¿na uaktywniæ magiczne portale pozwalaj¹ce na szybkie opuszczenie tego lochu.~~Skrót na powierzchniê
 
-SpotkaÅ‚am tajemniczego Å‚otrzyka, ktÃ³ry najwyraÅºniej tropiÅ‚ mojego porywacza. PodarowaÅ‚ mi on klucz, ktÃ³rym moÅ¼na uaktywniÄ‡ magiczne portale pozwalajÄ…ce na szybkie opuszczenie tego lochu.~
+Spotka³am tajemniczego ³otrzyka, który najwyraŸniej tropi³ mojego porywacza. Podarowa³ mi on klucz, którym mo¿na uaktywniæ magiczne portale pozwalaj¹ce na szybkie opuszczenie tego lochu.~
 
-@5002 = ~SkrÃ³t na powierzchniÄ™
+@5002 = ~Skrót na powierzchniê
 
-SpotkaÅ‚em tajemniczego Å‚otrzyka, ktÃ³ry najwyraÅºniej tropiÅ‚ mojego porywacza. PowiedziaÅ‚ mi, Å¼e mogÄ™ skorzystaÄ‡ z magicznych portali, aby wydostaÄ‡ siÄ™ szybko z tego lochu.~~SkrÃ³t na powierzchniÄ™
+Spotka³em tajemniczego ³otrzyka, który najwyraŸniej tropi³ mojego porywacza. Powiedzia³ mi, ¿e mogê skorzystaæ z magicznych portali, aby wydostaæ siê szybko z tego lochu.~~Skrót na powierzchniê
 
-SpotkaÅ‚am tajemniczego Å‚otrzyka, ktÃ³ry najwyraÅºniej tropiÅ‚ mojego porywacza. PowiedziaÅ‚ mi, Å¼e mogÄ™ skorzystaÄ‡ z magicznych portali, aby wydostaÄ‡ siÄ™ szybko z tego lochu.~
+Spotka³am tajemniczego ³otrzyka, który najwyraŸniej tropi³ mojego porywacza. Powiedzia³ mi, ¿e mogê skorzystaæ z magicznych portali, aby wydostaæ siê szybko z tego lochu.~

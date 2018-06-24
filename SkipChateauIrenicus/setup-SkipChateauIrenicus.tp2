@@ -2,6 +2,22 @@ BACKUP ~SkipChateauIrenicus/backup~
 AUTHOR ~Argent77~
 VERSION ~2.3~
 
+ALWAYS
+  OUTER_SET IS_EE = (GAME_IS ~bg2ee eet~) ? 1 : 0
+  OUTER_SET IS_EE2 = (IS_EE != 0 AND FILE_EXISTS ~engine.lua~) ? 1 : 0
+
+  ACTION_DEFINE_ARRAY a7noconvert BEGIN setup END
+  ACTION_DEFINE_ARRAY a7reload BEGIN mod END
+  LAF HANDLE_CHARSETS
+    INT_VAR
+      infer_charset   = 1
+    STR_VAR
+      tra_path        = EVAL ~%MOD_FOLDER%/languages~
+      noconvert_array = a7noconvert
+      reload_array    = a7reload
+  END
+END
+
 README ~SkipChateauIrenicus/readme/readme-%LANGUAGE%.txt~
        ~SkipChateauIrenicus/readme/readme.txt~
 
@@ -19,11 +35,12 @@ LANGUAGE ~Polski (Tlumaczenie: Cahir)~ ~polish~
          ~SkipChateauIrenicus/languages/polish/mod.tra~
 
 BEGIN @0  // Skip Chateau Irenicus
-  REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @100      // This mod requires BG2:EE or EET to be installed.
-  REQUIRE_PREDICATE FILE_EXISTS ~engine.lua~ @101 // This mod requires the game to be patched to v2.0 or higher.
+  REQUIRE_PREDICATE GAME_IS ~bg2 tob bg2ee eet~ @100 // This mod requires BG2, BG2:EE or EET.
   DESIGNATED 0
 
-  INCLUDE ~%MOD_FOLDER%/lib/journal.tph~
+  ACTION_IF IS_EE BEGIN
+    INCLUDE ~%MOD_FOLDER%/lib/journal.tph~
+  END
   INCLUDE ~%MOD_FOLDER%/lib/tables.tph~
   INCLUDE ~%MOD_FOLDER%/lib/portal.tph~
   INCLUDE ~%MOD_FOLDER%/lib/rogue.tph~
@@ -33,6 +50,7 @@ BEGIN @0  // Skip Chateau Irenicus
 
 BEGIN @11 // Vanilla NPCs only
   REQUIRE_COMPONENT ~setup-SkipChateauIrenicus.tp2~ 0 @102  // Main component required.
+  REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @101 // This component requires BG2:EE or EET.
   SUBCOMPONENT @10  // Deal with skipped NPCs
   DESIGNATED 101
 
@@ -42,6 +60,7 @@ BEGIN @11 // Vanilla NPCs only
 
 BEGIN @12 // All available NPCs
   REQUIRE_COMPONENT ~setup-SkipChateauIrenicus.tp2~ 0 @102  // Main component required.
+  REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @101 // This component requires BG2:EE or EET.
   SUBCOMPONENT @10  // Deal with skipped NPCs
   DESIGNATED 102
 

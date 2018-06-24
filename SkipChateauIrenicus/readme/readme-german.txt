@@ -20,9 +20,9 @@ im Schutt des Gebäudes verteilt, das Irenicus zerstört hat. Zusätzlich gibt e
 Kleingeld.
 
 "Überspringe Chateau Irenicus" ist als Alternative zum berüchtigten "Dungeon-Be-Gone" gedacht, welches eine ähnliche 
-Option anbietet, aber auf eine recht alberne Art und Weise umgesetzt hat.
+Option anbietet, aber auf eine recht alberne Art und Weise umgesetzt wurde.
 
-Diese Mod benötigt BG2:EE ab Version 2.0 oder EET (Enhanced Edition Trilogy).
+Diese Mod benötigt BG2 (mit oder ohne TdB), BG2:EE oder EET (Enhanced Edition Trilogy).
 
 
 Installation
@@ -32,13 +32,15 @@ Dies ist eine WeiDU Mod. Das bedeutet, sie ist sehr einfach zu installieren. Ent
 in das Spieleverzeichnis und startet "setup-SkipChateauIrenicus.exe". Folgt den Anweisungen des Programms und die Mod 
 ist startbereit. Ihr müsst ein neues SvA-Spiel starten, um die neuen Optionen nutzen zu können.
 
+Hinweis: Um alle Features dieser Mod nutzen zu können, sollte BG2:EE ab Version 2.0 installiert sein.
+
 
 Komponenten
 ~~~~~~~~~~~
 
-Hauptkomponente: Überspringe Chateau Irenicus
+Hauptkomponente: Überspringe Chateau Irenicus (benötigt BG2, BG2:EE oder EET)
 
-Diese Komponente wird kurz nach eurer Befreiung durch Imoen aktiv. Ein Spitzbube erscheint und ermöglicht es euch, 
+Diese Komponente wird kurz nach eurer Befreiung durch Imoen aktiv. Ein Schattendieb erscheint und ermöglicht es euch, 
 die magischen Portale zur Flucht zu nutzen. Jedes Portal bringt euch zu einer anderen Ebene des Kerkers oder direkt 
 zur Oberfläche. Danach ist der Weg zurück blockiert, wie im unmodifizierten Spiel. Gegenstände und Ausrüstung können 
 irgendwo im Schutt des zerstörten Gebäudes aufgesammelt werden.
@@ -46,10 +48,15 @@ irgendwo im Schutt des zerstörten Gebäudes aufgesammelt werden.
 Die Beschreibung der magischen Eicheln der Dryaden wurde angepasst, um mehr Informationen bereitzustellen, was mit 
 ihnen geschehen soll.
 
-Hinweis: Nach der Zwischensequenz mit Irenicus in Waukeens Promenade kann es für ein paar Sekunden zu Rucklern kommen.
+Die Mod nutzt einen leicht eingeschränkten Funktionsumfang für BG2:EE vor Version 2.0 und das originale BG2, um
+Gegenstände aus dem Verließ an die Oberfläche zu transferieren. Daher kann es sein, dass je nach Spielweise einige
+kleinere Gegenstände fehlen oder doppelt vorhanden sind.
+
+Hinweis: In BG2:EE ab Version 2.0 und EET kann es nach der Zwischensequenz mit Irenicus in Waukeens Promenade für ein
+         paar Sekunden zu Rucklern kommen.
 
 
-Optionale Komponente: Übersprungene NSCs mit einbeziehen
+Optionale Komponente: Übersprungene NSCs mit einbeziehen (benötigt Hauptkomponente, benötigt BG2:EE oder EET)
 
 Diese Komponente erlaubt es euch NSCs außerhalb von Chateau Irenicus anzutreffen, im Fall dass ihr das Verließ 
 vorzeitig verlasst. Es gibt zwei Optionen:
@@ -118,6 +125,10 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 
 History
 ~~~~~~~
+
+3.0
+- Added compatibility with classic BG2
+- Added compatibility with BG2:EE pre-2.0
 
 2.3
 - Moved NPC-related code into separate subcomponent

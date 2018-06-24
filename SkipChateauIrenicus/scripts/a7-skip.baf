@@ -25,9 +25,9 @@ THEN
     ActionOverride("a7-cutspy", DestroySelf())
     ActionOverride("a7-cutspy", DestroySelf())
     OpenDoor("Door05")
-    CreateCreature("a7-ctspy", [3790.2450], S)
-    CreateCreature("a7-ctspy", [3820.2590], S)
-    CreateCreature("a7-shad1", [3750.2650], S)
+    CreateCreature("a7-ctspy", [3790.2450], 0)  // S
+    CreateCreature("a7-ctspy", [3820.2590], 0)  // S
+    CreateCreature("a7-shad1", [3750.2650], 0)  // S
     MoveViewPoint([3750.2650], INSTANT)
     FadeFromColor([10.0],0)
     SmallWait(5)

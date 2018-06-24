@@ -14,6 +14,20 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/tables~ ~^.+\.2da$~ BEGIN
     END
 END
 
+// Additional tables for classic BG2
+ACTION_IF NOT IS_EE2 BEGIN
+  ACTION_BASH_FOR ~%MOD_FOLDER%/tables-bg2~ ~^.+\.2da$~ BEGIN
+    LOG ~DEBUG: Loading table "%BASH_FOR_FILE%"...~
+
+    COPY - ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_FILESPEC%~
+      PATCH_IF (SOURCE_SIZE > 0) BEGIN
+        READ_ASCII 0 data (SOURCE_SIZE)
+        TEXT_SPRINT table_data ~%table_data%%LNL%%data%~
+      END
+  END
+END
+
+
 // "control_table" contains all available item and container definitions
 OUTER_PATCH ~%table_data%~ BEGIN
   READ_2DA_ENTRIES_NOW ~control_table~ 7
@@ -70,31 +84,33 @@ END
 
 
 // Generating item transfer script
-OUTER_FOR (idxArea = 0; idxArea < supported_areas; idxArea += 1) BEGIN
-  OUTER_TEXT_SPRINT srcArea $EVAL supported_areas("%idxArea%")
-  // This part is still hardcoded
-  ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~AR0602~) BEGIN
-    OUTER_TEXT_SPRINT dstContainer ~A7-Rubble1~
-  END ELSE ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~AR0603~) BEGIN
-    OUTER_TEXT_SPRINT dstContainer ~A7-Rubble2~
-  END ELSE BEGIN
-    OUTER_TEXT_SPRINT dstContainer ~A7-Rubble3~
-  END
-
-  COPY_EXISTING - ~%srcArea%.ARE~ ~override~
-    READ_LONG 0x70 ofsContainers
-    READ_SHORT 0x74 numContainers
-    FOR (idx = 0; idx < numContainers; idx += 1) BEGIN
-      SET ofs = ofsContainers + (idx * 0xc0)
-      READ_ASCII ofs name (32) NULL
-      INNER_PATCH_SAVE name ~%name%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~~ END
-      LPF TABLE_MATCH_CONTAINER STR_VAR area = EVAL ~%SOURCE_RES%~ container = EVAL ~%name%~ RET row END
-      PATCH_IF (row < 0) BEGIN
-        TEXT_SPRINT container_contents ~%container_contents% MoveContainerContents("%SOURCE_RES%*%name%","AR0700*%dstContainer%")~
-      END ELSE BEGIN
-        PATCH_LOG ~DEBUG: Excluding container "%SOURCE_RES%*%name%"~
-      END
+ACTION_IF IS_EE2 BEGIN
+  OUTER_FOR (idxArea = 0; idxArea < supported_areas; idxArea += 1) BEGIN
+    OUTER_TEXT_SPRINT srcArea $EVAL supported_areas("%idxArea%")
+    // This part is still hardcoded
+    ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~AR0602~) BEGIN
+      OUTER_TEXT_SPRINT dstContainer ~A7-Rubble1~
+    END ELSE ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~AR0603~) BEGIN
+      OUTER_TEXT_SPRINT dstContainer ~A7-Rubble2~
+    END ELSE BEGIN
+      OUTER_TEXT_SPRINT dstContainer ~A7-Rubble3~
     END
+
+    COPY_EXISTING - ~%srcArea%.ARE~ ~override~
+      READ_LONG 0x70 ofsContainers
+      READ_SHORT 0x74 numContainers
+      FOR (idx = 0; idx < numContainers; idx += 1) BEGIN
+        SET ofs = ofsContainers + (idx * 0xc0)
+        READ_ASCII ofs name (32) NULL
+        INNER_PATCH_SAVE name ~%name%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~~ END
+        LPF TABLE_MATCH_CONTAINER STR_VAR area = EVAL ~%SOURCE_RES%~ container = EVAL ~%name%~ RET row END
+        PATCH_IF (row < 0) BEGIN
+          TEXT_SPRINT container_contents ~%container_contents% MoveContainerContents("%SOURCE_RES%*%name%","AR0700*%dstContainer%")~
+        END ELSE BEGIN
+          PATCH_LOG ~DEBUG: Excluding container "%SOURCE_RES%*%name%"~
+        END
+      END
+  END
 END
 
 

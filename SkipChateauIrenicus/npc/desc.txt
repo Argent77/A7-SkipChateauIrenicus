@@ -6,6 +6,9 @@ to deal with NPCs that can potentially be found in Chateau Irenicus, but have be
 set of variables that can be used to define script triggers and actions to selected BCS files which deal with the NPCs 
 in question.
 
+Note: The mod deals with NPCs in both pre and post 2.0 patched BG2:EE. If the code requires 2.0-specific script commands,
+      it is strongly recommended to use a fallback method for older BG2:EE games.
+
 Available variables:
 
 num_npc_actions: (Mandatory) Must be set to the number of desired script blocks to generate. The number should correlate 

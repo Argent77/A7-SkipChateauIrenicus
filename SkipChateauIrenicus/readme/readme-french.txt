@@ -126,6 +126,10 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 History
 ~~~~~~~
 
+3.0
+- Added compatibility with classic BG2
+- Added compatibility with BG2:EE pre-2.0
+
 2.3
 - Moved NPC-related code into separate subcomponent
 - Added error catching code to NPC addon feature to prevent mod termination because of buggy script files

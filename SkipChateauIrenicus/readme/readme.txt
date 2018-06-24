@@ -18,26 +18,26 @@ This mod allows you skip all the boring details of Chateau Irenicus. You can eve
 within the dungeon. Just inspect the rubble of the destroyed building on Waukeen's Promenade. As a bonus you will also 
 gain some experience and may find a bit of pocket change.
 
-"Skip Chateau Irenicus" (or SCI) is meant as an alternative to the (in)famous Dungeon-Be-Gone mod which provides a 
-similar option, but in a way that seriously breaks the fourth wall.
+"Skip Chateau Irenicus" is meant as an alternative to the (in)famous Dungeon-Be-Gone mod, which provides a similar
+option, but in a way that seriously breaks the fourth wall.
 
-This mod requires BG2:EE patched to v2.0 or higher, or EET (Enhanced Edition Trilogy).
+This mod requires BG2 (with or without ToB), BG2:EE or EET (Enhanced Edition Trilogy).
 
 
 Installation
 ~~~~~~~~~~~~
 
 This is a WeiDU mod, that means it is very easy to install. Simply unpack the downloaded archive into your game 
-directory and run "setup-SkipChateauIrenicus.exe". Follow the instructions and you are ready to start. You must start 
-a new SoA game to see any effect.
+directory and run "setup-SkipChateauIrenicus.exe". Follow the instructions and you are ready to start. You have to
+start a new SoA game to see any effect.
 
-Important: The game must be patched to v2.0 or higher to install this mod.
+Note: To get the most out of the mod, BG2:EE should be patched to v2.0 or higher.
 
 
 Components
 ~~~~~~~~~~
 
-Main component: Skip Chateau Irenicus
+Main component: Skip Chateau Irenicus (requires BG2, BG2:EE or EET)
 
 The component triggers moments after you are released from your cell. A rogue appears and opens up the opportunity 
 to use the magical portals to leave the dungeon. Each portal will transport you to the other level of the dungeon 
@@ -47,13 +47,17 @@ the dungeon inspect the rubble of the destroyed building on Waukeen's Promenade.
 The item description of the dryads' acorns have been slightly altered to give you some information what you can do 
 with it.
 
-Note: There may be a general slowdown of the game for a few seconds after the initial cutscene on Waukeen's Promenade 
-      which is caused by the item transference process.
+For BG2:EE before patch 2.0 and original BG2 the mod uses less advanced methods to transfer dungeon loot to the surface.
+As a result you may miss out on some minor stuff or have duplicate items, depending on how much you looted the dungeon
+before teleporting to the surface.
+
+Note: For BG2:EE v2.0+ and EET there may be a general slowdown of the game for a few seconds after the initial
+      cutscene on Waukeen's Promenade, which is caused by the item transference process.
 
 
-Optional component: Deal with skipped NPCs
+Optional component: Deal with skipped NPCs (requires main component, requires BG2:EE or EET)
 
-This component allows you to recruit NPCs which might have been missed because you skipped the dungeon. 
+This component allows you to recruit NPCs, which might have been missed because you skipped the dungeon.
 It comes in two flavors:
 
 1. Vanilla NPCs only
@@ -120,6 +124,10 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 
 History
 ~~~~~~~
+
+3.0
+- Added compatibility with classic BG2
+- Added compatibility with BG2:EE pre-2.0
 
 2.3
 - Moved NPC-related code into separate subcomponent

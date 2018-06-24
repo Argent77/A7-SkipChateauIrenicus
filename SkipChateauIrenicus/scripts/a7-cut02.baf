@@ -5,26 +5,26 @@ IF
 THEN
   RESPONSE #100
     CutSceneId("a7-shadow")
-    Face(NW)
+    Face(6)   // NW
     SmallWait(10)
-    Face(SE)
+    Face(14)  // SE
     SmallWait(10)
-    Face(SW)
+    Face(2)   // SW
     DisplayStringHead(Myself, @1001)  // Whoa, what a ride. Where am I now?
     Wait(2)
     MoveViewPoint([3750.2650], VERY_FAST)
     MoveToObject("Door05")
     SmallWait(5)
     OpenDoor("Door05")
-    CreateCreature("a7-ctspy", [3820.2590], S)
+    CreateCreature("a7-ctspy", [3820.2590], 0)  // S
     SmallWait(5)
     MoveToPoint([3750.2650])
     SmallWait(10)
-    Face(SE)
+    Face(14)  // SE
     SmallWait(10)
-    Face(SW)
+    Face(2)   // SW
     SmallWait(10)
-    Face(S)
+    Face(0)   // S
     Wait(1)
     EndCutSceneMode()
 END

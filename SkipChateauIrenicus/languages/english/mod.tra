@@ -1,9 +1,9 @@
-// -*- coding: utf-8 -*- 
+// -*- coding: windows-1252 -*- 
 
 // Misc. strings
-@1000 = ~These are the dryads' magical acorns that you've obtained off of the duergar leader Ilyich.
+@1000 = ~These are the dryads' magical acorns that you've obtained off of the duergar leader, Ilyich.
 
-You were told to deliver them to the Fairy Queen in the south end of the Windspear Hills.
+You were told to deliver them to the Fairy Queen who lives in the south end of the Windspear Hills.
 
 STATISTICS:
 

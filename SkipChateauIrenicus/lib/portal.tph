@@ -21,7 +21,7 @@ IF
   Range(LastTrigger, 9)
 THEN
   RESPONSE #100
-    CreateCreatureImpassableAllowOverlap("a7-tele1", [3900.2385], S)
+    CreateCreatureImpassableAllowOverlap("a7-tele1", [3900.2385], 0)  // S
 END
 
 IF
@@ -32,7 +32,7 @@ IF
   Range(LastTrigger, 9)
 THEN
   RESPONSE #100
-    CreateCreatureImpassableAllowOverlap("a7-tele1", [2975.555], S)
+    CreateCreatureImpassableAllowOverlap("a7-tele1", [2975.555], 0) // S
 END
 >>>>>>>>
 EXTEND_TOP ~TELE0603.BCS~ ~.../inlined/tele0603_shortcut.baf~
@@ -59,7 +59,7 @@ IF
   Range(LastTrigger, 9)
 THEN
   RESPONSE #100
-    CreateCreatureImpassableAllowOverlap("a7-tele2", [415.2850], S)
+    CreateCreatureImpassableAllowOverlap("a7-tele2", [415.2850], 0) // S
 END
 >>>>>>>>
 EXTEND_TOP ~TELE0602.BCS~ ~.../inlined/tele0602_shortcut.baf~
