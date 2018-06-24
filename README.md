@@ -1,5 +1,5 @@
 # Skip Chateau Irenicus
-*A BG2:EE mod that allows you to skip the opening dungeon without losing potential equipment and items.*
+*A mod for BG2, BG2:EE and EET that allows you to skip the opening dungeon without losing potential equipment and items.*
 
 ## Overview
 
@@ -7,21 +7,23 @@ Are you tired of running through the whole initial dungeon over and over? Not an
 
 This mod allows you skip all the boring details of Chateau Irenicus. You can even collect all the items normally found within the dungeon. Just inspect the rubble of the destroyed building on Waukeen's Promenade. As a bonus you will also gain some experience and may find a bit of pocket change.
 
-"Skip Chateau Irenicus" (or SCI) is meant as an alternative to the (in)famous Dungeon-Be-Gone mod which provides a similar option, but in a way that seriously breaks the fourth wall.
+"Skip Chateau Irenicus" is meant as an alternative to the (in)famous Dungeon-Be-Gone mod which provides a similar option, but in a way that seriously breaks the fourth wall.
 
-*This mod requires BG2:EE patched to v2.0 or higher, or EET (Enhanced Edition Trilogy).*
+*This mod requires BG2 (with or without ToB), BG2:EE or EET (Enhanced Edition Trilogy).*
 
 ## Components
 
-### Main component: Skip Chateau Irenicus
+### Main component: Skip Chateau Irenicus (requires BG2, BG2:EE or EET)
 
 The component triggers moments after you are released from your cell. A rogue appears and opens up the opportunity to use the magical portals to leave the dungeon. Each portal will transport you to the other level of the dungeon or directly to the surface. Afterwards the way back is blocked like in the unmodified game. To loot the items from the dungeon inspect the rubble of the destroyed building on Waukeen's Promenade.
 
 The item description of the dryads' acorns have been slightly altered to give you some information what you can do with it.
 
-**Note:** There may be a general slowdown of the game for a few seconds after the initial cutscene on Waukeen's Promenade which is caused by the item transference process.
+For BG2:EE before patch 2.0 and original BG2 the mod uses less advanced methods to transfer dungeon loot to the surface. As a result you may miss out on some minor stuff or have duplicate items, depending on how much you looted the dungeon before teleporting to the surface.
 
-### Optional component: Deal with skipped NPCs
+**Note:** For BG2:EE v2.0+ and EET there may be a general slowdown of the game for a few seconds after the initial cutscene on Waukeen's Promenade which is caused by the item transference process.
+
+### Optional component: Deal with skipped NPCs (requires main component, requires BG2:EE or EET)
 
 This component allows you to recruit NPCs which might have been missed because you skipped the dungeon. It comes in two flavors:
 
