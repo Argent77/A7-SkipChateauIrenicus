@@ -1,4 +1,4 @@
-// -*- coding: windows-1252 -*- 
+// -*- coding: windows-1252 -*-
 
 // Misc. strings
 @1000 = ~These are the dryads' magical acorns that you've obtained off of the duergar leader, Ilyich.
@@ -33,10 +33,10 @@ Weight: 0~
 
 // Portal dialogs
 @2100 = ~Select your destination:~
-@2101 = ~To the lower level.~ 
+@2101 = ~To the lower level.~
 @2102 = ~To the surface.~
 @2103 = ~Nevermind.~
-@2104 = ~To the upper level.~ 
+@2104 = ~To the upper level.~
 
 
 // Journal entries

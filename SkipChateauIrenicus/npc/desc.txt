@@ -1,9 +1,9 @@
 Script files for dealing with skipped NPCs
 ==========================================
 
-The subfolder "npc" may contain one or more WeiDU script files with .tpa or .tph extension. They are primarily intended 
-to deal with NPCs that can potentially be found in Chateau Irenicus, but have been skipped. The mod provides a small 
-set of variables that can be used to define script triggers and actions to selected BCS files which deal with the NPCs 
+The subfolder "npc" may contain one or more WeiDU script files with .tpa or .tph extension. They are primarily intended
+to deal with NPCs that can potentially be found in Chateau Irenicus, but have been skipped. The mod provides a small
+set of variables that can be used to define script triggers and actions to selected BCS files which deal with the NPCs
 in question.
 
 Note: The mod deals with NPCs in both pre and post 2.0 patched BG2:EE. If the code requires 2.0-specific script commands,
@@ -11,29 +11,29 @@ Note: The mod deals with NPCs in both pre and post 2.0 patched BG2:EE. If the co
 
 Available variables:
 
-num_npc_actions: (Mandatory) Must be set to the number of desired script blocks to generate. The number should correlate 
-                 with the number of defined npc_trigger/npc_action pairs. Empty variables will cause the script generator 
-                 to skip the block. Important: You can not define script blocks that depend on variables or actions 
+num_npc_actions: (Mandatory) Must be set to the number of desired script blocks to generate. The number should correlate
+                 with the number of defined npc_trigger/npc_action pairs. Empty variables will cause the script generator
+                 to skip the block. Important: You can not define script blocks that depend on variables or actions
                  defined in a previous block, because each block is executed in the same script pass.
 
-npc_script: (Optional) Use the array variable "npc_script" to define where the associated script trigger/action pair 
-            should be added to. You can ignore this variable if your script blocks are to be executed in the Waukeen's 
+npc_script: (Optional) Use the array variable "npc_script" to define where the associated script trigger/action pair
+            should be added to. You can ignore this variable if your script blocks are to be executed in the Waukeen's
             Promenade area script (AR0700.BCS).
 
-npc_trigger: (Mandatory) Use the array variable "npc_trigger" to add one or more script trigger blocks that should be 
-             evaluated in the area script of Waukeen's Promenade how to handle missed NPCs from Chateau Irenicus. 
+npc_trigger: (Mandatory) Use the array variable "npc_trigger" to add one or more script trigger blocks that should be
+             evaluated in the area script of Waukeen's Promenade how to handle missed NPCs from Chateau Irenicus.
              Important: Make sure to avoid syntax errors, or the installation of the mod will fail.
 
-npc_action: (Mandatory) Use the array variable "npc_action" to add one or more script action blocks that are executed 
-            in the area script of Waukeen's Promenade which define how to deal with missed NPCs from Chateau Irenicus. 
+npc_action: (Mandatory) Use the array variable "npc_action" to add one or more script action blocks that are executed
+            in the area script of Waukeen's Promenade which define how to deal with missed NPCs from Chateau Irenicus.
             Important: Make sure to avoid syntax errors, or the installation of the mod will fail.
 
-trans_action: (Optional) The content of this variable is added to the transition script which is used to transport the 
-              party to the surface. You can only set a sequence of actions without defining any triggers. 
-              Important: The script actions should not add any noticeable delay, so Wait(x) or similar actions are out 
+trans_action: (Optional) The content of this variable is added to the transition script which is used to transport the
+              party to the surface. You can only set a sequence of actions without defining any triggers.
+              Important: The script actions should not add any noticeable delay, so Wait(x) or similar actions are out
                          of question. Make sure to avoid syntax errors, or the installation of the mod will fail.
 
-The filename without extension is used as part of an area-local guard variable, so that script blocks are not executed 
+The filename without extension is used as part of an area-local guard variable, so that script blocks are not executed
 multiple times.
 
 Example for Jaheira (npc/jaheira.tph):

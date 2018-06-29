@@ -1,4 +1,4 @@
-// -*- coding: windows-1252 -*- 
+// -*- coding: windows-1252 -*-
 
 // Misc. strings
 @1000 = ~Das sind die magischen Eicheln der Dryaden, die Ihr dem Duergar-Anführer Ilyich abgenommen habt.
@@ -33,7 +33,7 @@ Gewicht: 0~
 
 // Portal dialogs
 @2100 = ~Ziel auswählen:~
-@2101 = ~Zur unteren Ebene.~ 
+@2101 = ~Zur unteren Ebene.~
 @2102 = ~Zur Oberfläche.~
 @2103 = ~Schon gut!~
 @2104 = ~Zur oberen Ebene.~
