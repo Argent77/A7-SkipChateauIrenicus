@@ -1,6 +1,6 @@
 BACKUP ~SkipChateauIrenicus/backup~
 AUTHOR ~Argent77~
-VERSION ~2.3~
+VERSION ~3.0~
 
 ALWAYS
   OUTER_SET IS_EE = (GAME_IS ~bg2ee eet~) ? 1 : 0
