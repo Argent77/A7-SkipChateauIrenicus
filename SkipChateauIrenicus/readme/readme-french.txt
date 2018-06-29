@@ -12,17 +12,17 @@ Discussion :     http://www.shsforums.net/topic/58730-mod-skip-chateau-irenicus/
 Généralité
 ~~~~~~~~~~
 
-Êtes-vous fatigué de courir à travers le donjon initial encore et encore ? Et bien, vous n'en aurez plus besoin !
+Êtes-vous fatigué.e de courir à travers le donjon initial encore et encore ? Et bien, vous n'en aurez plus besoin !
 
 Ce mod vous permet d'éviter d'effectuer toutes les tâches ennuyeuses du Donjon d'Irenicus. Vous pouvez même recueillir
 tous les objets que l'on trouve normalement dans le donjon. Il vous suffira d'inspecter les décombres du bâtiment
 détruit sur la Promenade de Waukyne pour les récupérer. En bonus, vous gagnerez également des points d'expérience et
 peut-être un peu d'argent de poche.
 
-"Skip Chateau Irenicus" (ou SCI) a été conçu comme une alternative au tristement célèbre mod Dungeon-Be-Gone qui offre
+"Skip Chateau Irenicus" a été conçu comme une alternative au (tristement) célèbre mod Dungeon-Be-Gone, qui offre
 une option similaire, mais d'une manière pour le moins peu crédible.
 
-Ce mod nécessite BG2:EE doté du patch v2.0 ou supérieur, ou EET (Enhanced Edition Trilogy).
+Ce mod nécessite BG2 (sans ou avec ToB), BG2:EE ou EET (Enhanced Edition Trilogy).
 
 
 Installation
@@ -32,35 +32,40 @@ Il s'agit d'un mod WeiDU, donc très facile à installer. Il suffit de décompre
 répertoire de jeu, d'exécuter "setup-SkipChateauIrenicus.exe" et de suivre les instructions. Pour en bénéficier, vous
 devrez commencer une nouvelle partie.
 
-Important : Le jeu doit être doté du patch v2.0 ou supérieur pour que l'installation fonctionne.
+Remarque : Pour tirer le meilleur parti de ce mod, BG2:EE doit être doté du patch v2.0 ou supérieur.
 
 
 Composants
 ~~~~~~~~~~
 
-Composant principal : Éviter le Donjon d'Irenicus
+Composant principal : Éviter le Donjon d'Irenicus (nécessite BG2, BG2:EE ou EET)
 
 Il se déclenche peu après que vous avez quitté votre cellule. Un roublard apparaît et vous offre la possibilité
 d'utiliser les portails magiques pour quitter le donjon. Chaque portail vous transportera à l'autre niveau du donjon
-ou directement à la surface. Comme dans le jeu, une fois arrivé dans la Promenade de Waukyne, il vous sera impossible de
-retourner dans le donjon. Pour récupérer les objets que l'on trouve habituellement dans le donjon, inspectez les
+ou directement à la surface. Comme dans le jeu, une fois arrivé.e dans la Promenade de Waukyne, il vous sera impossible
+de retourner dans le donjon. Pour récupérer les objets que l'on trouve habituellement dans le donjon, inspectez les
 décombres du bâtiment détruit sur la Promenade.
 
 La description des glands des dryades a été légèrement modifiée pour vous donner quelques informations sur ce que vous
 pouvez en faire.
 
-Note : Il peut y avoir un ralentissement général du jeu pendant quelques secondes après la cinématique initiale sur la
-       Promenade de Waukyne, dû au processus de transfert des objets.
+Pour BG2:EE doté d'un patch inférieur à 2.0 et pour BG2 classique, le mod utilise un code beaucoup moins sophistiqué
+pour transférer le butin du donjon à la surface. Par conséquent, il est possible qu'il vous manque quelques objets
+mineurs, ou que obteniez des doublons, selon que vous ayez plus ou moins pillé le donjon avant de vous téléporter
+vers la surface.
+
+Note : Pour BG2:EE v2.0+ et EET, il peut y avoir un ralentissement général du jeu pendant quelques secondes après la
+       cinématique initiale sur la Promenade de Waukyne, dû au processus de transfert des objets.
 
 
-Composant optionnel : Gérer les PNJs court-circuités
+Composant optionnel : Gérer les PNJs court-circuités (nécessite le composant principal, BG2:EE ou EET)
 
 Ce composant vous permet de recruter les PNJs que vous pourriez ne pas avoir rencontrés en prenant le raccourci vers
 la surface. Il se décline en deux options :
 
 1. Uniquement les PNJs originaux.
-Cette option gère seulement les PNJs du jeu, Jaheira, Minsc et Yoshimo, que vous retrouverez à l'endroit habituel où ils
-se rendent quand vous leur demandez de quitter le groupe.
+Cette option gère seulement les PNJs du jeu, Jaheira, Minsc et Yoshimo, que vous retrouverez à l'endroit habituel où
+ils se rendent quand vous leur demandez de quitter le groupe.
 
 2. Tous les PNJs concernés.
 Cette option prend en charge tous les PNJs, aussi bien ceux du jeu que ceux ajoutés par des mods. En plus de l'option

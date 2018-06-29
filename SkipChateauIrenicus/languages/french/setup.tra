@@ -1,4 +1,4 @@
-// -*- coding: ansi -*- 
+// -*- coding: ansi -*-
 // Setup (index 0..999)
 
 @0 = ~Esquiver le Donjon d'Irenicus~
@@ -6,8 +6,8 @@
 @11 = ~Uniquement les PNJs originaux~
 @12 = ~Tous les PNJs concernes~
 
-@100 = ~Ce mod necessite l'installation de BG2:EE ou de EET.~
-@101 = ~Ce mod requiert un jeu beneficiant du patch v2.0 ou ulterieur.~
+@100 = ~Ce mod necessite l'installation BG2, BG2:EE ou EET.~
+@101 = ~Ce mod composant necessitte BG2:EE ou EET.~
 @102 = ~Le composant principal est pre-requis.~
 
 // WeiDU prompts
