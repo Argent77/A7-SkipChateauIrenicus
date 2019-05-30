@@ -10,8 +10,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~JAHEIR7.CRE~) BEGIN
      !BeenInParty("Jaheira")
      Global("JaheiraJerk","GLOBAL",0)
      Global("JaheiraReleased","GLOBAL",0)
-     Global("JaheiraHunt","GLOBAL",0)
-     NextTriggerObject("Jaheira")~
+     Global("JaheiraHunt","GLOBAL",0)~
   OUTER_TEXT_SPRINT npc_trigger_1 ~%npc_trigger_0%~
 
   OUTER_TEXT_SPRINT npc_action_0
