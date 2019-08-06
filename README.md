@@ -1,6 +1,12 @@
 # Skip Chateau Irenicus
 *A mod for BG2, BG2:EE and EET that allows you to skip the opening dungeon without losing potential equipment and items.*
 
+**Author:** Argent77
+
+**Website:** https://argent77.github.io/A7-SkipChateauIrenicus/index.html
+
+**Discussion:** [Beamdog Forums](https://forums.beamdog.com/discussion/60934/mod-skip-chateau-irenicus) or [Spellhold Studios Forums](http://www.shsforums.net/forum/655-skip-chateau-irenicus/)
+
 ## Overview
 
 Are you tired of running through the whole initial dungeon over and over? Not anymore!
