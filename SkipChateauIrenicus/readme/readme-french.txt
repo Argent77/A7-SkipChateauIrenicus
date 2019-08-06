@@ -5,7 +5,8 @@ Version :        3.0
 Auteur  :        Argent77
 
 Téléchargement : https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest
-Discussion :     http://www.shsforums.net/topic/58730-mod-skip-chateau-irenicus/
+                 http://www.shsforums.net/files/file/1150-skip-chateau-irenicus/
+Discussion :     http://www.shsforums.net/forum/655-skip-chateau-irenicus/
                  https://forums.beamdog.com/discussion/60934/mod-skip-chateau-irenicus
 
 

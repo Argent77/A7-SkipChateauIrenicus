@@ -1,5 +1,5 @@
 BACKUP ~SkipChateauIrenicus/backup~
-AUTHOR ~Argent77~
+SUPPORT ~http://www.shsforums.net/forum/655-skip-chateau-irenicus/~
 VERSION ~3.0~
 
 ALWAYS
@@ -18,7 +18,9 @@ ALWAYS
   END
 END
 
-README ~SkipChateauIrenicus/readme/readme-%LANGUAGE%.txt~
+README ~SkipChateauIrenicus/readme/readme-%LANGUAGE%.html~
+       ~SkipChateauIrenicus/readme/readme-%LANGUAGE%.txt~
+       ~SkipChateauIrenicus/readme/readme.html~
        ~SkipChateauIrenicus/readme/readme.txt~
 
 LANGUAGE ~English~ ~english~
