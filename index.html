@@ -1,1 +1,197 @@
-<html><head><title>MOD: Skip Chateau Irenicus</title></head><body><h1>Nothing to see here yet...</h1></body></html>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD: Skip Chateau Irenicus</title>
+    <meta name="description" content="A mod for BG2, BG2:EE and EET that allows you to skip the opening dungeon without losing potential equipment and items." />
+    <meta name="keywords" content="bg2, tob, bgt, bg2ee, eet, mod, convenience" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div><a id="top"></a></div>
+    <div id="language">
+      <ul>
+        <li>English</li>
+        <!-- <li title="French"><a href="index-fr.html">Français</a></li> -->
+        <li title="German"><a href="index-de.html">Deutsch</a></li>
+        <!-- <li title="Polish"><a href="index-pl.html">Polski</a></li> -->
+      </ul>
+    </div>
+
+    <header>
+      <h1 class="title">Skip Chateau Irenicus</h1>
+      <div class="subtitle">A mod for BG2, BG2:EE and <abbr title="Enhanced Edition Trilogy">EET</abbr> that allows you to skip the opening dungeon without losing potential equipment and items.</div>
+      <hr />
+      <p class="about"><strong>Author: Argent77</strong></p>
+      <ul id="globalnav" class="about">
+        <li><strong>Download</strong> (<a href="http://www.shsforums.net/files/file/1150-skip-chateau-irenicus/">SHS</a>)</li>
+        <li><strong>Download</strong> (<a href="https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest">GitHub</a>)</li>
+        <li><strong>Discussion</strong> (<a href="http://www.shsforums.net/forum/655-skip-chateau-irenicus/">SHS</a>)</li>
+        <li><strong>Discussion</strong> (<a href="https://forums.beamdog.com/discussion/60934/mod-skip-chateau-irenicus">Beamdog</a>)</li>
+        <li><a href="https://github.com/Argent77/A7-SkipChateauIrenicus">Project</a></li>
+        <li>Version: 3.0</li>
+      </ul>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#compatibility">Compatibility</a></li>
+          <li><a href="#components">Components</a></li>
+          <li><a href="#modding">Modding</a></li>
+          <li><a href="#credits">Credits</a></li>
+          <li><a href="#changelog">Version History</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================== I N T R O D U C T I O N ================== -->
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>Are you tired of running through the whole initial dungeon over and over? Not anymore!</p>
+        <p>This mod allows you skip all the boring details of Chateau Irenicus. You can even collect all the items normally found within the dungeon. Just inspect the rubble of the destroyed building on Waukeen's Promenade. As a bonus you will also gain some experience and may find a bit of pocket change.</p>
+        <p>"Skip Chateau Irenicus" is meant as an alternative to the (in)famous Dungeon-Be-Gone mod, which provides a similar option, but in a way that seriously breaks the fourth wall.</p>
+        <p>The mod requires BG2 (with or without ToB), BG2:EE or <abbr title="Enhanced Edition Trilogy">EET</abbr>.</p>
+        <hr class="spacer" />
+        <p>Visit the <a href="http://www.shsforums.net/forum/655-skip-chateau-irenicus/">SHS Forums</a> or <a href="https://forums.beamdog.com/discussion/60934/mod-skip-chateau-irenicus">Beamdog Forums</a> if you have questions, or download the latest version from <a href="http://www.shsforums.net/files/file/1150-skip-chateau-irenicus/">Spellhold Studios</a> or <a href="https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest">GitHub</a>.</p>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== I N S T A L L A T I O N ================== -->
+      <section id="installation">
+        <h2>Installation</h2>
+        <p>This is a WeiDU mod, that means it is very easy to install. Simply unpack the zip file into the installation directory of your game and run either <em>&quot;setup-SkipChateauIrenicus.exe&quot;</em> (Windows) or <em>&quot;setup-SkipChateauIrenicus.command&quot;</em> (macOS). Follow the instructions, and you are ready to start.</p>
+        <p>To uninstall, run <em>&quot;setup-SkipChateauIrenicus.exe&quot;</em> or <em>&quot;setup-SkipChateauIrenicus.command&quot;</em> again and follow the prompts.</p>
+        <p><strong>Note:</strong> To get the most out of the mod, BG2:EE should be patched to v2.0 or higher.</p>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P A T I B I L I T Y ================== -->
+      <section id="compatibility">
+        <h2>Compatibility</h2>
+        <p>This mod skips an important part of the SoA main story. Although items will be transferred to the surface you may still miss certain mod-added content, such as quests, journal entries or NPCs. The mod provides a feature to deal with skipped NPCs, but only code for the vanilla NPCs Minsc, Jaheira and Yoshimo are included in this mod. Modders can use this feature to add their own code though. More information can be found in the chapter <a href="#modding">Information for modders</a>.</p>
+        <p>The mod is designed so that you can transport back and forth between the two levels of Chateau Irenicus until you decide to teleport to the surface. Afterwards the way is blocked forever, just like in the unmodified game.</p>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P O N E N T S ================== -->
+      <section id="components">
+        <h2>Mod Components</h2>
+        <ol class="gappedlist">
+          <li>
+            <p><strong>Skip Chateau Irenicus</strong> <em>(requires BG2, BGT, BG2:EE or <abbr title="Enhanced Edition Trilogy">EET</abbr>)</em></p>
+            <p>The component triggers moments after you are released from your cell. A rogue appears and opens up the opportunity to use the magical portals to leave the dungeon. Each portal will transport you to the other level of the dungeon or directly to the surface. Afterwards the way back is blocked like in the unmodified game. To loot the items from the dungeon inspect the rubble of the destroyed building on Waukeen's Promenade.</p>
+            <p>The item description of the dryads' acorns have been slightly altered to give you some information what you can do with it.</p>
+            <p>For BG2:EE before patch 2.0 and original BG2 the mod uses less advanced methods to transfer dungeon loot to the surface. As a result you may miss out on some minor stuff or have duplicate items, depending on how much you looted the dungeon before teleporting to the surface.</p>
+            <p><em><strong>Note:</strong> For BG2:EE v2.0+ and EET there may be a general slowdown of the game for a few seconds after the initial cutscene on Waukeen's Promenade, which is caused by the item transference process.</em></p>
+          </li>
+          <li>
+            <p><strong>Deal with skipped NPCs</strong> <em>(requires main component; for BG2:EE and <abbr title="Enhanced Edition Trilogy">EET</abbr> only)</em></p>
+            <p>This component allows you to recruit NPCs, which might have been missed because you skipped the dungeon. It comes in two flavors:</p>
+            <ul>
+              <li>
+                <p><strong>Vanilla NPCs only:</strong> This option deals only with the vanilla NPCs Jaheira, Minsc and Yoshimo. They can be found at their designated locations as if you dismissed them from the party.</p>
+              </li>
+              <li>
+                <p><strong>All available NPCs:</strong> This option deals with every supported vanilla and mod NPC. In addition to the vanilla NPCs it adds code for Adrian Sianodel (by Rhaella), Chloe (by Lucythebeast) as well as Yasraena (by Sillara). They can either be found directly near the destroyed building at Waukeen's Promenade or at their designated waiting locations as if you dismissed them from the party.</p>
+                <p>Other mod NPCs that can be encountered in Chateau Irenicus may be supported by their respective authors. In this case they will be handled by this mod component as well. This mod provides a mechanism to make it possible. You can read more about it in the following chapter.</p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P A T I B I L I T Y ================== -->
+      <section id="modding">
+        <h2>Information for modders</h2>
+        <p>The mod is extensible regarding how containers and items are transferred after returning to the surface. The subfolder "tables" of this mod is scanned for 2DA files which will be processed based on their content. Mods which provide items for Chateau Irenicus can simply put their own 2DA files into the folder, so that it will be taken care by this mod later on. Only items that can be acquired by special means (such as quest rewards or by scripted actions) have to be handled by this method. Items from containers are transferred automatically.</p>
+        <p>Each 2DA file may contain information about whether to exclude specific containers from the item transference process, how to handle items acquired by scripted actions and what to do with unique or dungeon-specific items. You can find a more detailed description with example code in "SkipChateauIrenicus/tables/desc.txt".</p>
+        <p>The mod also provides an "addon" feature which can be used to deal with mod-added NPCs that can be found in Chateau Irenicus, but are skipped because of this mod. For that reason a modder can place a WeiDU script file with .tpa or .tph extension into the "npc" subfolder of this mod. A small number of predefined variables can be used to interact with this mod. You can find a more detailed description with example code in "SkipChateauIrenicus/npc/desc.txt".</p>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== C R E D I T S ================== -->
+      <section id="credits">
+        <h2>Credits</h2>
+        <p><strong>Writing, coding &amp; testing:</strong> <a href="http://www.shsforums.net/user/14985-argent77/">Argent77</a></p>
+        <p><strong>French translation:</strong> Gwendolyne</p>
+        <p><strong>Polish translation:</strong> Cahir</p>
+        <hr class="spacer" />
+        <p>Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.</p>
+        <hr class="spacer" />
+        <h3>Copyright Notice:</h3>
+        <div class="important">
+          <div>
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+            </a>
+          </div>
+          <p>"Skip Chateau Irenicus" is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+        </div>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+
+      <!-- ================== V E R S I O N   H I S T O R Y ================== -->
+      <section id="changelog">
+        <h2>Version History</h2>
+        <h6>Version 3.0</h6>
+        <ul>
+          <li>Added compatibility with classic BG2</li>
+          <li>Added compatibility with BG2:EE pre-2.0</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.3</h6>
+        <ul>
+          <li>Moved NPC-related code into separate subcomponent</li>
+          <li>Added error catching code to NPC addon feature to prevent mod termination because of buggy script files</li>
+          <li>Added French translation (thanks Gwendolyne)</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.2</h6>
+        <ul>
+          <li>Added NPC support for Adrian, Chloe and Yasraena</li>
+          <li>Fixed harmless error messages shown during installation</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.1</h6>
+        <ul>
+          <li>Added Polish translation (thanks Cahir)</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.0</h6>
+        <ul>
+          <li>Relocated a container in the rubble of the destroyed building on Waukeen's Promenade to a more suitable location</li>
+          <li>Added more transportation options to the lower level portals in Chateau Irenicus</li>
+          <li>Vanilla NPCs Jaheira, Minsc and Yoshimo can be recruited later if you decide to skip them in Chateau Irenicus</li>
+          <li>Added German translation</li>
+          <li>For modders: externalized areas to consider when transferring items to the surface</li>
+          <li>For modders: implemented "addon" feature that can be used to deal with skipped NPCs</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 1.0</h6>
+        <ul>
+          <li>Initial release</li>
+        </ul>
+        <div class="back">
+          <a class="novisit" href="#top">BACK TO TOP</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
