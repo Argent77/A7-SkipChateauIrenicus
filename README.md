@@ -55,9 +55,11 @@ French translation: Gwendolyne
 
 Polish translation: Cahir
 
+Russian translation: Austin
+
 Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.
 
 
 ## Copyright Notice
 
-The mod "Skip Chateau Irenicus" is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+"Skip Chateau Irenicus" is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
