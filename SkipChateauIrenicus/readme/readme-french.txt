@@ -118,6 +118,7 @@ Writing, coding and testing: Argent77
 
 French translation: Gwendolyne
 Polish translation: Cahir
+Russian translation: Austin
 
 Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.
 
@@ -131,6 +132,11 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 
 History
 ~~~~~~~
+
+3.1
+- Added Russian translation (thanks Austin)
+- Fixed Jaheira should escape even when you talked to her in the dungeon
+- Converted English and German readme into html format
 
 3.0
 - Added compatibility with classic BG2
