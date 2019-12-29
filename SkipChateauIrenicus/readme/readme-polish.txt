@@ -1,7 +1,7 @@
 Pomiń lochy Irenicusa
 ~~~~~~~~~~~~~~~~~~~~~
 
-Version:    3.0
+Version:    3.1
 Author:     Argent77
 
 Download:   https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest
