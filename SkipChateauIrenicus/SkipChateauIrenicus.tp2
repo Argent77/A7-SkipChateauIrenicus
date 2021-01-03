@@ -62,7 +62,7 @@ BEGIN @0  // Skip Chateau Irenicus
 
 
 BEGIN @11 // Vanilla NPCs only
-  REQUIRE_COMPONENT ~setup-SkipChateauIrenicus.tp2~ 0 @102  // Main component required.
+  REQUIRE_COMPONENT ~SkipChateauIrenicus.tp2~ 0 @102  // Main component required.
   REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @101 // This component requires BG2:EE or EET.
   SUBCOMPONENT @10  // Deal with skipped NPCs
   DESIGNATED 101
@@ -72,7 +72,7 @@ BEGIN @11 // Vanilla NPCs only
 
 
 BEGIN @12 // All available NPCs
-  REQUIRE_COMPONENT ~setup-SkipChateauIrenicus.tp2~ 0 @102  // Main component required.
+  REQUIRE_COMPONENT ~SkipChateauIrenicus.tp2~ 0 @102  // Main component required.
   REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @101 // This component requires BG2:EE or EET.
   SUBCOMPONENT @10  // Deal with skipped NPCs
   DESIGNATED 102
