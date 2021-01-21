@@ -1,20 +1,28 @@
-BACKUP ~SkipChateauIrenicus/backup~
+BACKUP ~weidu_external/backup/SkipChateauIrenicus~
 SUPPORT ~http://www.shsforums.net/forum/655-skip-chateau-irenicus/~
 VERSION ~3.1~
 
 ALWAYS
+  // required because of non-standard BACKUP path
+  OUTER_TEXT_SPRINT MOD_FOLDER ~SkipChateauIrenicus~
+  // root folder for mutable data
+  OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
+
   OUTER_SET IS_EE = (GAME_IS ~bg2ee eet~) ? 1 : 0
   OUTER_SET IS_EE2 = (IS_EE != 0 AND FILE_EXISTS ~engine.lua~) ? 1 : 0
 
-  ACTION_DEFINE_ARRAY a7noconvert BEGIN setup END
-  ACTION_DEFINE_ARRAY a7reload BEGIN mod END
+  ACTION_DEFINE_ARRAY a7noconvert BEGIN ~setup~ END
+  ACTION_DEFINE_ARRAY a7reload BEGIN ~mod~ END
   LAF HANDLE_CHARSETS
     INT_VAR
-      infer_charset   = 1
+      from_utf8         = 1
+      infer_charset     = 1
     STR_VAR
-      tra_path        = EVAL ~%MOD_FOLDER%/languages~
-      noconvert_array = a7noconvert
-      reload_array    = a7reload
+      default_language  = ~english~
+      tra_path          = EVAL ~%MOD_FOLDER%/languages~
+      out_path          = EVAL ~%WORK_FOLDER%/lang/%MOD_FOLDER%~
+      noconvert_array   = ~a7noconvert~
+      reload_array      = ~a7reload~
   END
 END
 

@@ -1,51 +1,51 @@
-// -*- coding: ansi -*-
+// -*- coding: utf-8 -*-
 
 // Misc. strings
-@1000 = ~Ce sont les glands magiques des dryades, que vous avez obtenus auprès du chef duergar Ilyich.
+@1000 = ~Ce sont les glands magiques des dryades, que vous avez obtenus auprÃ¨s du chef duergar Ilyich.
 
-On vous a demandé de les remettre à la Reine des Fées à l'extrémité sud des Collines de Lancevent.
+On vous a demandÃ© de les remettre Ã  la Reine des FÃ©es Ã  l'extrÃ©mitÃ© sud des Collines de Lancevent.
 
 PARAMETRES :
 
 Poids : 0~
-@1001 = ~Wouaahh, génial. Quel voyage ! J'ai atterri où ?~
+@1001 = ~Wouaahh, gÃ©nial. Quel voyage ! J'ai atterri oÃ¹ ?~
 
 // Rogue dialog
-@2000 = ~Restez où vous êtes ! Êtes-vous amis ou ennemis ?~
-@2001 = ~Je m'appelle <GABBER>. Il y a très peu de temps, nous étions encore emprisonnés par un magicien très puissant. Comment avez-vous fait pour apparaître si soudainement ?~
-@2002 = ~Je ne vous dirai rien. Vous pourriez très bien être un espion envoyé par mon ravisseur, ou pire encore. OU Fichez le camp !~
-@2003 = ~Les niveaux de ce satané donjon sont reliés par des portails magiques.~
-@2004 = ~Vous dites qu'un magicien vous a capturés ? Où se trouve-t-il maintenant ?~
-@2005 = ~Il s'est téléporté il n'y a pas longtemps.~
-@2006 = ~Maudit soit-il ! Alors tous nos efforts pour parvenir jusqu'à lui sont réduits à néant. Très bien, un changement de plan s'impose. Nous lui tendrons une embuscade à la surface.~
-@2007 = ~Dites... Je peux utiliser ces portails pour m'évader ?~
-@2008 = ~Je ne vois pas pourquoi vous ne pourriez pas. Mais il faut une clé pour les utiliser. Heureusement pour vous, j'en ai récupéré quelques exemplaires. Si vous en voulez une, ce sera avec plaisir.~
-@2009 = ~Je vais prendre la clé. Merci.~
-@2010 = ~Pas besoin. Je préfère trouver la sortie par moi-même.~
-@2011 = ~Tenez, en voilà une.~
-@2012 = ~Je m'en fiche de toute façon. Je dois traquer un mage perfide.~
+@2000 = ~Restez oÃ¹ vous Ãªtes ! ÃŠtes-vous amis ou ennemis ?~
+@2001 = ~Je m'appelle <GABBER>. Il y a trÃ¨s peu de temps, nous Ã©tions encore emprisonnÃ©s par un magicien trÃ¨s puissant. Comment avez-vous fait pour apparaÃ®tre si soudainement ?~
+@2002 = ~Je ne vous dirai rien. Vous pourriez trÃ¨s bien Ãªtre un espion envoyÃ© par mon ravisseur, ou pire encore. OU Fichez le camp !~
+@2003 = ~Les niveaux de ce satanÃ© donjon sont reliÃ©s par des portails magiques.~
+@2004 = ~Vous dites qu'un magicien vous a capturÃ©s ? OÃ¹ se trouve-t-il maintenant ?~
+@2005 = ~Il s'est tÃ©lÃ©portÃ© il n'y a pas longtemps.~
+@2006 = ~Maudit soit-il ! Alors tous nos efforts pour parvenir jusqu'Ã  lui sont rÃ©duits Ã  nÃ©ant. TrÃ¨s bien, un changement de plan s'impose. Nous lui tendrons une embuscade Ã  la surface.~
+@2007 = ~Dites... Je peux utiliser ces portails pour m'Ã©vader ?~
+@2008 = ~Je ne vois pas pourquoi vous ne pourriez pas. Mais il faut une clÃ© pour les utiliser. Heureusement pour vous, j'en ai rÃ©cupÃ©rÃ© quelques exemplaires. Si vous en voulez une, ce sera avec plaisir.~
+@2009 = ~Je vais prendre la clÃ©. Merci.~
+@2010 = ~Pas besoin. Je prÃ©fÃ¨re trouver la sortie par moi-mÃªme.~
+@2011 = ~Tenez, en voilÃ  une.~
+@2012 = ~Je m'en fiche de toute faÃ§on. Je dois traquer un mage perfide.~
 
 @2013 = ~Ne vous approchez pas !~
-@2014 = ~Non merci. J'en ai déjà une.~
+@2014 = ~Non merci. J'en ai dÃ©jÃ  une.~
 @2015 = ~Comme vous voulez.~
-@2016 = ~Maintenant, si vous voulez bien m'excuser. J'ai un mage perfide à traquer.~
+@2016 = ~Maintenant, si vous voulez bien m'excuser. J'ai un mage perfide Ã  traquer.~
 
 // Portal dialogs
 @2100 = ~Choisissez votre destination :~
-@2101 = ~Vers le niveau inférieur.~
+@2101 = ~Vers le niveau infÃ©rieur.~
 @2102 = ~Vers la surface.~
 @2103 = ~Je reste ici.~
-@2104 = ~Vers le niveau supérieur.~
+@2104 = ~Vers le niveau supÃ©rieur.~
 
 // Journal entries
 @5000 = ~Raccourci vers la surface
 
-J'ai rencontré un roublard suspect. Je n'ai pas pris de risque et j'ai refusé de lui divulguer des informations. Il aurait bien pu être un espion de mon ravisseur, ou pire encore.~
+J'ai rencontrÃ© un roublard suspect. Je n'ai pas pris de risque et j'ai refusÃ© de lui divulguer des informations. Il aurait bien pu Ãªtre un espion de mon ravisseur, ou pire encore.~
 
 @5001 = ~Raccourci vers la surface
 
-J'ai rencontré un roublard mystérieux qui semblait traquer mon ravisseur. Il m'a donné une clé me permettant d'utiliser les portails magiques pour quitter ce donjon rapidement.~
+J'ai rencontrÃ© un roublard mystÃ©rieux qui semblait traquer mon ravisseur. Il m'a donnÃ© une clÃ© me permettant d'utiliser les portails magiques pour quitter ce donjon rapidement.~
 
 @5002 = ~Raccourci vers la surface
 
-J'ai rencontré un roublard mystérieux qui semblait traquer mon ravisseur. Il m'a dit que je pouvais utiliser les portails magiques pour quitter ce donjon en vitesse.~
+J'ai rencontrÃ© un roublard mystÃ©rieux qui semblait traquer mon ravisseur. Il m'a dit que je pouvais utiliser les portails magiques pour quitter ce donjon en vitesse.~
