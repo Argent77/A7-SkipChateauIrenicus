@@ -1,16 +1,17 @@
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Argent77/A7-SkipChateauIrenicus?color=darkred&include_prereleases&label=latest%20release)](https://GitHub.com/Argent77/A7-SkipChateauIrenicus/releases/latest)
-[![GitHub release date (latest by date)](https://img.shields.io/github/release-date/Argent77/A7-SkipChateauIrenicus?color=gold)](https://GitHub.com/Argent77/A7-SkipChateauIrenicus/releases/latest)
-[![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/A7-SkipChateauIrenicus/total.svg?color=blueviolet)](https://GitHub.com/Argent77/A7-SkipChateauIrenicus/releases)
-[![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://GitHub.com/Argent77/A7-SkipChateauIrenicus/releases/latest)
-[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian&color=limegreen)]()
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Argent77/A7-SkipChateauIrenicus?color=darkred&include_prereleases&label=latest%20release)](https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest)
+[![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/A7-SkipChateauIrenicus/total.svg?color=gold)](https://github.com/Argent77/A7-SkipChateauIrenicus/releases)
+[![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest)
+[![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BG2%20%7C%20BG2%3AEE%20%7C%20EET&color=indigo)](https://github.com/Argent77/A7-SkipChateauIrenicus)
+[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian&color=limegreen)](https://github.com/Argent77/A7-SkipChateauIrenicus)
 
 # Skip Chateau Irenicus
 *A mod for BG2, BG2:EE and EET that allows you to skip the opening dungeon without losing potential equipment and items.*
 
-[![Website](https://img.shields.io/static/v1?label=Website&message=Skip%20Chateau%20Irenicus&color=ccc7ba&labelColor=eee&style=flat)](https://argent77.github.io/A7-SkipChateauIrenicus/index.html)
+[![Website](https://img.shields.io/static/v1?label=Website&message=Skip%20Chateau%20Irenicus&color=ccc7ba&labelColor=eee&style=for-the-badge)](https://argent77.github.io/A7-SkipChateauIrenicus/index.html "View Readme")
 
-[![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=flat)](https://forums.beamdog.com/discussion/60934)
-[![SHS Forums](https://img.shields.io/static/v1?label=Discussion&message=SHS%20Forums&color=951514&labelColor=eee&style=flat)](http://www.shsforums.net/forum/655-skip-chateau-irenicus/)
+[![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=for-the-badge)](https://forums.beamdog.com/discussion/60934 "Beamdog Forums")
+&nbsp;&nbsp;
+[![SHS Forums](https://img.shields.io/static/v1?label=Discussion&message=SHS%20Forums&color=951514&labelColor=eee&style=for-the-badge)](http://www.shsforums.net/forum/655-skip-chateau-irenicus/ "Spellhold Studios Forums")
 
 ## Overview
 
