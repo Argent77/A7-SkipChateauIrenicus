@@ -56,7 +56,7 @@ LANGUAGE ~Russian (Translation: Austin)~ ~russian~
          ~SkipChateauIrenicus/languages/russian/mod.tra~
 
 BEGIN @0  // Skip Chateau Irenicus
-  REQUIRE_PREDICATE GAME_IS ~bg2 tob bg2ee eet~ @100 // This mod requires BG2, BG2:EE or EET.
+  REQUIRE_PREDICATE GAME_IS ~bg2 tob bgt bg2ee eet~ @100 // This mod requires BG2, BGT, BG2:EE or EET.
   DESIGNATED 0
 
   ACTION_IF IS_EE BEGIN

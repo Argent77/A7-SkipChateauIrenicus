@@ -23,7 +23,7 @@ peut-être un peu d'argent de poche.
 "Skip Chateau Irenicus" a été conçu comme une alternative au (tristement) célèbre mod Dungeon-Be-Gone, qui offre
 une option similaire, mais d'une manière pour le moins peu crédible.
 
-Ce mod nécessite BG2 (sans ou avec ToB), BG2:EE ou EET (Enhanced Edition Trilogy).
+Ce mod nécessite BG2 (sans ou avec ToB), BGT, BG2:EE ou EET (Enhanced Edition Trilogy).
 
 
 Installation
@@ -39,7 +39,7 @@ Remarque : Pour tirer le meilleur parti de ce mod, BG2:EE doit être doté du pa
 Composants
 ~~~~~~~~~~
 
-Composant principal : Éviter le Donjon d'Irenicus (nécessite BG2, BG2:EE ou EET)
+Composant principal : Éviter le Donjon d'Irenicus (nécessite BG2, BGT, BG2:EE ou EET)
 
 Il se déclenche peu après que vous avez quitté votre cellule. Un roublard apparaît et vous offre la possibilité
 d'utiliser les portails magiques pour quitter le donjon. Chaque portail vous transportera à l'autre niveau du donjon
@@ -132,6 +132,10 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 
 History
 ~~~~~~~
+
+3.2
+- Added missing BGT support
+- Added Project Infinity metadata
 
 3.1
 - Added Russian translation (thanks Austin)

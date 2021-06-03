@@ -1,11 +1,11 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Argent77/A7-SkipChateauIrenicus?color=darkred&include_prereleases&label=latest%20release)](https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest)
 [![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/A7-SkipChateauIrenicus/total.svg?color=gold)](https://github.com/Argent77/A7-SkipChateauIrenicus/releases)
 [![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest)
-[![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BG2%20%7C%20BG2%3AEE%20%7C%20EET&color=indigo)](https://github.com/Argent77/A7-SkipChateauIrenicus)
+[![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BG2%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=indigo)](https://github.com/Argent77/A7-SkipChateauIrenicus)
 [![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian&color=limegreen)](https://github.com/Argent77/A7-SkipChateauIrenicus)
 
 # Skip Chateau Irenicus
-*A mod for BG2, BG2:EE and EET that allows you to skip the opening dungeon without losing potential equipment and items.*
+*A mod for BG2, BGT, BG2:EE and EET that allows you to skip the opening dungeon without losing potential equipment and items.*
 
 [![Website](https://img.shields.io/static/v1?label=Website&message=Skip%20Chateau%20Irenicus&color=ccc7ba&labelColor=eee&style=for-the-badge)](https://argent77.github.io/A7-SkipChateauIrenicus/index.html "View Readme")
 
@@ -21,11 +21,11 @@ This mod allows you skip all the boring details of Chateau Irenicus. You can eve
 
 "Skip Chateau Irenicus" is meant as an alternative to the (in)famous Dungeon-Be-Gone mod which provides a similar option, but in a way that seriously breaks the fourth wall.
 
-*This mod requires BG2 (with or without ToB), BG2:EE or EET (Enhanced Edition Trilogy).*
+*This mod requires BG2 (with or without ToB), BGT, BG2:EE or EET (Enhanced Edition Trilogy).*
 
 ## Components
 
-### Main component: Skip Chateau Irenicus (requires BG2, BG2:EE or EET)
+### Main component: Skip Chateau Irenicus (requires BG2, BGT, BG2:EE or EET)
 
 The component triggers moments after you are released from your cell. A rogue appears and opens up the opportunity to use the magical portals to leave the dungeon. Each portal will transport you to the other level of the dungeon or directly to the surface. Afterwards the way back is blocked like in the unmodified game. To loot the items from the dungeon inspect the rubble of the destroyed building on Waukeen's Promenade.
 

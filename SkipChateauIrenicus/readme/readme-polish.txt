@@ -19,7 +19,7 @@ Modyfikacja ta pozwala na pominięcie nudnych szczegółów związanych z locham
 
 „Pomiń lochy Irenicusa” stanowi alternatywę dla (nie)sławnej modyfikacji Dungeon-Be-Gone, zapewniając podobne możliwości, lecz w sposób nieburzący tzw. czwartej ściany.
 
-Modyfikacja ta wymaga do działania BG2 (z zainstalowanym dodatkiem Tron Bhaala lub bez), BG2:EE lub EET (Enhanced Edition Trilogy).
+Modyfikacja ta wymaga do działania BG2 (z zainstalowanym dodatkiem Tron Bhaala lub bez), BGT, BG2:EE lub EET (Enhanced Edition Trilogy).
 
 
 Instalacja
@@ -33,7 +33,7 @@ Uwaga: Aby uzyskać jak najwięcej korzyści z tej modyfikacji, zalecana jest up
 Komponenty
 ~~~~~~~~~~
 
-Główny komponent: Pomiń lochy Irenicusa (wymaga zainstalowania BG2, BG2:EE lub EET)
+Główny komponent: Pomiń lochy Irenicusa (wymaga zainstalowania BG2, BGT, BG2:EE lub EET)
 
 Komponent ten uaktywnia się w momencie twojego uwolnienia z celi. Pojawia się wówczas łotrzyk, który oferuje możliwość użycia magicznych portali do opuszczenia lochów. Każdy z portali przeniesie cię do innego poziomu lochów lub prosto na powierzchnię. Po wyjściu na powierzchnię droga powrotna do lochów zostaje zablokowana jak w niezmodyfikowanej grze. Aby zebrać przedmioty znajdujące się w lochach, wystarczy przeszukać gruzy zniszczonego budynku na Promenadzie Waukeen.
 
@@ -95,6 +95,10 @@ The mod "Skip Chateau Irenicus" is licensed under the "Creative Commons Attribut
 
 History
 ~~~~~~~
+
+3.2
+- Added missing BGT support
+- Added Project Infinity metadata
 
 3.1
 - Added Russian translation (thanks Austin)
