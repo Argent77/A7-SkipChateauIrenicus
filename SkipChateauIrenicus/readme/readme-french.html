@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD: Skip Chateau Irenicus</title>
+    <meta name="description" content="A mod for BG2, BGT, BG2:EE and EET that allows you to skip the opening dungeon without losing potential equipment and items." />
+    <meta name="keywords" content="bg2, tob, bgt, bg2ee, eet, mod, convenience" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div><a id="top"></a></div>
+    <div id="language">
+      <ul>
+        <li><a href="readme.html">English</a></li>
+        <li title="French">Français</li>
+        <li title="German"><a href="readme-german.html">Deutsch</a></li>
+        <li title="Polish"><a href="readme-polish.html">Polski</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <h1 class="title">Skip Chateau Irenicus</h1>
+      <div class="subtitle">Un mod pour BG2, BGT, BG2:EE et <abbr title="Enhanced Edition Trilogy">EET</abbr> qui vous permet de court-circuiter le donjon initial sans perdre les objets qu'il renferme.</div>
+      <hr />
+      <p class="about"><strong>Auteur : Argent77</strong></p>
+      <ul id="globalnav" class="about">
+        <li><strong>Téléchargement</strong> (<a href="http://www.shsforums.net/files/file/1150-skip-chateau-irenicus/">SHS</a>)</li>
+        <li><strong>Téléchargement</strong> (<a href="https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest">GitHub</a>)</li>
+        <li><strong>Discussion</strong> (<a href="http://www.shsforums.net/forum/655-skip-chateau-irenicus/">SHS</a>)</li>
+        <li><strong>Discussion</strong> (<a href="https://forums.beamdog.com/discussion/60934/mod-skip-chateau-irenicus">Beamdog</a>)</li>
+        <li><a href="https://github.com/Argent77/A7-SkipChateauIrenicus">Projet</a></li>
+        <li>Version : 3.1</li>
+      </ul>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="#overview">Généralité</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#compatibility">Compatibilité</a></li>
+          <li><a href="#components">Composants</a></li>
+          <li><a href="#modding">Informations pour les moddeurs</a></li>
+          <li><a href="#credits">Crédits</a></li>
+          <li><a href="#changelog">Historique des versions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================== I N T R O D U C T I O N ================== -->
+      <section id="overview">
+        <h2>Généralité</h2>
+        <p>Êtes-vous fatigué.e de courir à travers le donjon initial encore et encore ? Et bien, vous n'en aurez plus besoin !</p>
+        <p>Ce mod vous permet d'éviter d'effectuer toutes les tâches ennuyeuses du Donjon d'Irenicus. Vous pouvez même recueillir tous les objets que l'on trouve normalement dans le donjon. Il vous suffira d'inspecter les décombres du bâtiment détruit sur la Promenade de Waukyne pour les récupérer. En bonus, vous gagnerez également des points d'expérience et peut-être un peu d'argent de poche.</p>
+        <p>"Skip Chateau Irenicus" a été conçu comme une alternative au (tristement) célèbre mod Dungeon-Be-Gone, qui offre une option similaire, mais d'une manière pour le moins peu crédible.</p>
+        <p>Ce mod nécessite BG2 (avec ou sans ToB), BGT, BG2:EE ou <abbr title="Enhanced Edition Trilogy">EET</abbr>.</p>
+        <hr class="spacer" />
+        <p>Si vous avez des questions, veuillez consulter le <a href="http://www.shsforums.net/forum/655-skip-chateau-irenicus/">forum de SHS</a> ou <a href="https://forums.beamdog.com/discussion/60934/mod-skip-chateau-irenicus">celui de Beamdog</a>. Vous pouvez télécharger la dernière version du mod sur le site <a href="http://www.shsforums.net/files/file/1150-skip-chateau-irenicus/">Spellhold Studios</a> ou sur <a href="https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest">GitHub</a>.</p>
+        <div class="back">
+          <a class="novisit" href="#top">HAUT DE PAGE</a>
+        </div>
+      </section>
+
+      <!-- ================== I N S T A L L A T I O N ================== -->
+      <section id="installation">
+        <h2>Installation</h2>
+        <p>Il s'agit d'un mod WeiDU, donc très facile à installer. Il suffit de décompresser l'archive téléchargée dans votre répertoire de jeu, d'exécuter <em>&quot;setup-SkipChateauIrenicus.exe&quot;</em> et de suivre les instructions. Pour en bénéficier, vous devrez commencer une nouvelle partie.</p>
+        <p>Pour le désinstaller, relancez <em>&quot;setup-SkipChateauIrenicus.exe&quot;</em> ou <em>&quot;setup-SkipChateauIrenicus.command&quot;</em> et suivez les indications affichées à l'écran.</p>
+        <p><strong>Remarque :</strong> Pour tirer le meilleur parti de ce mod, BG2:EE doit être doté du patch v2.0 ou supérieur.</p>
+        <div class="back">
+          <a class="novisit" href="#top">HAUT DE PAGE</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P A T I B I L I T Y ================== -->
+      <section id="compatibility">
+        <h2>Compatibilité</h2>
+        <p>Ce mod court-circuite une partie importante de l'histoire principale de SoA. Bien que des objets soient transférés à la surface, vous pouvez toujours louper certains contenus de mods, comme des quêtes, des entrées de journal ou des PNJ. SCI fournit une procédure pour gérer les NPCs que l'on manque, mais seul le code pour les PNJ vanilla (Minsc, Jaheira et Yoshimo) est inclus dans ce mod. Toutefois, les moddeurs peuvent l'utiliser pour ajouter leur propre code. Pour plus d'informations, reportez-vous au <a href="#modding">Informations pour les moddeurs</a>.</p>
+        <p>Le mod est conçu de telle manière que vous pouvez utiliser les portails pour passer d'un niveau à l'autre du donjon, jusqu'à ce que vous décidiez de vous téléporter à la surface. Ensuite, le chemin est bloqué à jamais, comme dans le jeu.</p>
+        <div class="back">
+          <a class="novisit" href="#top">HAUT DE PAGE</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P O N E N T S ================== -->
+      <section id="components">
+        <h2>Composants</h2>
+        <ol class="gappedlist">
+          <li>
+            <p><strong>Éviter le Donjon d'Irenicus</strong> <em>(nécessite BG2, BGT, BG2:EE ou <abbr title="Enhanced Edition Trilogy">EET</abbr>)</em></p>
+            <p>Ce composant se déclenche peu après que vous avez quitté votre cellule. Un roublard apparaît et vous offre la possibilité d'utiliser les portails magiques pour quitter le donjon. Chaque portail vous transportera à l'autre niveau du donjon ou directement à la surface. Comme dans le jeu, une fois arrivé.e dans la Promenade de Waukyne, il vous sera impossible de retourner dans le donjon. Pour récupérer les objets que l'on trouve habituellement dans le donjon, inspectez les décombres du bâtiment détruit sur la Promenade.</p>
+            <p>La description des glands des dryades a été légèrement modifiée pour vous donner quelques informations sur ce que vous pouvez en faire.</p>
+            <p>Pour BG2:EE doté d'un patch inférieur à 2.0 et pour BG2 classique, le mod utilise un code beaucoup moins sophistiqué pour transférer le butin du donjon à la surface. Par conséquent, il est possible qu'il vous manque quelques objets mineurs, ou que obteniez des doublons, selon que vous ayez plus ou moins pillé le donjon avant de vous téléporter vers la surface.</p>
+            <p><em><strong>Note :</strong> Pour BG2:EE v2.0+ et EET, il peut y avoir un ralentissement général du jeu pendant quelques secondes après la cinématique initiale sur la Promenade de Waukyne, dû au processus de transfert des objets.</em></p>
+          </li>
+          <li>
+            <p><strong>Gérer les PNJs court-circuités</strong> <em>(nécessite le composant principal, BG2:EE ou <abbr title="Enhanced Edition Trilogy">EET</abbr>)</em></p>
+            <p>Ce composant vous permet de recruter les PNJ que vous pourriez ne pas avoir rencontrés en prenant le raccourci vers la surface. Il se décline en deux options :</p>
+            <ul>
+              <li>
+                <p><strong>Uniquement les PNJ originaux :</strong> Cette option gère seulement les PNJ du jeu, Jaheira, Minsc et Yoshimo, que vous retrouverez à l'endroit habituel où ils se rendent quand vous leur demandez de quitter le groupe.</p>
+              </li>
+              <li>
+                <p><strong>Tous les PNJ concernés :</strong> Cette option prend en charge tous les PNJ, aussi bien ceux du jeu que ceux ajoutés par des mods. En plus de l'option précédente, elle gère Adrian Sianodel (de Rhaella), Chloe (de Lucythebeast) et Yasraena (de Sillara). Vous pourrez les retrouver soit près des décombres de la Promenade de Waukyne, soit à l'endroit habituel où ils se rendent quand vous leur demandez de quitter le groupe.</p>
+                <p>Les auteurs d'autres PNJ que l'on peut rencontrer dans le Donjon d'Irenicus peuvent décider de permettre à ce composant de les intégrer à l'aide d'une procédure simple. Les chapitres suivants la détaillent plus avant.</p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <div class="back">
+          <a class="novisit" href="#top">HAUT DE PAGE</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P A T I B I L I T Y ================== -->
+      <section id="modding">
+        <h2>Informations pour les moddeurs</h2>
+        <p>Ce mod est extensible, notamment sa manière de transférer les conteneurs et les objets lorsqu'on décide de rejoindre la surface. Il scanne le sous-dossier « tables » pour en lire les fichiers 2DA qui seront traités en fonction de leur contenu. Les moddeurs qui prévoient d'implanter des objets dans le Donjon d'Irenicus peuvent simplement ajouter leurs propres fichiers 2DA dans ce dossier, de sorte qu'ils soient pris en charge. Seuls les objets obtenus de manière spéciale (récompense de quête ou acquisition par script) doivent être gérés par cette méthode. Les objets déposés dans les conteneurs sont automatiquement transférés.</p>
+        <p>Chaque fichier 2DA contient des informations indiquant s'il faut exclure des conteneurs spécifiques du processus de transfert, comment gérer les objets acquis par des scripts et que faire d'objets uniques ou spécifiques au Donjon. Vous trouverez une description plus détaillée de la procédure avec un exemple de code dans le fichier "SkipChateauIrenicus/tables/desc.txt".</p>
+        <p>Le mod fournit également une procédure "greffon" pouvant être utilisée pour gérer les PNJ de mods que l'on peut rencontrer dans le Donjon d'Irenicus, mais qu'on loupe si on choisit de se téléporter vers la surface. Dans ce cas, un moddeur peut ajouter dans le sous-dossier "npc" un fichier avec l'extension .tpa ou .tph créant un script WeiDU. Il pourra utiliser quelques variables prédéfinies pour interagir avec SCI. Vous en trouverez une description plus détaillée avec un exemple de code dans le fichier "SkipChateauIrenicus/npc/desc.txt".</p>
+        <div class="back">
+          <a class="novisit" href="#top">HAUT DE PAGE</a>
+        </div>
+      </section>
+
+      <!-- ================== C R E D I T S ================== -->
+      <section id="credits">
+        <h2>Crédits</h2>
+        <p><strong>Writing, coding &amp; testing:</strong> <a href="http://www.shsforums.net/user/14985-argent77/">Argent77</a></p>
+        <p><strong>French translation:</strong> Gwendolyne</p>
+        <p><strong>Polish translation:</strong> Cahir</p>
+        <p><strong>Russian translation:</strong> Austin</p>
+        <hr class="spacer" />
+        <p>Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.</p>
+        <hr class="spacer" />
+        <h3>Informations sur les droits d'auteur :</h3>
+        <div class="important">
+          <div>
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+            </a>
+          </div>
+          <p>"Skip Chateau Irenicus" is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+        </div>
+        <div class="back">
+          <a class="novisit" href="#top">HAUT DE PAGE</a>
+        </div>
+      </section>
+
+      <!-- ================== V E R S I O N   H I S T O R Y ================== -->
+      <section id="changelog">
+        <h2>Historique des versions</h2>
+        <h6>Version 3.2</h6>
+        <ul>
+          <li>Added missing BGT support</li>
+          <li>Added Project Infinity metadata</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 3.1</h6>
+        <ul>
+          <li>Added Russian translation (thanks Austin)</li>
+          <li>Fixed Jaheira should escape even when you talked to her in the dungeon</li>
+          <li>Converted readme into html format</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 3.0</h6>
+        <ul>
+          <li>Added compatibility with classic BG2</li>
+          <li>Added compatibility with BG2:EE pre-2.0</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.3</h6>
+        <ul>
+          <li>Moved NPC-related code into separate subcomponent</li>
+          <li>Added error catching code to NPC addon feature to prevent mod termination because of buggy script files</li>
+          <li>Added French translation (thanks Gwendolyne)</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.2</h6>
+        <ul>
+          <li>Added NPC support for Adrian, Chloe and Yasraena</li>
+          <li>Fixed harmless error messages shown during installation</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.1</h6>
+        <ul>
+          <li>Added Polish translation (thanks Cahir)</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.0</h6>
+        <ul>
+          <li>Relocated a container in the rubble of the destroyed building on Waukeen's Promenade to a more suitable location</li>
+          <li>Added more transportation options to the lower level portals in Chateau Irenicus</li>
+          <li>Vanilla NPCs Jaheira, Minsc and Yoshimo can be recruited later if you decide to skip them in Chateau Irenicus</li>
+          <li>Added German translation</li>
+          <li>For modders: externalized areas to consider when transferring items to the surface</li>
+          <li>For modders: implemented "addon" feature that can be used to deal with skipped NPCs</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 1.0</h6>
+        <ul>
+          <li>Initial release</li>
+        </ul>
+        <div class="back">
+          <a class="novisit" href="#top">HAUT DE PAGE</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
