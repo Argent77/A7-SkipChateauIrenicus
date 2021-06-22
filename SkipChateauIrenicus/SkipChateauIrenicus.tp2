@@ -56,7 +56,7 @@ LANGUAGE ~Russian (Translation: Austin)~ ~russian~
          ~SkipChateauIrenicus/languages/russian/mod.tra~
 
 BEGIN @0  // Skip Chateau Irenicus
-  REQUIRE_PREDICATE GAME_IS ~bg2 tob bgt bg2ee eet~ @100 // This mod requires BG2, BGT, BG2:EE or EET.
+  REQUIRE_PREDICATE GAME_INCLUDES ~soa~ @100  // This mod requires BG2, BGT, BG2:EE or EET.
   DESIGNATED 0
   LABEL ~A7-SKIPCHATEAUIRENICUS-MAIN~
 
@@ -90,3 +90,12 @@ BEGIN @12 // All available NPCs
 
   OUTER_SET vanilla_npc_only = 0
   INCLUDE ~%MOD_FOLDER%/lib/npcs.tph~
+
+
+BEGIN @20 // More realistic opening cutscene
+  REQUIRE_PREDICATE GAME_INCLUDES ~soa~ @103  // This component requires BG2, BGT, BG2:EE or EET.
+  DESIGNATED 200
+  LABEL ~A7-SKIPCHATEAUIRENICUS-REALISTIC_OPENING_CUTSCENE~
+
+  INCLUDE ~%MOD_FOLDER%/lib/imoen_escape.tph~
+  LAF UPDATE_CUTSCENE END

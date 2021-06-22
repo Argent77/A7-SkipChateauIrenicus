@@ -5,11 +5,12 @@
 @10 = ~Uebersprungene NSCs mit einbeziehen~
 @11 = ~Nur originale NSCs~
 @12 = ~Alle verfuegbaren NSCs~
+@20 = ~Realistischere Eroeffnungssequenz~
 
 @100 = ~Diese Mod benoetigt BG2, BGT, BG2:EE 2.0+ oder EET.~
 @101 = ~Diese Komponente benoetigt BG2:EE oder EET.~
 @102 = ~Benoetigt die Hauptkomponente.~
-
+@103 = ~Diese Komponente benoetigt BG2, BGT, BG2:EE 2.0+ oder EET.~
 
 // WeiDU prompts
 @-1000= "Die %TP2_FILE_NAME%-Mod besitzt"

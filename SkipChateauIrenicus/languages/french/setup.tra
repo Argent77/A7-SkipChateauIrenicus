@@ -5,10 +5,12 @@
 @10 = ~Gerer les PNJs court-circuites~
 @11 = ~Uniquement les PNJs originaux~
 @12 = ~Tous les PNJs concernes~
+@20 = ~More realistic opening cutscene~
 
 @100 = ~Ce mod necessite l'installation BG2, BGT, BG2:EE ou EET.~
 @101 = ~Ce mod composant necessitte BG2:EE ou EET.~
 @102 = ~Le composant principal est pre-requis.~
+@103 = ~Ce mod composant necessitte BG2, BGT, BG2:EE ou EET.~
 
 // WeiDU prompts
 @-1000= "Le mod %TP2_FILE_NAME% contient"
