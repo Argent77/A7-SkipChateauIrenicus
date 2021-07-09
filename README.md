@@ -25,7 +25,7 @@ This mod allows you skip all the boring details of Chateau Irenicus. You can eve
 
 ## Components
 
-### Main component: Skip Chateau Irenicus (requires BG2, BGT, BG2:EE or EET)
+### Main component: Skip Chateau Irenicus _(requires BG2, BGT, BG2:EE or EET)_
 
 The component triggers moments after you are released from your cell. A rogue appears and opens up the opportunity to use the magical portals to leave the dungeon. Each portal will transport you to the other level of the dungeon or directly to the surface. Afterwards the way back is blocked like in the unmodified game. To loot the items from the dungeon inspect the rubble of the destroyed building on Waukeen's Promenade.
 
@@ -35,7 +35,7 @@ For BG2:EE before patch 2.0 and original BG2 the mod uses less advanced methods 
 
 **Note:** For BG2:EE v2.0+ and EET there may be a general slowdown of the game for a few seconds after the initial cutscene on Waukeen's Promenade which is caused by the item transference process.
 
-### Optional component: Deal with skipped NPCs (requires main component, requires BG2:EE or EET)
+### Optional component: Deal with skipped NPCs _(requires main component, requires BG2:EE or EET)_
 
 This component allows you to recruit NPCs which might have been missed because you skipped the dungeon. It comes in two flavors:
 
@@ -46,6 +46,12 @@ This option deals only with the vanilla NPCs Jaheira, Minsc and Yoshimo. They ca
 This option deals with every supported vanilla and mod NPC. In addition to the vanilla NPCs it adds code for Adrian Sianodel (by Rhaella), Chloe (by Lucythebeast) as well as Yasraena (by Sillara). They can either be found directly near the destroyed building at Waukeen's Promenade or at their designated waiting locations as if you dismissed them from the party.
 
 Other mod NPCs that can be encountered in Chateau Irenicus may be supported by their respective authors. In this case they will be handled by this mod component as well. This mod provides an easy mechanism to make it possible.
+
+### More realistic opening cutscene _(independent component, requires BG2, BGT, BG2:EE or EET)_
+
+In the original opening cutscene of the game Imoen appears out of nowhere and frees you from your cell, which raises the questions where she was held prisoner and how she managed to escape. This component changes the cutscene, so that Imoen is imprisoned like everyone else, and her escape is portrayed more believably.
+
+**Note:** This cutscene is fully compatible with the "Faster Chapter 1&2 Cut-Scenes & Dreams" component of the Tweaks Anthology mod.
 
 ## Compatibility
 
