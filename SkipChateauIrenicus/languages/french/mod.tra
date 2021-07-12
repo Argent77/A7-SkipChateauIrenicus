@@ -3,13 +3,12 @@
 // Misc. strings
 @1000 = ~Ce sont les glands magiques des dryades, que vous avez obtenus auprès du chef duergar Ilyich.
 
-On vous a demandé de les remettre à la Reine des Fées à l'extrémité sud des Collines de Lancevent.
+On vous a demandé de les remettre à la Reine des Fées qui vit à l'extrémité sud des Collines de Lancevent.
 
 PARAMETRES :
 
 Poids : 0~
 @1001 = ~Wouaahh, génial. Quel voyage ! J'ai atterri où ?~
-@1002 = ~Hein ?~
 
 // Rogue dialog
 @2000 = ~Restez où vous êtes ! Êtes-vous amis ou ennemis ?~
