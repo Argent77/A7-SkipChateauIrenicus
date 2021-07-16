@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOD: Pomiń lochy Irenicusa</title>
+    <meta name="description" content="Modyfikacja do BG2, BGT, BG2:EE i EET, pozwalajaca na pominiecie lochu startowego bez ryzyka utraty potencjalnego ekwipunku i magicznych przedmiotow." />
+    <meta name="keywords" content="bg2, tob, bgt, bg2ee, eet, mod, convenience" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div><a id="top"></a></div>
+    <div id="language">
+      <ul>
+        <li><a href="index.html">English</a></li>
+        <li title="French"><a href="index-fr.html">Français</a></li>
+        <li title="German"><a href="index-de.html">Deutsch</a></li>
+        <li title="Polish">Polski</li>
+      </ul>
+    </div>
+
+    <header>
+      <h1 class="title">Pomiń lochy Irenicusa</h1>
+      <div class="subtitle">Modyfikacja do BG2, BGT, BG2:EE i <abbr title="Enhanced Edition Trilogy">EET</abbr>, pozwalająca na pominięcie lochu startowego bez ryzyka utraty potencjalnego ekwipunku i magicznych przedmiotów.</div>
+      <hr />
+      <p class="about"><strong>Autor: Argent77</strong></p>
+      <ul id="globalnav" class="about">
+        <li><strong>Pobierz</strong> (<a href="http://www.shsforums.net/files/file/1150-skip-chateau-irenicus/">SHS</a>)</li>
+        <li><strong>Pobierz</strong> (<a href="https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest">GitHub</a>)</li>
+        <li><strong>Dyskusja</strong> (<a href="http://www.shsforums.net/forum/655-skip-chateau-irenicus/">SHS</a>)</li>
+        <li><strong>Dyskusja</strong> (<a href="https://forums.beamdog.com/discussion/60934/mod-skip-chateau-irenicus">Beamdog</a>)</li>
+        <li><a href="https://github.com/Argent77/A7-SkipChateauIrenicus">Projekt</a></li>
+        <li> Wersja: 3.2</li>
+      </ul>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="#overview">Opis</a></li>
+          <li><a href="#installation">Instalacja</a></li>
+          <li><a href="#compatibility">Kompatybilność</a></li>
+          <li><a href="#components">Komponenty</a></li>
+          <li><a href="#modding">Informacje dla twórców modyfikacji</a></li>
+          <li><a href="#credits">Autorzy</a></li>
+          <li><a href="#changelog">Historia wersji</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================== I N T R O D U C T I O N ================== -->
+      <section id="overview">
+        <h2>Opis</h2>
+        <p>Masz już dosyć przechodzenia po raz kolejny początkowego lochu? Koniec z tym!</p>
+        <p>Modyfikacja ta pozwala na pominięcie nudnych szczegółów związanych z lochami Irenicusa. Pozwala nawet zdobyć wszystkie przedmioty, które można znaleźć normalnie w początkowych lochach. Wystarczy zbadać gruzy zniszczonego budynku na Promenadzie Waukeen. W ramach premii można również uzyskać trochę doświadczenia, a także znaleźć drobne na zakupy.</p>
+        <p>„Pomiń lochy Irenicusa” stanowi alternatywę dla (nie)sławnej modyfikacji Dungeon-Be-Gone, zapewniając podobne możliwości, lecz w sposób nieburzący tzw. czwartej ściany.</p>
+        <p>Modyfikacja ta wymaga do działania BG2 (z zainstalowanym dodatkiem Tron Bhaala lub bez), BGT, BG2:EE lub <abbr title="Enhanced Edition Trilogy">EET</abbr>.</p>
+        <hr class="spacer" />
+        <p>Jeśli masz jakieś pytania, odwiedź <a href="http://www.shsforums.net/forum/655-skip-chateau-irenicus/">forum SHS</a> lub <a href="https://forums.beamdog.com/discussion/60934/mod-skip-chateau-irenicus">forum Beamdog</a>. Najnowsza wersja modyfikacji dostępna jest na stronie <a href="http://www.shsforums.net/files/file/1150-skip-chateau-irenicus/">Spellhold Studios</a> lub na platformie <a href="https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest">GitHub</a>.</p>
+        <div class="back">
+          <a class="novisit" href="#top">POWRÓT NA GÓRĘ</a>
+        </div>
+      </section>
+
+      <!-- ================== I N S T A L L A T I O N ================== -->
+      <section id="installation">
+        <h2>Instalacja</h2>
+        <p>Jest to modyfikacja WeiDU, co oznacza, iż jest bardzo prosta w instalacji. Wystarczy rozpakować pobrane archiwum do katalogu z grą, a następnie uruchomić plik <em>„setup-SkipChateauIrenicus.exe”</em>. Należy postępować zgodnie z instrukcjami, co spowoduje zainstalowanie modyfikacji. Aby można było zauważyć jej efekty, należy wcześniej rozpocząć nową grę w kampanii Cienie Amn.</p>
+        <p>Aby odinstalować modyfikację, wystarczy uruchomić ponownie plik „setup-SkipChateauIrenicus.exe” i postępować zgodnie z pojawiającymi się komunikatami.</p>
+        <p><strong>Uwaga:</strong> Aby uzyskać jak najwięcej korzyści z tej modyfikacji, zalecana jest uprzednia aktualizacja BG2:EE do wersji v2.0 lub wyższej.</p>
+        <div class="back">
+          <a class="novisit" href="#top">POWRÓT NA GÓRĘ</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P A T I B I L I T Y ================== -->
+      <section id="compatibility">
+        <h2>Kompatybilność</h2>
+        <p>Modyfikacja ta pomija ważną część historii przedstawionej w Cieniach Amn. Mimo iż wszystkie przedmioty zostaną przeniesione na powierzchnię, przegapisz część zawartości dodanej przez inne modyfikacje, jak choćby zadania, wpisy do dziennika czy BN. Modyfikacja ta dodaje możliwość zarządzania pominiętymi BN, lecz zawiera jedynie kod dla BN z podstawowej zawartości gry – Minsca, Jaheiry i Yoshimo. Twórcy modów mogą jednak dodawać swój kod. Więcej informacji na ten temat można znaleźć w <a href="#modding">kolejnym punkcie</a> instrukcji.</p>
+        <p>Modyfikacja została zaprojektowana w taki sposób, aby można było podróżować dowolną ilość razy pomiędzy dwoma poziomami lochów Irenicusa, dopóki gracz nie zdecyduje się przenieść na powierzchnię. Wówczas droga powrotna zostaje zablokowana jak w przypadku niezmodyfikowanej gry.</p>
+        <p>Komponent o nazwie „Bardziej realistyczny wprowadzający przerywnik filmowy” jest w pełni kompatybilny z komponentem „Szybsze przerywniki filmowe i sny z pierwszego i drugiego rozdziału”, znajdującym się w modyfikacji Tweaks Anthology, jednak aby działał poprawnie, należy go zainstalować przed ową modyfikacją.</p>
+        <div class="back">
+          <a class="novisit" href="#top">POWRÓT NA GÓRĘ</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P O N E N T S ================== -->
+      <section id="components">
+        <h2>Komponenty</h2>
+        <ol class="gappedlist">
+          <li>
+            <p><strong>Pomiń lochy Irenicusa</strong> <em>(wymaga zainstalowania BG2, BGT, BG2:EE lub <abbr title="Enhanced Edition Trilogy">EET</abbr>)</em></p>
+            <p>Komponent ten uaktywnia się w momencie twojego uwolnienia z celi. Pojawia się wówczas łotrzyk, który oferuje możliwość użycia magicznych portali do opuszczenia lochów. Każdy z portali przeniesie cię do innego poziomu lochów lub prosto na powierzchnię. Po wyjściu na powierzchnię droga powrotna do lochów zostaje zablokowana jak w niezmodyfikowanej grze. Aby zebrać przedmioty znajdujące się w lochach, wystarczy przeszukać gruzy zniszczonego budynku na Promenadzie Waukeen.</p>
+            <p>Opis należących do driad żołędzi został lekko zmieniony, dodając wskazówkę, co można z nimi zrobić.</p>
+            <p>W przypadku BG2:EE w wersji niższej niż 2.0, lub oryginalnej wersji BG2, modyfikacja używa mniej zaawansowanych metod przenoszenia łupów z lochu na powierzchnię. W rezultacie możliwe jest pominięcie pomniejszych skarbów lub powielenie niektórych przedmiotów, w zależności stopnia wyczyszczenia lochów przed teleportacją na powierzchnię.</p>
+            <p><em><strong>Uwaga:</strong> W przypadku BG2:EE v2.0+ lub EET gra może zanotować kilkusekundowe zwolnienie podczas początkowego przerywnika filmowego na Promenadzie Waukeen, związanego z procesem przenoszenia przedmiotów.</em></p>
+          </li>
+          <li>
+            <p><strong>Zarządzaj pominiętymi BN</strong> <em>(wymaga zainstalowania głównego komponentu, wymaga zainstalowania BG2:EE lub <abbr title="Enhanced Edition Trilogy">EET</abbr>)</em></p>
+            <p>Komponent ten pozwala na przyjęcie do drużyny tych BN, którzy mogli zostać przegapieni w wyniku instalacji komponentu głównego Pomiń lochy Irenicusa. Jest on dostępny w dwóch opcjach:</p>
+            <ul>
+              <li>
+                <p><strong>Tylko BN z podstawowej wersji:</strong> Opcja ta pozwala na zarządzanie tylko następującymi BN z podstawowej wersji gry: Jaheirą, Minsciem i Yoshimo. Można ich znaleźć w tych samych lokacjach, do których udają się zwykle po odłączeniu od drużyny.</p>
+              </li>
+              <li>
+                <p><strong>Wszyscy dostępni BN:</strong> Opcja ta pozwala na zarządzanie wszystkimi wspieranymi BN z podstawowej wersji gry oraz modyfikacji. Poza BN z podstawowej wersji gry uwzględnia ona również kod dla następujących BN dodawanych przez modyfikacje: Adrian Sianodel (autor: Rhaella), Chloe (autor: Lucythebeast) oraz Yasraena (autor: Sillara). Postacie te można znaleźć tuż obok zniszczonego budynku na Promenadzie Waukeen lub w tych samych lokacjach, do których udają się zwykle po odłączeniu od drużyny.</p>
+                <p>Pozostali BN dodawani przez modyfikacje, których można spotkać w lochach Irenicusa, mogą uzyskać w przyszłości wsparcie autorów tychże modyfikacji. W takim przypadku komponent ten również będzie uwzględniał ich obecność. Modyfikacja ta zawiera bowiem prosty mechanizm, który to umożliwia. Więcej informacji na ten temat można znaleźć w kolejnych rozdziałach.</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>Bardziej realistyczny wprowadzający przerywnik filmowy</strong> <em>(niezależny komponent dla BG2, BGT, BG2:EE i <abbr title="Enhanced Edition Trilogy">EET</abbr>)</em></p>
+            <p>W oryginalnym przerywniku filmowym Imoen pojawia się znikąd, uwalniając cię z celi, co rodzi pytania, gdzie ją więziono i jak udało jej się stamtąd uciec. Komponent ten zmienia ów przerywnik filmowy, sprawiając, że Imoen jest więziona podobnie jak pozostali, a jej ucieczka jest przedstawiona bardziej wiarygodnie.</p>
+            <p><em><strong>Uwaga:</strong> Przerywnik filmowy jest kompatybilny z komponentem „Szybsze przerywniki filmowe i sny z pierwszego i drugiego rozdziału”, znajdującym się w modyfikacji Tweaks Anthology.</em></p>
+          </li>
+        </ol>
+        <div class="back">
+          <a class="novisit" href="#top">POWRÓT NA GÓRĘ</a>
+        </div>
+      </section>
+
+      <!-- ================== C O M P A T I B I L I T Y ================== -->
+      <section id="modding">
+        <h2>Informacje dla twórców modyfikacji</h2>
+        <p>Modyfikacja ta została zaprojektowana w taki sposób, aby można było dodawać nowe sposoby przenoszenia pojemników i przedmiotów po powrocie na powierzchnię. Katalog „tables”, znajdujący się w folderze z modyfikacją, jest przeszukiwany w poszukiwaniu plików 2DA, które zostaną przetworzone w sposób zależny od ich zawartości. Inne modyfikacje wprowadzające nowe przedmioty do lochów Irenicusa mogą po prostu dodawać własne pliki 2DA do tego katalogu, a zostaną one wzięte pod uwagę przez tę modyfikację później. Użycie tej metody jest konieczne tylko w wypadku przedmiotów, które można otrzymać w nietypowy sposób (np. będące nagrodą za wykonane zadanie lub otrzymane w wyniku działania skryptu). Przedmioty znajdujące się w pojemnikach zostaną przeniesione automatycznie.</p>
+        <p>Każdy plik 2DA może zawierać informacje o tym, czy dane pojemniki mają być wykluczone z procesu przenoszenia, jak zarządzać przedmiotami uzyskanymi w wyniku działania skryptu lub co zrobić z unikalnymi przedmiotami, które są ściśle związane z lochami. Bardziej szczegółowy opis wraz z przykładowym kodem znajduje się w pliku „SkipChateauIrenicus/tables/desc.txt”.</p>
+        <p>Modyfikacja ta zawiera również opcję „rozszerz”, która może być wykorzystywana do zarządzania BN dodanymi do lochów Irenicusa przez inne modyfikacje, ale pominiętymi w wyniku działania tej modyfikacji. Z tego powodu twórca modyfikacji może umieścić plik ze skryptem WeiDU o rozszerzeniu .tpa lub .tph w podkatalogu „npc”, znajdującym się w folderze z modyfikacją. Do działania wraz z tą modyfikacją można użyć niewielkiej ilości predefiniowanych zmiennych. Bardziej szczegółowy opis wraz z przykładowym kodem znajduje się w pliku jego „SkipChateauIrenicus/npc/desc.txt”.</p>
+        <div class="back">
+          <a class="novisit" href="#top">POWRÓT NA GÓRĘ</a>
+        </div>
+      </section>
+
+      <!-- ================== C R E D I T S ================== -->
+      <section id="credits">
+        <h2>Autorzy</h2>
+        <p><strong>Writing, coding &amp; testing:</strong> <a href="http://www.shsforums.net/user/14985-argent77/">Argent77</a></p>
+        <p><strong>French translation:</strong> Gwendolyne</p>
+        <p><strong>Polish translation:</strong> Cahir</p>
+        <p><strong>Russian translation:</strong> Austin</p>
+        <hr class="spacer" />
+        <p>Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.</p>
+        <hr class="spacer" />
+        <h3>Copyright Notice:</h3>
+        <div class="important">
+          <div>
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+              <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+            </a>
+          </div>
+          <p>"Skip Chateau Irenicus" is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+        </div>
+        <div class="back">
+          <a class="novisit" href="#top">POWRÓT NA GÓRĘ</a>
+        </div>
+      </section>
+
+      <!-- ================== V E R S I O N   H I S T O R Y ================== -->
+      <section id="changelog">
+        <h2>Historia wersji</h2>
+        <h6>Version 3.2</h6>
+        <ul>
+          <li>Added new component "More realistic opening cutscene"</li>
+          <li>Added missing BGT support</li>
+          <li>Added Project Infinity metadata</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 3.1</h6>
+        <ul>
+          <li>Added Russian translation (thanks Austin)</li>
+          <li>Fixed Jaheira should escape even when you talked to her in the dungeon</li>
+          <li>Converted readme into html format</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 3.0</h6>
+        <ul>
+          <li>Added compatibility with classic BG2</li>
+          <li>Added compatibility with BG2:EE pre-2.0</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.3</h6>
+        <ul>
+          <li>Moved NPC-related code into separate subcomponent</li>
+          <li>Added error catching code to NPC addon feature to prevent mod termination because of buggy script files</li>
+          <li>Added French translation (thanks Gwendolyne)</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.2</h6>
+        <ul>
+          <li>Added NPC support for Adrian, Chloe and Yasraena</li>
+          <li>Fixed harmless error messages shown during installation</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.1</h6>
+        <ul>
+          <li>Added Polish translation (thanks Cahir)</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 2.0</h6>
+        <ul>
+          <li>Relocated a container in the rubble of the destroyed building on Waukeen's Promenade to a more suitable location</li>
+          <li>Added more transportation options to the lower level portals in Chateau Irenicus</li>
+          <li>Vanilla NPCs Jaheira, Minsc and Yoshimo can be recruited later if you decide to skip them in Chateau Irenicus</li>
+          <li>Added German translation</li>
+          <li>For modders: externalized areas to consider when transferring items to the surface</li>
+          <li>For modders: implemented "addon" feature that can be used to deal with skipped NPCs</li>
+        </ul>
+        <hr class="spacer" />
+        <h6>Version 1.0</h6>
+        <ul>
+          <li>Initial release</li>
+        </ul>
+        <div class="back">
+          <a class="novisit" href="#top">POWRÓT NA GÓRĘ</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
