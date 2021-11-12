@@ -1,7 +1,5 @@
 // *** Code for dealing with NPCs in Chateau Irenicus ***
 
-LOG ~DEBUG: Starting parsing NPC addon code...~
-
 // List of available vanilla NPCs
 ACTION_DEFINE_ARRAY vanillaNPCs BEGIN ~jaheira~ ~minsc~ ~yoshimo~ END
 
@@ -23,8 +21,6 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/npc~ ~^.+\.tp[ah]$~ BEGIN
   END
 
   ACTION_IF (NOT skipped) BEGIN
-    LOG ~DEBUG: Executing addon "%BASH_FOR_FILE%"...~
-
     // applying addon code
     COPY - ~%BASH_FOR_FILESPEC%~ ~%a7_script_file%~
       TEXT_SPRINT a7_npc_file ~%SOURCE_RES%~
@@ -33,11 +29,11 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/npc~ ~^.+\.tp[ah]$~ BEGIN
 
       // dealing with main actions
       OUTER_FOR (a7_idx = 0; a7_idx < num_npc_actions; a7_idx += 1) BEGIN
-        ACTION_IF (VARIABLE_IS_SET EVAL "npc_trigger_%a7_idx%" AND VARIABLE_IS_SET EVAL "npc_action_%a7_idx%") BEGIN
+        ACTION_IF (VARIABLE_IS_SET $npc_trigger(~%a7_idx%~) AND VARIABLE_IS_SET $npc_action(~%a7_idx%~)) BEGIN
           OUTER_TEXT_SPRINT a7_curTrigger $EVAL npc_trigger("%a7_idx%")
           OUTER_TEXT_SPRINT a7_curAction $EVAL npc_action("%a7_idx%")
           OUTER_TEXT_SPRINT a7_curScript ~AR0700.BCS~
-          ACTION_IF (VARIABLE_IS_SET EVAL "npc_script_%a7_idx%") BEGIN
+          ACTION_IF (VARIABLE_IS_SET $npc_script(~%a7_idx%~)) BEGIN
             OUTER_TEXT_SPRINT scriptRes $EVAL npc_script("%a7_idx%")
             ACTION_IF (NOT ~%scriptRes%~ STRING_EQUAL ~~ AND FILE_EXISTS_IN_GAME ~%scriptRes%~) BEGIN
               OUTER_TEXT_SPRINT a7_curScript ~%scriptRes%~
@@ -94,5 +90,3 @@ COPY + ~.../inlined/script.tph~ ~%a7_script_file%~
 REINCLUDE ~%a7_script_file%~
 DELETE + ~%a7_script_file%~
 DELETE + ~%MOD_FOLDER%/temp~
-
-LOG ~DEBUG: Finished parsing NPC addon code...~

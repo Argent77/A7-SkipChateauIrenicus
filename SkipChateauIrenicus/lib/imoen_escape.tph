@@ -94,11 +94,10 @@ BEGIN
             OP_DELETE BEGIN
               LPF REPLACE_STRING INT_VAR pos_start pos_end RET pos_start pos_end END
             END
-            DEFAULT PATCH_LOG ~DEBUG: Unknown replacement operation at index=%i%~
+            DEFAULT
           END
           SET pos_start = pos_end
         END ELSE BEGIN
-          PATCH_LOG ~DEBUG: Search string not found at index=%i%~
           SET success = 0
         END
       END ELSE BEGIN

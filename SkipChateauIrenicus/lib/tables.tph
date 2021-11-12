@@ -1,29 +1,25 @@
 // *** Prepares item control tables ***
 
-LOG ~DEBUG: Starting parsing item control tables...~
-
 OUTER_TEXT_SPRINT table_data ~~
 
-ACTION_BASH_FOR ~%MOD_FOLDER%/tables~ ~^.+\.2da$~ BEGIN
-  LOG ~DEBUG: Loading table "%BASH_FOR_FILE%"...~
-
-  COPY - ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_FILESPEC%~
-    PATCH_IF (SOURCE_SIZE > 0) BEGIN
-      READ_ASCII 0 data (SOURCE_SIZE)
-      TEXT_SPRINT table_data ~%table_data%%LNL%%data%~
-    END
+OUTER_SET table_folder = 0
+OUTER_TEXT_SPRINT $table_folder(~%table_folder%~) ~tables~
+OUTER_SET table_folder += 1
+ACTION_IF (NOT IS_EE2) BEGIN
+  // Additional tables for classic BG2
+  OUTER_TEXT_SPRINT $table_folder(~%table_folder%~) ~tables-bg2~
+  OUTER_SET table_folder += 1
 END
 
-// Additional tables for classic BG2
-ACTION_IF NOT IS_EE2 BEGIN
-  ACTION_BASH_FOR ~%MOD_FOLDER%/tables-bg2~ ~^.+\.2da$~ BEGIN
-    LOG ~DEBUG: Loading table "%BASH_FOR_FILE%"...~
-
-    COPY - ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_FILESPEC%~
+OUTER_FOR (idx = 0; idx < table_folder; ++idx) BEGIN
+  OUTER_TEXT_SPRINT folder $table_folder(~%idx%~)
+  ACTION_BASH_FOR ~%MOD_FOLDER%/%folder%~ ~^.+\.2da$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~%BASH_FOR_FILESPEC%~
       PATCH_IF (SOURCE_SIZE > 0) BEGIN
         READ_ASCII 0 data (SOURCE_SIZE)
         TEXT_SPRINT table_data ~%table_data%%LNL%%data%~
       END
+    BUT_ONLY
   END
 END
 
@@ -41,13 +37,13 @@ STR_VAR
 RET row
 BEGIN
   SET row = "-1"
-  PATCH_IF (NOT ~%area%~ STRING_EQUAL ~~ AND NOT ~%container%~ STRING_EQUAL ~~) BEGIN
-    FOR (idx = 0; idx < control_table; idx += 1) BEGIN
+  PATCH_IF (NOT ~%area%~ STR_EQ ~~ AND NOT ~%container%~ STR_EQ ~~) BEGIN
+    FOR (idx = 0; idx < control_table; ++idx) BEGIN
       READ_2DA_ENTRY_FORMER "control_table" idx 0 action
-      PATCH_IF (~%action%~ STRING_EQUAL ~SKIP_CONTAINER~) BEGIN
+      PATCH_IF (~%action%~ STR_EQ ~SKIP_CONTAINER~) BEGIN
         READ_2DA_ENTRY_FORMER "control_table" idx 1 areaName
         READ_2DA_ENTRY_FORMER "control_table" idx 2 containerName
-        PATCH_IF (~%area%~ STRING_EQUAL_CASE ~%areaName%~ AND ~%container%~ STRING_EQUAL_CASE ~%containerName%~) BEGIN
+        PATCH_IF (~%area%~ STR_EQ ~%areaName%~ AND ~%container%~ STR_EQ ~%containerName%~) BEGIN
           SET row = idx
           SET idx = control_table
         END
@@ -55,8 +51,6 @@ BEGIN
     END
   END
 END
-
-LOG ~DEBUG: Finished parsing item control tables...~
 
 
 // Variables containing script portions for handling items and containers
@@ -69,13 +63,13 @@ OUTER_TEXT_SPRINT item_destroy_party ~~   // sequence of script actions
 
 
 // Generating list of supported areas
-OUTER_FOR (idx = 0; idx < control_table; idx += 1) BEGIN
-  OUTER_PATCH ~dummy~ BEGIN
+OUTER_PATCH ~~ BEGIN
+  FOR (idx = 0; idx < control_table; ++idx) BEGIN
     READ_2DA_ENTRY_FORMER "control_table" idx 0 action
-    PATCH_IF (~%action%~ STRING_EQUAL ~ADD_AREA~) BEGIN
+    PATCH_IF (~%action%~ STR_EQ ~ADD_AREA~) BEGIN
       READ_2DA_ENTRY_FORMER "control_table" idx 1 area
       PATCH_IF (FILE_EXISTS_IN_GAME ~%area%.ARE~) BEGIN
-        TEXT_SPRINT EVAL "supported_areas_%supported_areas%" ~%area%~
+        TEXT_SPRINT $supported_areas(~%supported_areas%~) ~%area%~
         SET supported_areas += 1
       END
     END
@@ -84,52 +78,51 @@ END
 
 
 // Generating item transfer script
-ACTION_IF IS_EE2 BEGIN
-  OUTER_FOR (idxArea = 0; idxArea < supported_areas; idxArea += 1) BEGIN
-    OUTER_TEXT_SPRINT srcArea $EVAL supported_areas("%idxArea%")
+ACTION_IF (IS_EE2) BEGIN
+  OUTER_FOR (idxArea = 0; idxArea < supported_areas; ++idxArea) BEGIN
+    OUTER_TEXT_SPRINT srcArea $supported_areas(~%idxArea%~)
     // This part is still hardcoded
-    ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~AR0602~) BEGIN
+    ACTION_IF (~%srcArea%~ STR_EQ ~AR0602~) BEGIN
       OUTER_TEXT_SPRINT dstContainer ~A7-Rubble1~
-    END ELSE ACTION_IF (~%srcArea%~ STRING_EQUAL_CASE ~AR0603~) BEGIN
+    END ELSE ACTION_IF (~%srcArea%~ STR_EQ ~AR0603~) BEGIN
       OUTER_TEXT_SPRINT dstContainer ~A7-Rubble2~
     END ELSE BEGIN
       OUTER_TEXT_SPRINT dstContainer ~A7-Rubble3~
     END
 
-    COPY_EXISTING - ~%srcArea%.ARE~ ~override~
+    COPY_EXISTING ~%srcArea%.ARE~ ~override~
       READ_LONG 0x70 ofsContainers
       READ_SHORT 0x74 numContainers
-      FOR (idx = 0; idx < numContainers; idx += 1) BEGIN
+      FOR (idx = 0; idx < numContainers; ++idx) BEGIN
         SET ofs = ofsContainers + (idx * 0xc0)
         READ_ASCII ofs name (32) NULL
-        INNER_PATCH_SAVE name ~%name%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]~ ~~ END
+        INNER_PATCH_SAVE name ~%name%~ BEGIN REPLACE_TEXTUALLY ~[ %TAB%]+~ ~~ END
         LPF TABLE_MATCH_CONTAINER STR_VAR area = EVAL ~%SOURCE_RES%~ container = EVAL ~%name%~ RET row END
         PATCH_IF (row < 0) BEGIN
           TEXT_SPRINT container_contents ~%container_contents% MoveContainerContents("%SOURCE_RES%*%name%","AR0700*%dstContainer%")~
-        END ELSE BEGIN
-          PATCH_LOG ~DEBUG: Excluding container "%SOURCE_RES%*%name%"~
         END
       END
+    BUT_ONLY
   END
 END
 
 
 // Generating item creation and destruction scripts
-OUTER_FOR (idx = 0; idx < control_table; idx += 1) BEGIN
-  OUTER_PATCH ~dummy~ BEGIN
+OUTER_PATCH ~~ BEGIN
+  FOR (idx = 0; idx < control_table; ++idx) BEGIN
     READ_2DA_ENTRY_FORMER "control_table" idx 0 action
     READ_2DA_ENTRY_FORMER "control_table" idx 1 area
 
     // determining target container
-    PATCH_IF (~%area%~ STRING_EQUAL_CASE ~AR0602~) BEGIN
+    PATCH_IF (~%area%~ STR_EQ ~AR0602~) BEGIN
       TEXT_SPRINT dstContainer ~A7-Rubble1~
-    END ELSE PATCH_IF (~%area%~ STRING_EQUAL_CASE ~AR0603~) BEGIN
+    END ELSE PATCH_IF (~%area%~ STR_EQ ~AR0603~) BEGIN
       TEXT_SPRINT dstContainer ~A7-Rubble2~
     END ELSE BEGIN
       TEXT_SPRINT dstContainer ~A7-Rubble3~
     END
 
-    PATCH_IF (~%action%~ STRING_EQUAL ~CREATE_ITEM~) BEGIN
+    PATCH_IF (~%action%~ STR_EQ ~CREATE_ITEM~) BEGIN
       READ_2DA_ENTRY_FORMER "control_table" idx 2 res
       READ_2DA_ENTRY_FORMER "control_table" idx 3 unique
       READ_2DA_ENTRY_FORMER "control_table" idx 4 charge1
@@ -141,7 +134,7 @@ OUTER_FOR (idx = 0; idx < control_table; idx += 1) BEGIN
       END ELSE BEGIN
         TEXT_SPRINT item_create ~%item_create%%LNL%ActionOverride("%dstContainer%", CreateItem("%res%", %charge1%, %charge2%, %charge3%))~
       END
-    END ELSE PATCH_IF (~%action%~ STRING_EQUAL ~DESTROY_ITEM~) BEGIN
+    END ELSE PATCH_IF (~%action%~ STR_EQ ~DESTROY_ITEM~) BEGIN
       READ_2DA_ENTRY_FORMER "control_table" idx 1 area
       READ_2DA_ENTRY_FORMER "control_table" idx 2 res
       READ_2DA_ENTRY_FORMER "control_table" idx 3 invOnly
