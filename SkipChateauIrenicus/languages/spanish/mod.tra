@@ -1,0 +1,54 @@
+// -*- coding: utf-8 -*-
+
+// Misc. strings
+@1000 = ~Estas son las bellotas mágicas de las dríadas que habéis obtenido del líder duergar, Ilyich.
+
+Os dijeron que las entregaseis a la Reina de las Hadas que vive en el extremo sur de las Colinas de Ventolanza.
+
+CARACTERÍSTICAS:
+
+Peso: 0~
+@1001 = ~Vaya, qué viaje. ¿Dónde estoy ahora?~
+@1002 = ~¿Eh?~
+
+
+// Rogue dialog
+@2000 = ~¡Mantened la distancia! ¿Sois amigo o enemigo?~
+@2001 = ~Soy <GABBER>. He estado encarcelado por un mago de gran poder hasta hace poco. ¿Cómo habéis aparecido tan repentinamente?~
+@2002 = ~No os diré nada. Podríais ser un espía de mi captor o algo peor. ¡Perdeos!~
+@2003 = ~Esta maldita mazmorra utiliza portales mágicos para conectar cada nivel.~
+@2004 = ~¿Dices que un mago os encarceló? ¿Dónde está ahora?~
+@2005 = ~Se ha teletransportado hace poco.~
+@2006 = ~¡Maldita sea! Entonces todos nuestros esfuerzos para llegar a él fueron en vano. Muy bien, es necesario un cambio de plan. Prepararemos una emboscada para él en la superficie.~
+@2007 = ~¿Puedo usar estos portales para escapar?~
+@2008 = ~No veo por qué no. Sin embargo, necesitaréis una llave para poder usarlos. Por suerte para vos, he cogido unas cuantas llaves de repuesto. Podéis quedaros con una si lo deseáis.~
+@2009 = ~Tomaré la llave. Gracias.~
+@2010 = ~No es necesario. Prefiero encontrar la salida por mí mismo.~
+@2011 = ~Aquí tenéis.~
+@2012 = ~De todos modos, no me importa. Tengo que cazar a un mago traicionero.~
+@2013 = ~¡Mantened la distancia!~
+@2014 = ~No, gracias. Ya tengo uno.~
+@2015 = ~Como queráis.~
+@2016 = ~Ahora, si me disculpáis. Tengo que cazar a un mago traicionero.~
+
+
+// Portal dialogs
+@2100 = ~Seleccionar vuestro destino:~
+@2101 = ~Al nivel inferior.~
+@2102 = ~A la superficie.~
+@2103 = ~No importa.~
+@2104 = ~Al nivel superior.~
+
+
+// Journal entries
+@5000 = ~Atajo a la superficie
+
+Me encontré con un pícaro sospechoso. Fui a lo seguro y me negué a revelar cualquier información. Podría ser un espía de mi captor, o algo peor.~
+
+@5001 = ~Atajo a la superficie
+
+Me encontré con un misterioso pícaro que aparentemente estaba cazando a mi captor. Me dio una llave que me permite utilizar portales mágicos para salir rápidamente de esta mazmorra.~
+
+@5002 = ~Atajo a la superficie
+
+Me encontré con un misterioso pícaro que aparentemente estaba cazando a mi captor. Me dijo que podía usar portales mágicos para salir rápidamente de esta mazmorra.~

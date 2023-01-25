@@ -54,6 +54,11 @@ LANGUAGE ~Russian (Translation: Austin)~ ~russian~
          ~SkipChateauIrenicus/languages/english/mod.tra~
          ~SkipChateauIrenicus/languages/russian/setup.tra~
          ~SkipChateauIrenicus/languages/russian/mod.tra~
+LANGUAGE ~Spanish (Translation: ElGamerViejuno)~ ~spanish~
+         ~SkipChateauIrenicus/languages/english/setup.tra~
+         ~SkipChateauIrenicus/languages/english/mod.tra~
+         ~SkipChateauIrenicus/languages/spanish/setup.tra~
+         ~SkipChateauIrenicus/languages/spanish/mod.tra~
 
 BEGIN @0  // Skip Chateau Irenicus
   REQUIRE_PREDICATE GAME_INCLUDES ~soa~ @100  // This mod requires BG2, BGT, BG2:EE or EET.

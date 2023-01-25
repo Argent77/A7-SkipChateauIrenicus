@@ -2,7 +2,7 @@
 [![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/A7-SkipChateauIrenicus/total.svg?color=gold)](https://github.com/Argent77/A7-SkipChateauIrenicus/releases)
 [![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://github.com/Argent77/A7-SkipChateauIrenicus/releases/latest)
 [![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BG2%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=indigo)](https://github.com/Argent77/A7-SkipChateauIrenicus)
-[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian&color=limegreen)](https://github.com/Argent77/A7-SkipChateauIrenicus)
+[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian%20%7C%20Spanish&color=limegreen)](https://github.com/Argent77/A7-SkipChateauIrenicus)
 
 # Skip Chateau Irenicus
 *A mod for BG2, BGT, BG2:EE and EET that allows you to skip the opening dungeon without losing potential equipment and items.*
@@ -68,6 +68,8 @@ French translation: Gwendolyne
 Polish translation: Cahir
 
 Russian translation: Austin
+
+Spanish translation: ElGamerViejuno
 
 Thanks to the authors of Dungeon-Be-Gone for inspiring me to create this mod.
 

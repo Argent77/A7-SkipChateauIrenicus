@@ -1,0 +1,13 @@
+// -*- coding: us-ascii -*-
+// Setup (index 0..999)
+
+@0 = ~Saltar Chateau Irenicus~
+@10 = ~Tratar con los NPCs omitidos~
+@11 = ~Solo NPCs estándar~
+@12 = ~Todos los NPCs disponibles~
+@20 = ~Escena de apertura más realista~
+
+@100 = ~Este mod requiere BG2, BGT, BG2:EE o EET.~
+@101 = ~Este componente requiere BG2:EE o EET.~
+@102 = ~Componente principal requerido.~
+@103 = ~Este componente requiere BG2, BGT, BG2:EE o EET.~
