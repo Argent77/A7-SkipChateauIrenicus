@@ -11,16 +11,29 @@ ALWAYS
   OUTER_SET IS_EE = (GAME_IS ~bg2ee eet~) ? 1 : 0
   OUTER_SET IS_EE2 = (IS_EE != 0 AND FILE_EXISTS ~engine.lua~) ? 1 : 0
 
+  // manual conversion table for all languages
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY charset_table BEGIN
+    // language folder => character set
+    ~english~ => ~CP1252~
+    ~german~ => ~CP1252~
+    ~french~ => ~CP1252~
+    ~polish~ => ~CP1250~
+    ~russian~ => ~CP1251~
+    ~spanish~ => ~CP1252~
+    ~brazilianportuguese~ => ~CP1252~
+  END
+
   ACTION_DEFINE_ARRAY a7noconvert BEGIN ~setup~ END
   ACTION_DEFINE_ARRAY a7reload BEGIN ~mod~ END
   LAF HANDLE_CHARSETS
     INT_VAR
       from_utf8         = 1
-      infer_charset     = 1
+      infer_charset     = 0
     STR_VAR
       default_language  = ~english~
       tra_path          = EVAL ~%MOD_FOLDER%/languages~
       out_path          = EVAL ~%WORK_FOLDER%/lang/%MOD_FOLDER%~
+      charset_table
       noconvert_array   = ~a7noconvert~
       reload_array      = ~a7reload~
   END
@@ -59,6 +72,11 @@ LANGUAGE ~Spanish (Translation: ElGamerViejuno)~ ~spanish~
          ~SkipChateauIrenicus/languages/english/mod.tra~
          ~SkipChateauIrenicus/languages/spanish/setup.tra~
          ~SkipChateauIrenicus/languages/spanish/mod.tra~
+LANGUAGE ~Brazilian Portuguese (Translation: Felipe)~ ~brazilianportuguese~
+         ~SkipChateauIrenicus/languages/english/setup.tra~
+         ~SkipChateauIrenicus/languages/english/mod.tra~
+         ~SkipChateauIrenicus/languages/brazilianportuguese/setup.tra~
+         ~SkipChateauIrenicus/languages/brazilianportuguese/mod.tra~
 
 BEGIN @0  // Skip Chateau Irenicus
   REQUIRE_PREDICATE GAME_INCLUDES ~soa~ @100  // This mod requires BG2, BGT, BG2:EE or EET.

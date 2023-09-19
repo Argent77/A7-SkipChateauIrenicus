@@ -1,0 +1,13 @@
+// -*- coding: us-ascii -*-
+// Setup (index 0..999)
+
+@0 = ~Ignorar o Chateau Irenicus~
+@10 = ~Lidar com os NPCs ignorados~
+@11 = ~Só os NPCs Vanilla~
+@12 = ~Todos os NPCs disponíveis~
+@20 = ~Cena de abertura mais realista~
+
+@100 = ~Este mod requer o Baldur's Gate 2, BGT, Baldur's Gate 2: Enhanced Edition ou a Enhanced Edition Trilogy.~
+@101 = ~Este componente requer o Baldur's Gate 2: Enhanced Edition ou a Enhanced Edition Trilogy.~
+@102 = ~É requerido o componente principal.~
+@103 = ~Este componente requer o Baldur's Gate 2, BGT, Baldur's Gate 2: Enhanced Edition ou a Enhanced Edition Trilogy.~

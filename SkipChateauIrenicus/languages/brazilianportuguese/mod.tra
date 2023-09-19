@@ -1,0 +1,54 @@
+// -*- coding: utf-8 -*-
+
+// Misc. strings
+@1000 = ~Estas são as sementes mágicas das dryads que você obteve do líder dos duergar, Ilyich.
+
+Foi dito a você pra entregá-las para a Rainha das Fadas que vive no extremo sul de Windspear Hills.
+
+STATISTICS:
+
+Weight: 0~
+@1001 = ~Whoa! Mas que viagem!. Aonde eu estou agora?~
+@1002 = ~Hã?~
+
+
+// Rogue dialog
+@2000 = ~Mantenha distância! Você é amigo ou inimigo?~
+@2001 = ~Eu sou <GABBER>. Eu fui aprisionado por um mago de grande poder até recentemente. Como você apareceu tão de repente?~
+@2002 = ~Eu não direi nada pra você. Você poderia ser um espião do meu captor ou pior. Desapareça!~
+@2003 = ~Esta maldita masmorra usa portais mágicos pra conectar cada nível.~
+@2004 = ~Você disse que um mago aprisionou você? Aonde ele está agora?~
+@2005 = ~Ele se teletransportou há pouco tempo atrás.~
+@2006 = ~Maldição! Então todos os nossos esforços pra alcancá-lo foram pra nada. Tudo bem, uma mudança de plano é necessária. Nós prepararemos uma emboscada pra ele na superfície.~
+@2007 = ~Eu posso usar estes portais pra escapar?~
+@2008 = ~Eu não vejo por que não. Você precisa de uma chave pra usá-los. Pra sua sorte eu agarrei algumas chaves disponíveis. Você pode ter uma se você quiser.~
+@2009 = ~Eu pegarei a chave. Obrigado.~
+@2010 = ~Não precisa. Eu prefiro achar o caminho de saída sozinho.~
+@2011 = ~Aqui vai você.~
+@2012 = ~De qualquer maneira eu não me importo. Eu tenho que caçar um mago traiçoeiro.~
+@2013 = ~Mantenha distância!~
+@2014 = ~Não, obrigado. Eu já tenho uma.~
+@2015 = ~Faça como quiser.~
+@2016 = ~Agora se você me desculpar, eu tenho que caçar um mago traiçoeiro.~
+
+
+// Portal dialogs
+@2100 = ~Selecione seu destino:~
+@2101 = ~Para o nível inferior.~
+@2102 = ~Para a superfície.~
+@2103 = ~Deixa pra lá.~
+@2104 = ~Para o nível superior.~
+
+
+// Journal entries
+@5000 = ~Atalho para a superfície
+
+Eu encontrei um rogue suspeito. Eu fui pelo lado seguro e me recusei a revelar qualquer informação. Ele poderia ter sido um espião pro meu captor, ou pior.~
+
+@5001 = ~Atalho para a superfície
+
+Eu encontrei um rogue misterioso que estava aparentemente caçando meu captor. Ele me deu uma chave a qual me permite usar portais mágicos pra sair desta masmorra rapidamente.~
+
+@5002 = ~Atalho para a superfície
+
+Eu encontrei um rogue misterioso que estava aparentemente caçando meu captor. Ele me disse que eu posso usar portais mágicos pra sair desta masmorra rapidamente.~
