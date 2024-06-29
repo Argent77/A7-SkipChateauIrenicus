@@ -1,5 +1,26 @@
 // *** Waukeen's Promenade (AR0700) ***
 
+// Updating achievement: Flying Solo
+IF
+  Global("BD_ACH_PARTY","GLOBAL",0)
+  Global("Chapter","GLOBAL",%bg2_chapter_1%)
+  NumInPartyGT(1)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_ACH_PARTY","GLOBAL",-1)
+    Continue()
+END
+
+IF
+  Global("BD_ACH_PARTY","GLOBAL",0)
+  Global("Chapter","GLOBAL",%bg2_chapter_1%)
+  !NumInPartyGT(1)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_ACH_PARTY","GLOBAL",1)
+    Continue()
+END
+
 // Enabling containers
 IF
   Global("A7-ShortcutEnabled", "GLOBAL", 1)

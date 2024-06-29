@@ -9,7 +9,15 @@ ALWAYS
   OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
 
   OUTER_SET IS_EE = (GAME_IS ~bg2ee eet~) ? 1 : 0
-  OUTER_SET IS_EE2 = (IS_EE != 0 AND FILE_EXISTS ~engine.lua~) ? 1 : 0
+  OUTER_SET IS_EE2 = (IS_EE && FILE_EXISTS ~engine.lua~) ? 1 : 0
+
+  // Setting bg2_chapter_1, bg2_chapter_2, ... to actual chapter value for BG2 part of the game
+  OUTER_SET bg2_chapter = (GAME_IS ~eet~) ? 12 : 0
+  OUTER_FOR (i = 1; i < 11; ++i) BEGIN
+    OUTER_SET bg2_chapter += 1
+    OUTER_TEXT_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
 
   // manual conversion table for all languages
   ACTION_DEFINE_ASSOCIATIVE_ARRAY charset_table BEGIN

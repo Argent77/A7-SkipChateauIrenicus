@@ -18,3 +18,24 @@ THEN
 END
 >>>>>>>>
 EXTEND_TOP ~ar0700.bcs~ ~.../inlined/ar0700_acorns.baf~
+
+// Fixing achievements
+ACTION_IF (IS_EE2) BEGIN
+  // Achievement: Lord of Murder
+  COPY_EXISTING ~baldur.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY
+        ~AreaCheck("AR0603")[ %TAB%%WNL%]+\(\(Story\|Nightmare\)ModeOn()[ %TAB%%WNL%]+Global("bd_ach_difficulty","global",0)\)~
+        ~Global("Chapter","GLOBAL",%bg2_chapter_1%) \1~
+    END
+  BUT_ONLY
+
+  // Achievement: Wand Collector
+  COPY_EXISTING ~achievem.bcs~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY
+        ~\(Global("ACH_WAND_COLLECTOR","GLOBAL",0)\)[%WNL%%TAB% ]+AreaCheck("AR0603")~
+        ~\1 Global("Chapter","GLOBAL",%bg2_chapter_1%)~
+    END
+  BUT_ONLY IF_EXISTS
+END
