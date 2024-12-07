@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/SkipChateauIrenicus~
 SUPPORT ~http://www.shsforums.net/forum/655-skip-chateau-irenicus/~
-VERSION ~3.4~
+VERSION ~3.5~
 
 ALWAYS
   // required because of non-standard BACKUP path
