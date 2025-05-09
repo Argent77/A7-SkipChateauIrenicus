@@ -14,10 +14,10 @@ Peso: 0~
 
 // Rogue dialog
 @2000 = ~¡Mantened la distancia! ¿Sois amigo o enemigo?~
-@2001 = ~Soy <GABBER>. He estado encarcelado por un mago de gran poder hasta hace poco. ¿Cómo habéis aparecido tan repentinamente?~
+@2001 = ~Soy <GABBER>. He estado encarcelado por un mago de gran poder hasta hace poco. ¿Cómo habéis aparecido tan repentinamente?~ ~Soy <GABBER>. He estado encarcelada por un mago de gran poder hasta hace poco. ¿Cómo habéis aparecido tan repentinamente?~
 @2002 = ~No os diré nada. Podríais ser un espía de mi captor o algo peor. ¡Perdeos!~
 @2003 = ~Esta maldita mazmorra utiliza portales mágicos para conectar cada nivel.~
-@2004 = ~¿Dices que un mago os encarceló? ¿Dónde está ahora?~
+@2004 = ~¿Decís que un mago os encarceló? ¿Dónde está ahora?~
 @2005 = ~Se ha teletransportado hace poco.~
 @2006 = ~¡Maldita sea! Entonces todos nuestros esfuerzos para llegar a él fueron en vano. Muy bien, es necesario un cambio de plan. Prepararemos una emboscada para él en la superficie.~
 @2007 = ~¿Puedo usar estos portales para escapar?~
